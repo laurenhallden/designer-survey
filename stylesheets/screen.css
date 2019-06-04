@@ -455,6 +455,16 @@ body, html {
   font-size: 16px;
 }
 
+/* line 1, ../sass/_type.scss */
+ul li {
+  margin-bottom: 1rem;
+}
+
+/* line 5, ../sass/_type.scss */
+h4 {
+  margin-top: 2.5rem;
+}
+
 /* line 1, ../sass/_layout.scss */
 section {
   padding-top: 60px;
