@@ -456,11 +456,22 @@ body, html {
 }
 
 /* line 1, ../sass/_type.scss */
+body, html {
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.6;
+}
+
+/* line 6, ../sass/_type.scss */
+h1, h2, h3, h4, h5 {
+  font-family: Georgia;
+}
+
+/* line 10, ../sass/_type.scss */
 ul li {
   margin-bottom: 1rem;
 }
 
-/* line 5, ../sass/_type.scss */
+/* line 14, ../sass/_type.scss */
 h4 {
   margin-top: 2.5rem;
 }
@@ -474,6 +485,11 @@ section {
 /* line 6, ../sass/_layout.scss */
 .row + .row {
   margin-top: 40px;
+}
+
+/* line 11, ../sass/_layout.scss */
+.chart div {
+  border: 1px solid #efefef;
 }
 
 /* Buttons */
