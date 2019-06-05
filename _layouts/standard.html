@@ -20,7 +20,6 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h2>Frequently Asked Questions</h2>
                 <h4>What is the survey?</h4>
                 <p>This is a project by <a href="/about">Dan, Tony, and Lauren</a>, three designers working in Philadelphia. Our goal is to raise the salary conversation for digital designers in the Philadelphia community so that we can <strong>better understand our worth</strong> and how we can <strong>advocate for our peers.</strong>
                 </p>
@@ -29,66 +28,119 @@
                 <p><strong>All responses will be anonymous</strong> (more on that below). The survey should take about 15 minutes to complete.</p>
             </div>
         </div>
-    </div>
-</section>
-<section class="bg-light chart">
-    <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <h4>Senior UX/UI Designer</h4>
+            <div class="col-md-4">
+                <div class="card text-white bg-primary">
+                  <div class="card-header">Sample job</div>
+                  <div class="card-body">
+                    <h4 class="card-title">Senior UX/UI Designer</h4>
+                    <p class="card-text">Years of experience, what this job entails, etc.</p>
+                  </div>
+                </div>
+            </div>    
+            <div class="col-md-8">
+                <div class="card text-white bg-secondary">
+                    <div class="card-header">Salary distribution</div>
+                    <div class="card-body">
+                        <canvas id="myChart" width="400" height="200"></canvas>
+                        <script>
+                        var canvas = document.getElementById('myChart');
+                        var data = {
+                                labels: ['20k','30k','40k','50k','60k','70k','80k','90k','100k','110k','120k','130k','140k','150k','160k','170k','180k','190k','200k'],
+                                datasets: [{
+                                    data: [0,0,1,2,4,7,12,16,21,13,8,5,4,3,2,1,0,0,0,0],
+                                    backgroundColor: [
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(255, 99, 132, 0.2)'
+                                    ],
+                                    borderColor: [
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)',
+                                        'rgba(255, 99, 132, 1)'
+                                    ],
+                                    borderWidth: 1
+                                }]
+                            };
+                        var option = {
+                            tooltips: {
+                                 //enabled: false
+                            },
+
+                            legend: {
+                                display: false
+                            },
+
+                            scales: {
+                                yAxes: [{
+                                  ticks: {
+                                    max: 25,
+                                        callback: function(value, index, values) {
+                                        return (value) + '%';
+                                    }
+                                  },
+                                  scaleLabel: {
+                                    display: true,
+                                    labelString: 'Percentage',
+                                  },
+                                },
+                              ],
+                                xAxes:[{
+                                    display: true,
+                                    labelString: 'Average Score',
+                                    ticks: {
+                                        autoSkip: true,
+                                        maxTicksLimit: 12
+                                    }
+                                }]
+                            }
+                        };
+
+                        var myBarChart = Chart.Bar(canvas,{
+                            data:data,
+                          options:option
+                        });
+                        </script>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-                <p>Years of Experience</p>
-                <p>What this job involves</p>
-
-            </div>     
-            <div class="col-md-6">
-    <canvas id="myChart" width="400" height="200"></canvas>
-<script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['10%', '25%', '50%', '75%', '90%'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-</div>
-</div>
-</section>
-
-<section class="bg-light faq">
-    <div class="container">
+        </div>
         <div class="row">
             <div class="col-md-8">
                 <h4>How will the data be used?</h4>
