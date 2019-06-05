@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Source Sans Pro', sans-serif;
 	line-height: 1.6;
 	font-weight: 300;
 }
@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5 {
 }
 
 strong {
-	font-weight: 800;
+	font-weight: 700;
 }
 
 ul li {
@@ -19,6 +19,13 @@ ul li {
 h3 {
 	margin-top: 2.5rem;
 	margin-bottom: 1rem;
+}
+
+.card {
+	font-family: 'Source Code Pro', monospace;
+	line-height: 1.6;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 .card-text {

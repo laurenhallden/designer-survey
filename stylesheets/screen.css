@@ -453,7 +453,7 @@ textarea {
 
 /* line 1, ../sass/_variables.scss */
 body, html {
-  font-size: 16px;
+  font-size: 18px;
   color: #ebebeb;
 }
 
@@ -621,7 +621,7 @@ body, html {
 
 /* line 1, ../sass/_type.scss */
 body, html {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
   font-weight: 300;
 }
@@ -633,7 +633,7 @@ h1, h2, h3, h4, h5 {
 
 /* line 11, ../sass/_type.scss */
 strong {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 /* line 15, ../sass/_type.scss */
@@ -648,6 +648,14 @@ h3 {
 }
 
 /* line 24, ../sass/_type.scss */
+.card {
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* line 31, ../sass/_type.scss */
 .card-text {
   margin-bottom: .5rem;
 }
