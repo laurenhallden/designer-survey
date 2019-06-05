@@ -453,7 +453,7 @@ textarea {
 
 /* line 1, ../sass/_variables.scss */
 body, html {
-  font-size: 18px;
+  font-size: 20px;
   color: #ebebeb;
 }
 
@@ -643,23 +643,24 @@ ul li {
 
 /* line 19, ../sass/_type.scss */
 h3 {
+  font-size: 36px;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 24, ../sass/_type.scss */
+/* line 25, ../sass/_type.scss */
 .card {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
 }
-/* line 30, ../sass/_type.scss */
+/* line 31, ../sass/_type.scss */
 .card strong {
   font-weight: 700;
 }
 
-/* line 35, ../sass/_type.scss */
+/* line 36, ../sass/_type.scss */
 .card-text {
   margin-bottom: .5rem;
 }
