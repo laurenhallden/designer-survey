@@ -654,8 +654,12 @@ h3 {
   font-size: 14px;
   font-weight: 400;
 }
+/* line 30, ../sass/_type.scss */
+.card strong {
+  font-weight: 700;
+}
 
-/* line 31, ../sass/_type.scss */
+/* line 35, ../sass/_type.scss */
 .card-text {
   margin-bottom: .5rem;
 }
