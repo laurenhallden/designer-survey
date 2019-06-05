@@ -649,7 +649,7 @@ h3 {
 }
 
 /* line 25, ../sass/_type.scss */
-button, .btn {
+button, .btn, nav {
   font-family: 'Source Code Pro', monospace;
 }
 
