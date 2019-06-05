@@ -649,18 +649,23 @@ h3 {
 }
 
 /* line 25, ../sass/_type.scss */
+button, .btn {
+  font-family: 'Source Code Pro', monospace;
+}
+
+/* line 29, ../sass/_type.scss */
 .card {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
   font-size: 16px;
   font-weight: 400;
 }
-/* line 31, ../sass/_type.scss */
+/* line 35, ../sass/_type.scss */
 .card strong {
   font-weight: 700;
 }
 
-/* line 36, ../sass/_type.scss */
+/* line 40, ../sass/_type.scss */
 .card-text {
   margin-bottom: .5rem;
 }
