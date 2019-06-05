@@ -1,10 +1,15 @@
 body, html {
 	font-family: 'Source Code Pro', monospace;
 	line-height: 1.6;
+	font-weight: 300;
 }
 
 h1, h2, h3, h4, h5 {
 	font-family: Georgia;
+}
+
+strong {
+	font-weight: 800;
 }
 
 ul li {

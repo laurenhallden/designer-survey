@@ -623,25 +623,31 @@ body, html {
 body, html {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
+  font-weight: 300;
 }
 
-/* line 6, ../sass/_type.scss */
+/* line 7, ../sass/_type.scss */
 h1, h2, h3, h4, h5 {
   font-family: Georgia;
 }
 
-/* line 10, ../sass/_type.scss */
+/* line 11, ../sass/_type.scss */
+strong {
+  font-weight: 800;
+}
+
+/* line 15, ../sass/_type.scss */
 ul li {
   margin-bottom: 1rem;
 }
 
-/* line 14, ../sass/_type.scss */
+/* line 19, ../sass/_type.scss */
 h3 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 19, ../sass/_type.scss */
+/* line 24, ../sass/_type.scss */
 .card-text {
   margin-bottom: .5rem;
 }
