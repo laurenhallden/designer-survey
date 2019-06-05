@@ -636,8 +636,14 @@ ul li {
 }
 
 /* line 14, ../sass/_type.scss */
-h4 {
+h3 {
   margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* line 19, ../sass/_type.scss */
+.card-text {
+  margin-bottom: .5rem;
 }
 
 /* line 1, ../sass/_layout.scss */
@@ -649,11 +655,6 @@ section {
 /* line 6, ../sass/_layout.scss */
 .row + .row {
   margin-top: 40px;
-}
-
-/* line 11, ../sass/_layout.scss */
-.chart div {
-  border: 1px solid #efefef;
 }
 
 /* Buttons */
