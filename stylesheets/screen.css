@@ -1,10 +1,74 @@
-/*@import "compass/reset";*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
+/* line 5, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.3.6/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
 /* line 8, ../sass/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -451,112 +515,127 @@ textarea {
   /* 2 */
 }
 
+/* $blue:    #375a7f !default; */
+/* $indigo:  #6610f2 !default; */
+/* $purple:  #6f42c1 !default; */
+/* $red:     #E74C3C !default; */
+/* $yellow:  #F39C12 !default; */
+/* $green:   #00bc8c !default; */
 /* line 1, ../sass/_variables.scss */
 body, html {
   font-size: 20px;
   color: #ebebeb;
 }
 
-/* line 13, ../sass/_bootswatch.scss */
+/* line 18, ../sass/_bootswatch.scss */
 .bg-primary .navbar-nav .active > .nav-link {
-  color: #00bc8c !important;
+  color: #BA6767 !important;
 }
 
-/* line 18, ../sass/_bootswatch.scss */
+/* line 23, ../sass/_bootswatch.scss */
 .bg-dark {
-  background-color: #00bc8c !important;
+  background-color: #BA6767 !important;
 }
-/* line 21, ../sass/_bootswatch.scss */
+/* line 26, ../sass/_bootswatch.scss */
 .bg-dark.navbar-dark .navbar-nav .nav-link:focus,
 .bg-dark.navbar-dark .navbar-nav .nav-link:hover,
 .bg-dark.navbar-dark .navbar-nav .active > .nav-link {
-  color: #375a7f !important;
+  color: #64B8C8 !important;
 }
 
-/* line 34, ../sass/_bootswatch.scss */
+/* line 36, ../sass/_bootswatch.scss */
+.btn-primary {
+  background-color: #64B8C8;
+}
+/* line 39, ../sass/_bootswatch.scss */
+.btn-primary:hover {
+  background-color: #41a5b8;
+}
+
+/* line 47, ../sass/_bootswatch.scss */
 .blockquote-footer {
   color: #999;
 }
 
-/* line 44, ../sass/_bootswatch.scss */
+/* line 57, ../sass/_bootswatch.scss */
 .table-primary, .table-primary > th, .table-primary > td {
-  background-color: #375a7f;
+  background-color: #64B8C8;
 }
-/* line 50, ../sass/_bootswatch.scss */
+/* line 63, ../sass/_bootswatch.scss */
 .table-secondary, .table-secondary > th, .table-secondary > td {
   background-color: #444;
 }
-/* line 56, ../sass/_bootswatch.scss */
+/* line 69, ../sass/_bootswatch.scss */
 .table-light, .table-light > th, .table-light > td {
   background-color: #303030;
 }
-/* line 62, ../sass/_bootswatch.scss */
+/* line 75, ../sass/_bootswatch.scss */
 .table-dark, .table-dark > th, .table-dark > td {
   background-color: #adb5bd;
 }
-/* line 68, ../sass/_bootswatch.scss */
+/* line 81, ../sass/_bootswatch.scss */
 .table-success, .table-success > th, .table-success > td {
-  background-color: #00bc8c;
+  background-color: #BA6767;
 }
-/* line 74, ../sass/_bootswatch.scss */
+/* line 87, ../sass/_bootswatch.scss */
 .table-info, .table-info > th, .table-info > td {
   background-color: #3498DB;
 }
-/* line 80, ../sass/_bootswatch.scss */
+/* line 93, ../sass/_bootswatch.scss */
 .table-danger, .table-danger > th, .table-danger > td {
-  background-color: #E74C3C;
+  background-color: #BA6767;
 }
-/* line 86, ../sass/_bootswatch.scss */
+/* line 99, ../sass/_bootswatch.scss */
 .table-warning, .table-warning > th, .table-warning > td {
-  background-color: #F39C12;
+  background-color: #DAC96B;
 }
-/* line 92, ../sass/_bootswatch.scss */
+/* line 105, ../sass/_bootswatch.scss */
 .table-active, .table-active > th, .table-active > td {
   background-color: #444;
 }
-/* line 100, ../sass/_bootswatch.scss */
+/* line 113, ../sass/_bootswatch.scss */
 .table-hover .table-primary:hover, .table-hover .table-primary:hover > th, .table-hover .table-primary:hover > td {
-  background-color: #2f4d6d;
+  background-color: #51afc1;
 }
-/* line 106, ../sass/_bootswatch.scss */
+/* line 119, ../sass/_bootswatch.scss */
 .table-hover .table-secondary:hover, .table-hover .table-secondary:hover > th, .table-hover .table-secondary:hover > td {
   background-color: #373737;
 }
-/* line 112, ../sass/_bootswatch.scss */
+/* line 125, ../sass/_bootswatch.scss */
 .table-hover .table-light:hover, .table-hover .table-light:hover > th, .table-hover .table-light:hover > td {
   background-color: #232323;
 }
-/* line 118, ../sass/_bootswatch.scss */
+/* line 131, ../sass/_bootswatch.scss */
 .table-hover .table-dark:hover, .table-hover .table-dark:hover > th, .table-hover .table-dark:hover > td {
   background-color: #9fa8b2;
 }
-/* line 124, ../sass/_bootswatch.scss */
+/* line 137, ../sass/_bootswatch.scss */
 .table-hover .table-success:hover, .table-hover .table-success:hover > th, .table-hover .table-success:hover > td {
-  background-color: #00a379;
+  background-color: #b25555;
 }
-/* line 130, ../sass/_bootswatch.scss */
+/* line 143, ../sass/_bootswatch.scss */
 .table-hover .table-info:hover, .table-hover .table-info:hover > th, .table-hover .table-info:hover > td {
   background-color: #258cd1;
 }
-/* line 136, ../sass/_bootswatch.scss */
+/* line 149, ../sass/_bootswatch.scss */
 .table-hover .table-danger:hover, .table-hover .table-danger:hover > th, .table-hover .table-danger:hover > td {
-  background-color: #e43725;
+  background-color: #b25555;
 }
-/* line 142, ../sass/_bootswatch.scss */
+/* line 155, ../sass/_bootswatch.scss */
 .table-hover .table-warning:hover, .table-hover .table-warning:hover > th, .table-hover .table-warning:hover > td {
-  background-color: #e08e0b;
+  background-color: #d5c257;
 }
-/* line 148, ../sass/_bootswatch.scss */
+/* line 161, ../sass/_bootswatch.scss */
 .table-hover .table-active:hover, .table-hover .table-active:hover > th, .table-hover .table-active:hover > td {
   background-color: #444;
 }
 
-/* line 158, ../sass/_bootswatch.scss */
+/* line 171, ../sass/_bootswatch.scss */
 .input-group-addon {
   color: #fff;
 }
 
-/* line 167, ../sass/_bootswatch.scss */
+/* line 180, ../sass/_bootswatch.scss */
 .nav-tabs .nav-link,
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link.active:focus,
@@ -574,47 +653,47 @@ body, html {
   color: #fff;
 }
 
-/* line 178, ../sass/_bootswatch.scss */
+/* line 191, ../sass/_bootswatch.scss */
 .breadcrumb a {
   color: #fff;
 }
 
-/* line 183, ../sass/_bootswatch.scss */
+/* line 196, ../sass/_bootswatch.scss */
 .pagination a:hover {
   text-decoration: none;
 }
 
-/* line 190, ../sass/_bootswatch.scss */
+/* line 203, ../sass/_bootswatch.scss */
 .close {
   opacity: 0.4;
 }
-/* line 193, ../sass/_bootswatch.scss */
+/* line 206, ../sass/_bootswatch.scss */
 .close:hover, .close:focus {
   opacity: 1;
 }
 
-/* line 199, ../sass/_bootswatch.scss */
+/* line 212, ../sass/_bootswatch.scss */
 .alert {
   border: none;
   color: #fff;
 }
-/* line 203, ../sass/_bootswatch.scss */
+/* line 216, ../sass/_bootswatch.scss */
 .alert a,
 .alert .alert-link {
   color: #fff;
   text-decoration: underline;
 }
 
-/* line 215, ../sass/_bootswatch.scss */
+/* line 228, ../sass/_bootswatch.scss */
 .list-group-item-action {
   color: #fff;
 }
-/* line 218, ../sass/_bootswatch.scss */
+/* line 231, ../sass/_bootswatch.scss */
 .list-group-item-action:hover, .list-group-item-action:focus {
   background-color: #444;
   color: #fff;
 }
-/* line 224, ../sass/_bootswatch.scss */
+/* line 237, ../sass/_bootswatch.scss */
 .list-group-item-action .list-group-item-heading {
   color: #fff;
 }
