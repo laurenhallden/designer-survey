@@ -1,5 +1,7 @@
 body, html {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: $gray-200;
+	font-family: 'Open Sans', sans-serif;
 	line-height: 1.6;
 	font-weight: 300;
 }
@@ -26,6 +28,20 @@ button, .btn, nav {
 	font-family: 'Source Code Pro', monospace;	
 }
 
+a {
+	color: $blue;
+	font-weight: 500;
+
+	&:hover {
+		color: $blue;
+		text-decoration: underline;
+	}
+
+	&:active {
+		color: darken($blue, 15%);
+	}
+}
+
 .card {
 	font-family: 'Source Code Pro', monospace;
 	line-height: 1.6;
@@ -34,6 +50,10 @@ button, .btn, nav {
 
 	strong {
 		font-weight: 700;
+	}
+
+	h4 {
+		font-size: 1.2rem;
 	}
 }
 
