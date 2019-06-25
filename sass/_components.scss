@@ -5,11 +5,22 @@
 }
 
 .navbar {
-	font-size: 1rem;
+	font-size: 0.9rem;
+	font-family: 'Open Sans', sans-serif;
+
+	.navbar-brand {
+		font-size: 0.9rem;
+	}
 
 	a {
+		font-size: 0.9rem;
+		color: $white;
+
 		&:hover {
-			color: $blue !important;
+			color: $green !important;
+		}
+		&:active {
+			color: darken($green, 15%) !important;
 		}
 	}
 }
@@ -24,6 +35,7 @@
 
 .btn {
 	border-radius: 5px;
+	color: $gray-900;
 
 	.fa-angle-right {
 		font-weight: bold;
@@ -33,13 +45,66 @@
 
 .btn-primary {
 	background-color: $blue;
+	color: $gray-900;
 
 	&:hover {
-		background-color: darken($blue, 15%);
-	};
+		background-color: darken($blue, 15%) !important;
+		color: $gray-900;
+	}
+
+	&:active {
+		background-color: darken($blue, 30%) !important;
+	}
 }
 
 /* Cards */
+
+.hero-card {
+	background-image: url('/images/hero-bg.png');
+	padding: 135px 50px;
+	border-radius: 8px;
+	box-shadow: $high-float;
+}
+
+.card {
+	font-family: 'Source Code Pro', monospace;
+	line-height: 1.6;
+	font-size: 16px;
+	font-weight: 400;
+	box-shadow: $high-float;
+
+	strong {
+		font-weight: 700;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: $green !important;
+
+		&:active {
+			color: darken($green, 15%) !important;
+		}
+	}
+}
+
+.card-text {
+	margin-bottom: .5rem;
+}
+
 .bg-primary {
  	background-color: darken($blue, 15%) !important;
+ }
+
+.bg-secondary, .bg-light {
+	.card-header {
+		background-color: $gray-700;
+	}
+
+	.card-body {
+		background-color: $gray-800;
+	}
  }

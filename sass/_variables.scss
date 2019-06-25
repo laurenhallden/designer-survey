@@ -3,33 +3,27 @@
 // Color system
 //
 
-$white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #ebebeb !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #999 !default;
-$gray-700: #444 !default;
-$gray-800: #303030 !default;
-$gray-900: #222 !default;
+$white:    #fff;
+$gray-100: lighten(#2C2C32, 90%);
+$gray-200: lighten(#2C2C32, 80%);
+$gray-300: lighten(#2C2C32, 70%);
+$gray-400: lighten(#2C2C32, 60%);
+$gray-500: lighten(#2C2C32, 50%);
+$gray-600: lighten(#2C2C32, 40%);
+$gray-700: #4D4D59;
+$gray-800: #3A3A43;
+$gray-900: #2C2C32;
 $black:    #000 !default;
 
-/* $blue:    #375a7f !default; */
-$blue:     #4bafc8 !default;
-/* $indigo:  #6610f2 !default; */
-$indigo:     #64B8C8 !default;
-/* $purple:  #6f42c1 !default; */
+$blue:    #5FD0FF;
+$indigo:  #64B8C8 !default;
 $purple:  #8664B3 !default;
 $pink:    #e83e8c !default;
-/* $red:     #E74C3C !default; */
 $red:     #BA6767 !default;
 $orange:  #fd7e14 !default;
-/* $yellow:  #F39C12 !default; */
-$yellow:  #DAC96B !default;
-/* $green:   #00bc8c !default; */
-$green:   #6CBC6A !default;
-$teal:    #20c997 !default;
+$yellow:  #DAC96B !default;	
+$green:   #89EBD7;
+$teal:    $green;
 $cyan:    #3498DB !default;
 
 $primary:       $blue !default;
@@ -42,3 +36,5 @@ $light:         $gray-800 !default;
 $dark:          $gray-500 !default;
 
 $yiq-contrasted-threshold:  175 !default;
+
+$high-float:    5px 5px 8px rgba(0,0,0,0.2);

@@ -448,16 +448,10 @@ textarea {
   /* 2 */
 }
 
-/* $blue:    #375a7f !default; */
-/* $indigo:  #6610f2 !default; */
-/* $purple:  #6f42c1 !default; */
-/* $red:     #E74C3C !default; */
-/* $yellow:  #F39C12 !default; */
-/* $green:   #00bc8c !default; */
 /* line 1, ../sass/_type.scss */
 body, html {
   font-size: 18px;
-  color: #ebebeb;
+  color: #fbfbfb;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
   font-weight: 300;
@@ -469,70 +463,80 @@ h1, h2, h3, h4, h5 {
 }
 
 /* line 13, ../sass/_type.scss */
+h1 {
+  font-style: italic;
+}
+
+/* line 17, ../sass/_type.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 17, ../sass/_type.scss */
+/* line 21, ../sass/_type.scss */
 ul li {
   margin-bottom: 1rem;
 }
 
-/* line 21, ../sass/_type.scss */
+/* line 25, ../sass/_type.scss */
 h3 {
   font-size: 36px;
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
 
-/* line 27, ../sass/_type.scss */
+/* line 31, ../sass/_type.scss */
 button, .btn, nav {
   font-family: 'Source Code Pro', monospace;
 }
 
-/* line 31, ../sass/_type.scss */
+/* line 35, ../sass/_type.scss */
 a {
-  color: #4bafc8;
+  color: #5FD0FF;
   font-weight: 500;
 }
-/* line 35, ../sass/_type.scss */
+/* line 39, ../sass/_type.scss */
 a:hover {
-  color: #4bafc8;
+  color: #5FD0FF;
   text-decoration: underline;
 }
-/* line 40, ../sass/_type.scss */
+/* line 44, ../sass/_type.scss */
 a:active {
-  color: #2e8398;
+  color: #13baff;
 }
 
-/* line 45, ../sass/_type.scss */
+/* line 49, ../sass/_type.scss */
 .card {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
   font-size: 16px;
   font-weight: 400;
 }
-/* line 51, ../sass/_type.scss */
+/* line 55, ../sass/_type.scss */
 .card strong {
   font-weight: 700;
 }
-/* line 55, ../sass/_type.scss */
+/* line 59, ../sass/_type.scss */
 .card h4 {
   font-size: 1.2rem;
 }
 
-/* line 60, ../sass/_type.scss */
+/* line 64, ../sass/_type.scss */
 .card-text {
   margin-bottom: .5rem;
 }
 
 /* line 1, ../sass/_layout.scss */
 section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /* line 6, ../sass/_layout.scss */
+section + section {
+  padding-top: 5px;
+}
+
+/* line 10, ../sass/_layout.scss */
 .row + .row {
   margin-top: 40px;
 }
@@ -540,45 +544,116 @@ section {
 /* Sections */
 /* line 3, ../sass/_components.scss */
 .bg-light {
-  background-color: #303030;
+  background-color: #3A3A43;
 }
 
 /* line 7, ../sass/_components.scss */
 .navbar {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-family: 'Open Sans', sans-serif;
 }
 /* line 11, ../sass/_components.scss */
+.navbar .navbar-brand {
+  font-size: 0.9rem;
+}
+/* line 15, ../sass/_components.scss */
+.navbar a {
+  font-size: 0.9rem;
+  color: #fff;
+}
+/* line 19, ../sass/_components.scss */
 .navbar a:hover {
-  color: #4bafc8 !important;
+  color: #89EBD7 !important;
+}
+/* line 22, ../sass/_components.scss */
+.navbar a:active {
+  color: #48e0c1 !important;
 }
 
-/* line 18, ../sass/_components.scss */
+/* line 29, ../sass/_components.scss */
 .hero p {
   font-size: 1.2rem;
 }
 
 /* Buttons */
-/* line 25, ../sass/_components.scss */
+/* line 36, ../sass/_components.scss */
 .btn {
   border-radius: 5px;
+  color: #2C2C32;
 }
-/* line 28, ../sass/_components.scss */
+/* line 40, ../sass/_components.scss */
 .btn .fa-angle-right {
   font-weight: bold;
   margin-left: 5px;
 }
 
-/* line 34, ../sass/_components.scss */
+/* line 46, ../sass/_components.scss */
 .btn-primary {
-  background-color: #4bafc8;
+  background-color: #5FD0FF;
+  color: #2C2C32;
 }
-/* line 37, ../sass/_components.scss */
+/* line 50, ../sass/_components.scss */
 .btn-primary:hover {
-  background-color: #2e8398;
+  background-color: #13baff !important;
+  color: #2C2C32;
+}
+/* line 55, ../sass/_components.scss */
+.btn-primary:active {
+  background-color: #008bc5 !important;
 }
 
 /* Cards */
-/* line 43, ../sass/_components.scss */
-.bg-primary {
-  background-color: #2e8398 !important;
+/* line 62, ../sass/_components.scss */
+.hero-card {
+  background-image: url("/images/hero-bg.png");
+  padding: 135px 50px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* line 69, ../sass/_components.scss */
+.card {
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+}
+/* line 76, ../sass/_components.scss */
+.card strong {
+  font-weight: 700;
+}
+/* line 80, ../sass/_components.scss */
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+/* line 85, ../sass/_components.scss */
+.card a {
+  color: #89EBD7 !important;
+}
+/* line 88, ../sass/_components.scss */
+.card a:active {
+  color: #48e0c1 !important;
+}
+
+/* line 94, ../sass/_components.scss */
+.card-text {
+  margin-bottom: .5rem;
+}
+
+/* line 98, ../sass/_components.scss */
+.bg-primary {
+  background-color: #13baff !important;
+}
+
+/* line 103, ../sass/_components.scss */
+.bg-secondary .card-header, .bg-light .card-header {
+  background-color: #4D4D59;
+}
+/* line 107, ../sass/_components.scss */
+.bg-secondary .card-body, .bg-light .card-body {
+  background-color: #3A3A43;
+}
+
+/* Standard */
