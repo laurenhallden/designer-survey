@@ -6,7 +6,6 @@
 
 .navbar {
 	font-size: 0.9rem;
-	font-family: 'Open Sans', sans-serif;
 
 	.navbar-brand {
 		font-size: 0.9rem;
@@ -15,6 +14,7 @@
 	a {
 		font-size: 0.9rem;
 		color: $white;
+		font-weight: 600;
 
 		&:hover {
 			color: $green !important;
@@ -30,6 +30,8 @@
 .btn {
 	border-radius: 5px;
 	color: $gray-900;
+	font-weight: 500;
+	font-size: 1rem;
 
 	.fa-angle-right {
 		font-weight: bold;
@@ -40,6 +42,7 @@
 .btn-primary {
 	background-color: $blue;
 	color: $gray-900;
+	font-weight: 600;
 
 	&:hover {
 		background-color: darken($blue, 15%) !important;

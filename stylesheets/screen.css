@@ -482,26 +482,21 @@ ul li {
 /* line 27, ../sass/_type.scss */
 h3 {
   font-size: 36px;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 /* line 33, ../sass/_type.scss */
-button, .btn, nav {
-  font-family: 'Source Code Pro', monospace;
-}
-
-/* line 37, ../sass/_type.scss */
 a {
   color: #5FD0FF;
   font-weight: 500;
 }
-/* line 41, ../sass/_type.scss */
+/* line 37, ../sass/_type.scss */
 a:hover {
   color: #5FD0FF;
   text-decoration: underline;
 }
-/* line 46, ../sass/_type.scss */
+/* line 42, ../sass/_type.scss */
 a:active {
   color: #13baff;
 }
@@ -531,16 +526,16 @@ section + section {
 /* line 7, ../sass/_components.scss */
 .navbar {
   font-size: 0.9rem;
-  font-family: 'Open Sans', sans-serif;
 }
-/* line 11, ../sass/_components.scss */
+/* line 10, ../sass/_components.scss */
 .navbar .navbar-brand {
   font-size: 0.9rem;
 }
-/* line 15, ../sass/_components.scss */
+/* line 14, ../sass/_components.scss */
 .navbar a {
   font-size: 0.9rem;
   color: #fff;
+  font-weight: 600;
 }
 /* line 19, ../sass/_components.scss */
 .navbar a:hover {
@@ -556,30 +551,33 @@ section + section {
 .btn {
   border-radius: 5px;
   color: #2C2C32;
+  font-weight: 500;
+  font-size: 1rem;
 }
-/* line 34, ../sass/_components.scss */
+/* line 36, ../sass/_components.scss */
 .btn .fa-angle-right {
   font-weight: bold;
   margin-left: 5px;
 }
 
-/* line 40, ../sass/_components.scss */
+/* line 42, ../sass/_components.scss */
 .btn-primary {
   background-color: #5FD0FF;
   color: #2C2C32;
+  font-weight: 600;
 }
-/* line 44, ../sass/_components.scss */
+/* line 47, ../sass/_components.scss */
 .btn-primary:hover {
   background-color: #13baff !important;
   color: #2C2C32;
 }
-/* line 49, ../sass/_components.scss */
+/* line 52, ../sass/_components.scss */
 .btn-primary:active {
   background-color: #008bc5 !important;
 }
 
 /* Cards */
-/* line 56, ../sass/_components.scss */
+/* line 59, ../sass/_components.scss */
 .hero-card {
   background-image: url("/images/hero-bg.png");
   background-color: #3A555D;
@@ -588,12 +586,12 @@ section + section {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* line 65, ../sass/_components.scss */
+/* line 68, ../sass/_components.scss */
 .hero p {
   font-size: 1.2rem;
 }
 
-/* line 70, ../sass/_components.scss */
+/* line 73, ../sass/_components.scss */
 .card {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
@@ -601,39 +599,39 @@ section + section {
   font-weight: 400;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
-/* line 77, ../sass/_components.scss */
+/* line 80, ../sass/_components.scss */
 .card strong {
   font-weight: 700;
 }
-/* line 81, ../sass/_components.scss */
+/* line 84, ../sass/_components.scss */
 .card h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-/* line 86, ../sass/_components.scss */
+/* line 89, ../sass/_components.scss */
 .card a {
   color: #89EBD7 !important;
 }
-/* line 89, ../sass/_components.scss */
+/* line 92, ../sass/_components.scss */
 .card a:active {
   color: #48e0c1 !important;
 }
 
-/* line 95, ../sass/_components.scss */
+/* line 98, ../sass/_components.scss */
 .card-text {
   margin-bottom: .5rem;
 }
 
-/* line 99, ../sass/_components.scss */
+/* line 102, ../sass/_components.scss */
 .bg-primary {
   background-color: #13baff !important;
 }
 
-/* line 104, ../sass/_components.scss */
+/* line 107, ../sass/_components.scss */
 .bg-secondary .card-header, .bg-light .card-header {
   background-color: #4D4D59;
 }
-/* line 108, ../sass/_components.scss */
+/* line 111, ../sass/_components.scss */
 .bg-secondary .card-body, .bg-light .card-body {
   background-color: #3A3A43;
 }
