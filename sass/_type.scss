@@ -1,9 +1,11 @@
 body, html {
-	font-size: 18px;
+	font-size: 20px;
 	color: $gray-200;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.6;
 	font-weight: 300;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5 {
@@ -44,23 +46,4 @@ a {
 	&:active {
 		color: darken($blue, 15%);
 	}
-}
-
-.card {
-	font-family: 'Source Code Pro', monospace;
-	line-height: 1.6;
-	font-size: 16px;
-	font-weight: 400;
-
-	strong {
-		font-weight: 700;
-	}
-
-	h4 {
-		font-size: 1.2rem;
-	}
-}
-
-.card-text {
-	margin-bottom: .5rem;
 }
