@@ -10,3 +10,10 @@ section+section {
 .row+.row {
 	margin-top: 40px;
 }
+
+@media screen and (max-width: 900px) {
+
+	.col+.col {
+		margin-top: 30px;
+	}
+}

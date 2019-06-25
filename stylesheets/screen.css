@@ -457,46 +457,47 @@ body, html {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #2C2C32 !important;
 }
 
-/* line 11, ../sass/_type.scss */
+/* line 12, ../sass/_type.scss */
 h1, h2, h3, h4, h5 {
   font-family: Georgia;
 }
 
-/* line 15, ../sass/_type.scss */
+/* line 16, ../sass/_type.scss */
 h1 {
   font-style: italic;
 }
 
-/* line 19, ../sass/_type.scss */
+/* line 20, ../sass/_type.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 23, ../sass/_type.scss */
+/* line 24, ../sass/_type.scss */
 ul li {
   margin-bottom: 1rem;
 }
 
-/* line 27, ../sass/_type.scss */
+/* line 28, ../sass/_type.scss */
 h3 {
   font-size: 36px;
   margin-top: 50px;
   margin-bottom: 15px;
 }
 
-/* line 33, ../sass/_type.scss */
+/* line 34, ../sass/_type.scss */
 a {
   color: #5FD0FF;
   font-weight: 500;
 }
-/* line 37, ../sass/_type.scss */
+/* line 38, ../sass/_type.scss */
 a:hover {
   color: #5FD0FF;
   text-decoration: underline;
 }
-/* line 42, ../sass/_type.scss */
+/* line 43, ../sass/_type.scss */
 a:active {
   color: #13baff;
 }
@@ -517,6 +518,12 @@ section + section {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 900px) {
+  /* line 16, ../sass/_layout.scss */
+  .col + .col {
+    margin-top: 30px;
+  }
+}
 /* Sections */
 /* line 3, ../sass/_components.scss */
 .bg-light {
@@ -580,18 +587,20 @@ section + section {
 /* line 59, ../sass/_components.scss */
 .hero-card {
   background-image: url("/images/hero-bg.png");
+  background-position: center;
+  background-size: cover;
   background-color: #3A555D;
   padding: 135px 50px;
   border-radius: 8px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* line 68, ../sass/_components.scss */
+/* line 70, ../sass/_components.scss */
 .hero p {
   font-size: 1.2rem;
 }
 
-/* line 73, ../sass/_components.scss */
+/* line 75, ../sass/_components.scss */
 .card {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
@@ -599,39 +608,39 @@ section + section {
   font-weight: 400;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
 }
-/* line 80, ../sass/_components.scss */
+/* line 82, ../sass/_components.scss */
 .card strong {
   font-weight: 700;
 }
-/* line 84, ../sass/_components.scss */
+/* line 86, ../sass/_components.scss */
 .card h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-/* line 89, ../sass/_components.scss */
+/* line 91, ../sass/_components.scss */
 .card a {
   color: #89EBD7 !important;
 }
-/* line 92, ../sass/_components.scss */
+/* line 94, ../sass/_components.scss */
 .card a:active {
   color: #48e0c1 !important;
 }
 
-/* line 98, ../sass/_components.scss */
+/* line 100, ../sass/_components.scss */
 .card-text {
   margin-bottom: .5rem;
 }
 
-/* line 102, ../sass/_components.scss */
+/* line 104, ../sass/_components.scss */
 .bg-primary {
   background-color: #13baff !important;
 }
 
-/* line 107, ../sass/_components.scss */
+/* line 109, ../sass/_components.scss */
 .bg-secondary .card-header, .bg-light .card-header {
   background-color: #4D4D59;
 }
-/* line 111, ../sass/_components.scss */
+/* line 113, ../sass/_components.scss */
 .bg-secondary .card-body, .bg-light .card-body {
   background-color: #3A3A43;
 }
