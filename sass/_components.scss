@@ -1,8 +1,45 @@
+/* Sections */
+
+.bg-light {
+	background-color: $gray-800;
+}
+
+.navbar {
+	font-size: 1rem;
+
+	a {
+		&:hover {
+			color: $blue !important;
+		}
+	}
+}
+
+.hero {
+	p {
+		font-size: 1.2rem;
+	}
+}
+
 /* Buttons */
 
 .btn {
+	border-radius: 5px;
+
 	.fa-angle-right {
 		font-weight: bold;
 		margin-left: 5px;
 	}
 }
+
+.btn-primary {
+	background-color: $blue;
+
+	&:hover {
+		background-color: darken($blue, 15%);
+	};
+}
+
+/* Cards */
+.bg-primary {
+ 	background-color: darken($blue, 15%) !important;
+ }

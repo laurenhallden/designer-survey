@@ -317,14 +317,12 @@ html [type="button"],
 [type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-  border-radius: 0;
-  /* 3 */
 }
 
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 313, ../sass/_normalize.scss */
+/* line 312, ../sass/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -336,7 +334,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 325, ../sass/_normalize.scss */
+/* line 324, ../sass/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -347,7 +345,7 @@ button:-moz-focusring,
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
-/* line 336, ../sass/_normalize.scss */
+/* line 335, ../sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -360,7 +358,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 349, ../sass/_normalize.scss */
+/* line 348, ../sass/_normalize.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -379,7 +377,7 @@ legend {
 /**
  * Remove the default vertical scrollbar in IE.
  */
-/* line 362, ../sass/_normalize.scss */
+/* line 361, ../sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -388,7 +386,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10-.
  * 2. Remove the padding in IE 10-.
  */
-/* line 371, ../sass/_normalize.scss */
+/* line 370, ../sass/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -400,7 +398,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 381, ../sass/_normalize.scss */
+/* line 380, ../sass/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -412,7 +410,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 393, ../sass/_normalize.scss */
+/* line 392, ../sass/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -423,7 +421,7 @@ textarea {
 /**
  * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
  */
-/* line 402, ../sass/_normalize.scss */
+/* line 401, ../sass/_normalize.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -432,7 +430,7 @@ textarea {
 /**
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
-/* line 411, ../sass/_normalize.scss */
+/* line 410, ../sass/_normalize.scss */
 ::-webkit-input-placeholder {
   color: inherit;
   opacity: 0.54;
@@ -442,7 +440,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 421, ../sass/_normalize.scss */
+/* line 420, ../sass/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -539,9 +537,48 @@ section {
   margin-top: 40px;
 }
 
+/* Sections */
+/* line 3, ../sass/_components.scss */
+.bg-light {
+  background-color: #303030;
+}
+
+/* line 7, ../sass/_components.scss */
+.navbar {
+  font-size: 1rem;
+}
+/* line 11, ../sass/_components.scss */
+.navbar a:hover {
+  color: #4bafc8 !important;
+}
+
+/* line 18, ../sass/_components.scss */
+.hero p {
+  font-size: 1.2rem;
+}
+
 /* Buttons */
-/* line 4, ../sass/_components.scss */
+/* line 25, ../sass/_components.scss */
+.btn {
+  border-radius: 5px;
+}
+/* line 28, ../sass/_components.scss */
 .btn .fa-angle-right {
   font-weight: bold;
   margin-left: 5px;
+}
+
+/* line 34, ../sass/_components.scss */
+.btn-primary {
+  background-color: #4bafc8;
+}
+/* line 37, ../sass/_components.scss */
+.btn-primary:hover {
+  background-color: #2e8398;
+}
+
+/* Cards */
+/* line 43, ../sass/_components.scss */
+.bg-primary {
+  background-color: #2e8398 !important;
 }
