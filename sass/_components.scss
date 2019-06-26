@@ -9,6 +9,15 @@
 
 	.navbar-brand {
 		font-size: 0.9rem;
+		color: $white !important;
+
+		&:hover {
+			color: $green !important;
+		}
+
+		&:active {
+			color: darken($green, 15%) !important;
+		}
 	}
 
 	a {
@@ -19,8 +28,50 @@
 		&:hover {
 			color: $green !important;
 		}
+
 		&:active {
 			color: darken($green, 15%) !important;
+		}
+	}
+
+	.navbar-toggler {
+		background: $blue;
+		color: white;
+		padding: 0;
+
+		&:hover {
+			background: darken($blue, 15%) !important;
+		}
+
+		&:active {
+			background: darken($blue, 30%) !important;
+		}
+	}
+
+	.navbar-toggler-icon {
+		width: auto;
+		height: auto;
+		padding: 10px 15px;
+		font-size: 1.5rem;
+	}
+
+	.navbar-nav {
+		li {
+			margin-bottom: 0;
+
+			&.active {
+				a {
+					color: $green;
+
+					&:hover {
+						color: $green !important;
+					}
+
+					&:active {
+						color: darken($green, 15%) !important;
+					}
+				}
+			}
 		}
 	}
 }
