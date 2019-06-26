@@ -1,7 +1,7 @@
 /* Sections */
 
 .bg-light {
-	background-color: $gray-800;
+	background-color: $gray-800 !important;
 }
 
 .navbar {
@@ -115,6 +115,9 @@
 	}
  }
 
+
+ /* Mailchimp signup */
+
 #mc_embed_signup {
 	text-align: left;
 	display: block;
@@ -163,3 +166,6 @@
 	    transition: all 0.23s ease-in-out 0s;
 	}
 }
+
+/* Footer */
+

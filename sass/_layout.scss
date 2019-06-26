@@ -1,7 +1,3 @@
-body {
-	padding-bottom: 80px;
-}
-
 section {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -9,6 +5,11 @@ section {
 
 section+section {
 	padding-top: 5px;
+}
+
+section+.bg-light {
+	padding-top: 40px;
+	margin-top: 20px;
 }
 
 .row+.row {
@@ -20,4 +21,8 @@ section+section {
 	.col-space+.col-space {
 		margin-top: 30px;
 	}
+}
+
+.footer {
+	padding-bottom: 80px;
 }
