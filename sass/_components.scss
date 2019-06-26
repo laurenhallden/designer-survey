@@ -114,3 +114,52 @@
 		background-color: $gray-800;
 	}
  }
+
+#mc_embed_signup {
+	text-align: left;
+	display: block;
+	background: transparent;
+	font-size: 18px !important;
+	font-weight: 500;
+	width: 100%;
+
+	form {
+		text-align: left !important;
+	}
+
+	input.email {
+		font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
+		font-size: 16px;
+		border: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		color: $gray-900;
+		background-color: $gray-500;
+		box-sizing: border-box;
+		height: 46px;
+		padding: 0px 0.4em;
+		display: inline-block;
+		margin: 0;
+		width: 350px;
+		vertical-align: top;
+	}
+
+	.button {
+	    font-size: 18px;
+	    border: none;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    letter-spacing: 0;
+	    color: $gray-900;
+	    background-color: $blue;
+	    box-sizing: border-box;
+	    height: 46px;
+	    line-height: 46px;
+	    padding: 0 18px;
+	    display: inline-block;
+	    margin: 0;
+	    transition: all 0.23s ease-in-out 0s;
+	}
+}
