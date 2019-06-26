@@ -141,11 +141,12 @@
 		background-color: $gray-500;
 		box-sizing: border-box;
 		height: 46px;
-		padding: 0px 0.4em;
+		padding: 0px 0.4em 0px 15px;
 		display: inline-block;
 		margin: 0;
 		width: 350px;
 		vertical-align: top;
+		font-weight: 600;
 	}
 
 	.button {

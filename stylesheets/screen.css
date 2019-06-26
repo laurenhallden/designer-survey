@@ -682,13 +682,14 @@ section + .bg-light {
   background-color: #a9a9b4;
   box-sizing: border-box;
   height: 46px;
-  padding: 0px 0.4em;
+  padding: 0px 0.4em 0px 15px;
   display: inline-block;
   margin: 0;
   width: 350px;
   vertical-align: top;
+  font-weight: 600;
 }
-/* line 151, ../sass/_components.scss */
+/* line 152, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -707,7 +708,7 @@ section + .bg-light {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 170, ../sass/_components.scss */
+  /* line 171, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
