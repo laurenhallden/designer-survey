@@ -12,11 +12,11 @@
 		color: $white !important;
 
 		&:hover {
-			color: $teal !important;
+			color: $bright-teal !important;
 		}
 
 		&:active {
-			color: darken($teal, 15%) !important;
+			color: darken($bright-teal, 15%) !important;
 		}
 	}
 
@@ -26,11 +26,11 @@
 		font-weight: 600;
 
 		&:hover {
-			color: $teal !important;
+			color: $bright-teal !important;
 		}
 
 		&:active {
-			color: darken($teal, 15%) !important;
+			color: darken($bright-teal, 15%) !important;
 		}
 	}
 
@@ -61,14 +61,14 @@
 
 			&.active {
 				a {
-					color: $teal;
+					color: $bright-teal;
 
 					&:hover {
-						color: $teal !important;
+						color: $bright-teal !important;
 					}
 
 					&:active {
-						color: darken($teal, 15%) !important;
+						color: darken($bright-teal, 15%) !important;
 					}
 				}
 			}
@@ -187,6 +187,14 @@
 
  		.acc-card-body {
  			margin-bottom: 30px;
+
+ 			a {
+ 				color: $blue !important;
+
+ 				&:active {
+ 					color: darken($blue, 15%) !important;
+ 				}
+ 			}
  		}
 
  		.acc-card-header .btn {
