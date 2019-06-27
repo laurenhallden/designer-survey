@@ -552,11 +552,11 @@ section + .bg-light {
 }
 /* line 14, ../sass/_components.scss */
 .navbar .navbar-brand:hover {
-  color: #89EBD7 !important;
+  color: #1DFEC1 !important;
 }
 /* line 18, ../sass/_components.scss */
 .navbar .navbar-brand:active {
-  color: #48e0c1 !important;
+  color: #01ce96 !important;
 }
 /* line 23, ../sass/_components.scss */
 .navbar a {
@@ -566,11 +566,11 @@ section + .bg-light {
 }
 /* line 28, ../sass/_components.scss */
 .navbar a:hover {
-  color: #89EBD7 !important;
+  color: #1DFEC1 !important;
 }
 /* line 32, ../sass/_components.scss */
 .navbar a:active {
-  color: #48e0c1 !important;
+  color: #01ce96 !important;
 }
 /* line 37, ../sass/_components.scss */
 .navbar .navbar-toggler {
@@ -599,15 +599,15 @@ section + .bg-light {
 }
 /* line 63, ../sass/_components.scss */
 .navbar .navbar-nav li.active a {
-  color: #89EBD7;
+  color: #1DFEC1;
 }
 /* line 66, ../sass/_components.scss */
 .navbar .navbar-nav li.active a:hover {
-  color: #89EBD7 !important;
+  color: #1DFEC1 !important;
 }
 /* line 70, ../sass/_components.scss */
 .navbar .navbar-nav li.active a:active {
-  color: #48e0c1 !important;
+  color: #01ce96 !important;
 }
 
 /* Buttons */
