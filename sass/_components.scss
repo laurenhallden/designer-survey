@@ -219,6 +219,9 @@
  			&:hover {
  				text-decoration: none;
  				border-bottom: 1px solid white;
+	  			@media screen and (max-width: 767px) {
+					border-bottom: 0;
+				}
  			}
 
  			 &:focus {
