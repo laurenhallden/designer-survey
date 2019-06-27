@@ -204,6 +204,7 @@
 
  				&:active {
  					color: darken($blue, 15%) !important;
+ 					text-decoration: none;
  				}
  			}
  		}
@@ -219,6 +220,10 @@
  				text-decoration: none;
  				border-bottom: 1px solid white;
  			}
+
+ 			 &:focus {
+				text-decoration: none !important;
+			}
 
  			@media screen and (max-width: 767px) {
 				font-size: 1.6rem;
