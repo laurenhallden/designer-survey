@@ -25,170 +25,156 @@
 </section>
 
 <section class="faq">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9">
-                <h3>What is the survey?</h3>
-                <p>This is a project by <a href="/about">Dan, Lauren, and Tony</a>, three designers working in Philadelphia. Our goal is to demystify salaries and job titles for designers in the Philadelphia community, so that we can <strong>better understand our worth</strong> and how we can <strong>advocate for our peers.</strong> To do that, we've designed a brief survey that should take about 5-10 minutes to complete.</p>
-                <h3>What will it look like?</h3>
-                <p>The survey will ask for basic information about your current salary, benefits, and job responsibilities, as well as specific demographic information such as gender identification, sexuality, racial/ethnic identification, and disability status.</p>
-                <p>We're specifically asking for this information in order to:</p>
-                <ul>
-                    <li>build an understanding of the salary data when it comes to underrepresented minorities in our community</li>
-                    <li>visualize and discuss any notable pay disparities that may emerge</li>
-                    <li>provide you with a point of reference for what your skills are worth to employers</li>
-                </ul>
-                <p>We understand that all of this information can be extremely sensitive. <strong>All responses will be anonymous</strong> (more on that below). We won't ask you for your email address or name.</p>
-                <p>These sensitive questions are required, but free response in order to allow you to use language that is most meaningful to you.</p>
-                <h3>How will the data be used?</h3>
-                <p>Results will be presented largely in two sections:</p>
-                <p><strong>Compensation Profiles:</strong> We'll be creating profiles from the data based on clusters of responsibilities, salary data, and experience level. You might expect to see profiles along the lines of "Entry-level designer at an Agency" or "In-house Design Lead."</p>
-            </div>
+  <div class="container">
+    <div class="accordion" id="accordion">
+
+
+      <div class="card acc-card">
+        <div class="acc-card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is the survey?
+            </button>
+          </h5>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-space">
-                <div class="card text-white bg-secondary">
-                  <div class="card-header">Sample job</div>
-                  <div class="card-body">
-                    <h4 class="card-title">Senior UX/UI Designer</h4>
-                    <p class="card-text">Employed at: <strong>an agency</strong></p>
-                    <p class="card-text">Years of experience: <strong>5</strong></p>
-                    <p class="card-text">Manages team members: <strong>no</strong></p>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="acc-card-body">
+            <p>This is a project by <a href="/about">Dan, Lauren, and Tony</a>, three designers working in Philadelphia. Our goal is to demystify salaries and job titles for designers in the Philadelphia community, so that we can <strong>better understand our worth</strong> and how we can <strong>advocate for our peers.</strong> To do that, we've designed a brief survey that should take about 5-10 minutes to complete.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card acc-card">
+        <div class="acc-card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What will it look like?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="acc-card-body">
+            <p>The survey will ask for basic information about your current salary, benefits, and job responsibilities, as well as specific demographic information such as gender identification, sexuality, racial/ethnic identification, and disability status.</p>
+            <p>We're specifically asking for this information in order to:</p>
+            <ul>
+              <li>build an understanding of the salary data when it comes to underrepresented minorities in our community</li>
+              <li>visualize and discuss any notable pay disparities that may emerge</li>
+              <li>provide you with a point of reference for what your skills are worth to employers</li>
+            </ul>
+            <p>We understand that all of this information can be extremely sensitive. <strong>All responses will be anonymous</strong> (more on that below). We won't ask you for your email address or name.</p>
+            <p>These sensitive questions are required, but free response in order to allow you to use language that is most meaningful to you.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card acc-card">
+        <div class="acc-card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How will the data be used?
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="acc-card-body">
+            <p>Results will be presented largely in two sections:</p>
+            <p><strong>Compensation Profiles:</strong> We'll be creating profiles from the data based on clusters of responsibilities, salary data, and experience level. You might expect to see profiles along the lines of "Entry-level designer at an Agency" or "In-house Design Lead."</p>
+
+            <div class="charts">
+              <div class="row">
+
+                <div class="col-md-4 col-space">
+                  <div class="card text-white bg-secondary">
+                    <div class="card-header">Sample job
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">Senior UX/UI Designer</h4>
+                      <p class="card-text">Employed at: <strong>an agency</strong></p>
+                      <p class="card-text">Years of experience: <strong>5</strong></p>
+                      <p class="card-text">Manages team members: <strong>no</strong></p>
+                    </div>
+                  </div>
+                </div>    
+                <div class="col-md-8 col-space">
+                  <div class="card text-white bg-secondary">
+                    <div class="card-header">Salary distribution
+                    </div>
+                    <div class="card-body">
+                      {% include sample-chart.html %}
+                    </div>
                   </div>
                 </div>
-            </div>    
-            <div class="col-md-8 col-space">
-                <div class="card text-white bg-secondary">
-                    <div class="card-header">Salary distribution</div>
-                    <div class="card-body">
-                        <canvas id="myChart" width="400" height="200"></canvas>
-                        <script>
-                        var canvas = document.getElementById('myChart');
-                        var data = {
-                                labels: ['20k','30k','40k','50k','60k','70k','80k','90k','100k','110k','120k','130k','140k','150k','160k','170k','180k','190k','200k'],
-                                datasets: [{
-                                    data: [0,0,1,2,4,7,12,16,21,13,8,5,4,3,2,1,0,0,0,0],
-                                    backgroundColor: [
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)'
-                                    ],
-                                    borderColor: [
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)',
-                                        'rgba(137, 235, 215, 1)'
-                                    ],
-                                    borderWidth: 1
-                                }]
-                            };
-                        var option = {
-                            tooltips: {
-                                 //enabled: false
-                            },
 
-                            legend: {
-                                display: false
-                            },
-
-                            scales: {
-                                yAxes: [{
-                                  ticks: {
-                                    fontColor: "#777788",
-                                    max: 25,
-                                        callback: function(value, index, values) {
-                                        return (value) + '%';
-                                    }
-                                  },
-                                  scaleLabel: {
-                                    display: true,
-                                    fontColor: "#777788",
-                                    labelString: 'Percentage of respondents',
-                                  },
-                                },
-                              ],
-                                xAxes:[{
-                                    display: true,
-                                    fontColor: "#777788",
-                                    labelString: 'Average Score',
-                                    ticks: {
-                                        fontColor: "#777788",
-                                        autoSkip: true,
-                                        maxTicksLimit: 12
-                                    }
-                                }]
-                            }
-                        };
-
-                        var myBarChart = Chart.Bar(canvas,{
-                            data:data,
-                          options:option
-                        });
-                        </script>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-9">
-                <p><strong>Overall Trends:</strong> A critical part of this work is to understand how compensation disparity intersects with demographics in our design community. We expect to do a comparative analysis that will visualize trends in order to make data understandable and actionable.</p>
-                <h3>How will my information be kept private?</h3>
-                <p>We realize that the information we’re collecting is sensitive. <strong>We will not:</strong></p>
-                <ul>
-                    <li>Collect or store any identifying information (e.g., name, email) alongside the survey data</li>
-                    <li>Share the raw data with anyone outside of our <a href="/about">analysis team</a></li>
-                    <li>Present data in any format that allows a single person's response to be identifiable</li>
-                </ul>
-                <p>If you have questions about how your data will be handled, contact us at:<br/>
-                phillydesigncomp AT gmail DOT com</p>
-                <h3>What's the timeline?</h3>
-                <p>We expect to collect responses in July of 2019, and provide results by the end of the summer or early fall.</p>
-
-                <h3>How can I contribute?</h3>
-                <p>You can <a href="#">take the survey here.</a> Have feedback? Contact us at phillydesigncomp AT gmail DOT com.</p>
-                <h3>How can I get updates on this project?</h3>
-                <p>If you’re interested in keeping up-to-date with this project and its results, provide your email address below:</p>
-
-                {% include mailchimp.html %}
+              </div>
 
             </div>
+
+            <p><strong>Overall Trends:</strong> A critical part of this work is to understand how compensation disparity intersects with demographics in our design community. We expect to do a comparative analysis that will visualize trends in order to make data understandable and actionable.</p>
+          </div>
         </div>
+
+
+        <div class="card acc-card">
+          <div class="acc-card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                How will my information be kept private?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+            <div class="acc-card-body">
+              <p>We realize that the information we’re collecting is sensitive. <strong>We will not:</strong></p>
+              <ul>
+                <li>Collect or store any identifying information (e.g., name, email) alongside the survey data</li>
+                <li>Share the raw data with anyone outside of our <a href="/about">analysis team</a></li>
+                <li>Present data in any format that allows a single person's response to be identifiable</li>
+              </ul>
+              <p>If you have questions about how your data will be handled, contact us at:<br/>
+              phillydesigncomp AT gmail DOT com</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card acc-card">
+          <div class="acc-card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                What's the timeline?
+              </button>
+            </h5>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+            <div class="acc-card-body">
+              <p>We expect to collect responses in July of 2019, and provide results by the end of the summer or early fall.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card acc-card">
+          <div class="acc-card-header" id="headingSix">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  How can I get updates on this project?
+              </button>
+            </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+          <div class="acc-card-body">
+            <p>If you’re interested in keeping up-to-date with this project and its results, provide your email address below:</p>
+
+            {% include mailchimp.html %}
+          </div>
+        </div>
+
+
+      </div>
     </div>
+  </div>
 </section>
 
 {% include footer.html %}

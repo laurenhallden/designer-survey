@@ -166,6 +166,44 @@
 	}
  }
 
+ #accordion {
+ 	.acc-card {
+ 		font-family: 'Open Sans', sans-serif;
+ 		font-size: 1rem;
+ 		font-weight: 300;
+ 		background-color: transparent;
+ 		box-shadow: none;
+ 		border: 0px;
+ 		padding: 0;
+ 		max-width: 45rem;
+
+ 		.acc-card-header, .acc-card-body {
+ 			background-color: transparent;
+ 			border: 0px;
+ 			box-shadow: none;
+ 			color: white;
+ 			padding: 0;
+ 		}
+
+ 		.acc-card-body {
+ 			margin-bottom: 30px;
+ 		}
+
+ 		.acc-card-header .btn {
+ 			padding: 20px 0;
+ 			color: white;
+ 			font-size: 32px;
+ 		}
+ 	}
+ }
+
+ .charts {
+ 	.row {
+ 		margin-top: 30px;
+ 		margin-bottom: 30px;
+ 	}
+ }
+
 
  /* Mailchimp signup */
 
