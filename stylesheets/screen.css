@@ -459,50 +459,75 @@ body, html {
   -moz-osx-font-smoothing: grayscale;
   background-color: #2C2C32 !important;
 }
+@media screen and (max-width: 767px) {
+  /* line 1, ../sass/_type.scss */
+  body, html {
+    font-size: 18px;
+  }
+}
 
-/* line 12, ../sass/_type.scss */
+/* line 16, ../sass/_type.scss */
 h1, h2, h3, h4, h5 {
   font-family: Georgia;
 }
 
-/* line 16, ../sass/_type.scss */
+/* line 20, ../sass/_type.scss */
 h1 {
   font-style: italic;
 }
-/* line 19, ../sass/_type.scss */
+/* line 23, ../sass/_type.scss */
 h1 span {
   font-style: initial;
   font-size: 2.5rem;
 }
+@media screen and (max-width: 767px) {
+  /* line 23, ../sass/_type.scss */
+  h1 span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 20, ../sass/_type.scss */
+  h1 {
+    font-size: 2rem;
+  }
+}
 
-/* line 25, ../sass/_type.scss */
+/* line 37, ../sass/_type.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 29, ../sass/_type.scss */
+/* line 41, ../sass/_type.scss */
 ul li {
   margin-bottom: 1rem;
 }
 
-/* line 33, ../sass/_type.scss */
+/* line 45, ../sass/_type.scss */
 h3 {
-  font-size: 36px;
+  font-size: 2rem;
   margin-top: 50px;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 767px) {
+  /* line 45, ../sass/_type.scss */
+  h3 {
+    font-size: 1.6rem;
+  }
+}
 
-/* line 39, ../sass/_type.scss */
+/* line 55, ../sass/_type.scss */
 a {
   color: #5FD0FF;
   font-weight: 500;
 }
-/* line 43, ../sass/_type.scss */
+/* line 59, ../sass/_type.scss */
 a:hover {
   color: #5FD0FF;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid #5FD0FF;
 }
-/* line 48, ../sass/_type.scss */
+/* line 65, ../sass/_type.scss */
 a:active {
   color: #13baff;
 }
@@ -540,6 +565,17 @@ section + .bg-light {
   padding-bottom: 80px;
 }
 
+/* line 30, ../sass/_layout.scss */
+.hidden-md-up {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  /* line 30, ../sass/_layout.scss */
+  .hidden-md-up {
+    display: block;
+  }
+}
+
 /* Sections */
 /* line 3, ../sass/_components.scss */
 .bg-light {
@@ -557,11 +593,11 @@ section + .bg-light {
 }
 /* line 14, ../sass/_components.scss */
 .navbar .navbar-brand:hover {
-  color: #1DFEC1 !important;
+  color: #89EBD7 !important;
 }
 /* line 18, ../sass/_components.scss */
 .navbar .navbar-brand:active {
-  color: #01ce96 !important;
+  color: #48e0c1 !important;
 }
 /* line 23, ../sass/_components.scss */
 .navbar a {
@@ -571,82 +607,83 @@ section + .bg-light {
 }
 /* line 28, ../sass/_components.scss */
 .navbar a:hover {
-  color: #1DFEC1 !important;
+  color: #89EBD7 !important;
+  border-bottom: 0;
 }
-/* line 32, ../sass/_components.scss */
+/* line 33, ../sass/_components.scss */
 .navbar a:active {
-  color: #01ce96 !important;
+  color: #48e0c1 !important;
 }
-/* line 37, ../sass/_components.scss */
+/* line 38, ../sass/_components.scss */
 .navbar .navbar-toggler {
   background: #5FD0FF;
   color: white;
   padding: 0;
 }
-/* line 42, ../sass/_components.scss */
+/* line 43, ../sass/_components.scss */
 .navbar .navbar-toggler:hover {
   background: #13baff !important;
 }
-/* line 46, ../sass/_components.scss */
+/* line 47, ../sass/_components.scss */
 .navbar .navbar-toggler:active {
   background: #008bc5 !important;
 }
-/* line 51, ../sass/_components.scss */
+/* line 52, ../sass/_components.scss */
 .navbar .navbar-toggler-icon {
   width: auto;
   height: auto;
   padding: 10px 15px;
   font-size: 1.5rem;
 }
-/* line 59, ../sass/_components.scss */
+/* line 60, ../sass/_components.scss */
 .navbar .navbar-nav li {
   margin-bottom: 0;
 }
-/* line 63, ../sass/_components.scss */
+/* line 64, ../sass/_components.scss */
 .navbar .navbar-nav li.active a {
-  color: #1DFEC1;
+  color: #89EBD7;
 }
-/* line 66, ../sass/_components.scss */
+/* line 67, ../sass/_components.scss */
 .navbar .navbar-nav li.active a:hover {
-  color: #1DFEC1 !important;
+  color: #89EBD7 !important;
 }
-/* line 70, ../sass/_components.scss */
+/* line 71, ../sass/_components.scss */
 .navbar .navbar-nav li.active a:active {
-  color: #01ce96 !important;
+  color: #48e0c1 !important;
 }
 
 /* Buttons */
-/* line 81, ../sass/_components.scss */
+/* line 82, ../sass/_components.scss */
 .btn {
   border-radius: 5px;
   color: #2C2C32;
   font-weight: 500;
   font-size: 1rem;
 }
-/* line 87, ../sass/_components.scss */
+/* line 88, ../sass/_components.scss */
 .btn .fa-angle-right {
   font-weight: bold;
   margin-left: 5px;
 }
 
-/* line 93, ../sass/_components.scss */
+/* line 94, ../sass/_components.scss */
 .btn-primary {
   background-color: #5FD0FF;
   color: #2C2C32;
   font-weight: 600;
 }
-/* line 98, ../sass/_components.scss */
+/* line 99, ../sass/_components.scss */
 .btn-primary:hover {
   background-color: #13baff !important;
   color: #2C2C32;
 }
-/* line 103, ../sass/_components.scss */
+/* line 104, ../sass/_components.scss */
 .btn-primary:active {
   background-color: #008bc5 !important;
 }
 
 /* Cards */
-/* line 110, ../sass/_components.scss */
+/* line 111, ../sass/_components.scss */
 .hero-card {
   background-image: url("/images/hero-bg.png");
   background-position: center;
@@ -657,18 +694,18 @@ section + .bg-light {
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
 @media screen and (max-width: 767px) {
-  /* line 110, ../sass/_components.scss */
+  /* line 111, ../sass/_components.scss */
   .hero-card {
     padding: 80px 30px;
   }
 }
 
-/* line 125, ../sass/_components.scss */
+/* line 126, ../sass/_components.scss */
 .hero p {
   font-size: 1.2rem;
 }
 
-/* line 130, ../sass/_components.scss */
+/* line 131, ../sass/_components.scss */
 .card {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
@@ -676,44 +713,50 @@ section + .bg-light {
   font-weight: 400;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
-/* line 137, ../sass/_components.scss */
+/* line 138, ../sass/_components.scss */
 .card strong {
   font-weight: 700;
 }
-/* line 141, ../sass/_components.scss */
+/* line 142, ../sass/_components.scss */
 .card h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-/* line 146, ../sass/_components.scss */
+/* line 147, ../sass/_components.scss */
 .card a {
-  color: #64B8C8 !important;
+  color: #89EBD7 !important;
+  font-weight: 600;
 }
-/* line 149, ../sass/_components.scss */
+/* line 151, ../sass/_components.scss */
+.card a:hover {
+  border-bottom: 0;
+  color: #48e0c1 !important;
+}
+/* line 156, ../sass/_components.scss */
 .card a:active {
-  color: #3b94a5 !important;
+  color: #20bb9c !important;
 }
 
-/* line 155, ../sass/_components.scss */
+/* line 162, ../sass/_components.scss */
 .card-text {
   margin-bottom: .5rem;
 }
 
-/* line 159, ../sass/_components.scss */
+/* line 166, ../sass/_components.scss */
 .bg-primary {
   background-color: #13baff !important;
 }
 
-/* line 164, ../sass/_components.scss */
+/* line 171, ../sass/_components.scss */
 .bg-secondary .card-header, .bg-light .card-header {
   background-color: #4D4D59;
 }
-/* line 168, ../sass/_components.scss */
+/* line 175, ../sass/_components.scss */
 .bg-secondary .card-body, .bg-light .card-body {
   background-color: #3A3A43;
 }
 
-/* line 174, ../sass/_components.scss */
+/* line 181, ../sass/_components.scss */
 #accordion .acc-card {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -724,7 +767,7 @@ section + .bg-light {
   padding: 0;
   max-width: 45rem;
 }
-/* line 184, ../sass/_components.scss */
+/* line 191, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header, #accordion .acc-card .acc-card-body {
   background-color: transparent;
   border: 0px;
@@ -732,37 +775,50 @@ section + .bg-light {
   color: white;
   padding: 0;
 }
-/* line 192, ../sass/_components.scss */
+/* line 199, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body {
   margin-bottom: 30px;
 }
-/* line 195, ../sass/_components.scss */
+/* line 202, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a {
   color: #5FD0FF !important;
 }
-/* line 198, ../sass/_components.scss */
+/* line 205, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a:active {
   color: #13baff !important;
 }
-/* line 204, ../sass/_components.scss */
+/* line 211, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn {
-  padding: 20px 0;
+  padding: 20px 0 0px;
+  margin-bottom: 10px;
   color: white;
-  font-size: 32px;
+  font-size: 1.5rem;
+  border-radius: 0;
 }
-/* line 209, ../sass/_components.scss */
+/* line 218, ../sass/_components.scss */
+#accordion .acc-card .acc-card-header .btn:hover {
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+@media screen and (max-width: 767px) {
+  /* line 211, ../sass/_components.scss */
+  #accordion .acc-card .acc-card-header .btn {
+    font-size: 1.6rem;
+  }
+}
+/* line 228, ../sass/_components.scss */
 #accordion .acc-card .btn {
   text-align: left !important;
 }
 
-/* line 216, ../sass/_components.scss */
+/* line 235, ../sass/_components.scss */
 .charts .row {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 /* Mailchimp signup */
-/* line 225, ../sass/_components.scss */
+/* line 244, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -771,11 +827,11 @@ section + .bg-light {
   font-weight: 500;
   width: 100%;
 }
-/* line 233, ../sass/_components.scss */
+/* line 252, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 237, ../sass/_components.scss */
+/* line 256, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -794,7 +850,7 @@ section + .bg-light {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 256, ../sass/_components.scss */
+/* line 275, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -813,7 +869,7 @@ section + .bg-light {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 275, ../sass/_components.scss */
+  /* line 294, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;

@@ -7,6 +7,10 @@ body, html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: $gray-900 !important;
+
+	@media screen and (max-width: 767px) {
+		font-size: 18px;
+	}
 }
 
 h1, h2, h3, h4, h5 {
@@ -19,6 +23,14 @@ h1 {
 	span {
 		font-style: initial;
 		font-size: 2.5rem;
+
+		@media screen and (max-width: 767px) {
+			font-size: 1.5rem;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		font-size: 2rem;
 	}
 }
 
@@ -31,9 +43,13 @@ ul li {
 }
 
 h3 {
-	font-size: 36px;
+	font-size: 2rem;
 	margin-top: 50px;
 	margin-bottom: 15px;
+
+	@media screen and (max-width: 767px) {
+		font-size: 1.6rem;
+	}
 }
 
 a {
@@ -42,7 +58,8 @@ a {
 
 	&:hover {
 		color: $blue;
-		text-decoration: underline;
+		text-decoration: none;
+		border-bottom: 1px solid $blue;
 	}
 
 	&:active {

@@ -12,11 +12,11 @@
 		color: $white !important;
 
 		&:hover {
-			color: $bright-teal !important;
+			color: $green !important;
 		}
 
 		&:active {
-			color: darken($bright-teal, 15%) !important;
+			color: darken($green, 15%) !important;
 		}
 	}
 
@@ -26,11 +26,12 @@
 		font-weight: 600;
 
 		&:hover {
-			color: $bright-teal !important;
+			color: $green !important;
+			border-bottom: 0;
 		}
 
 		&:active {
-			color: darken($bright-teal, 15%) !important;
+			color: darken($green, 15%) !important;
 		}
 	}
 
@@ -61,14 +62,14 @@
 
 			&.active {
 				a {
-					color: $bright-teal;
+					color: $green;
 
 					&:hover {
-						color: $bright-teal !important;
+						color: $green !important;
 					}
 
 					&:active {
-						color: darken($bright-teal, 15%) !important;
+						color: darken($green, 15%) !important;
 					}
 				}
 			}
@@ -144,10 +145,16 @@
 	}
 
 	a {
-		color: $teal !important;
+		color: $green !important;
+		font-weight: 600;
+
+		&:hover {
+			border-bottom: 0;
+			color: darken($green, 15%) !important;
+		}
 
 		&:active {
-			color: darken($teal, 15%) !important;
+			color: darken($green, 30%) !important;
 		}
 	}
 }
@@ -202,10 +209,22 @@
  		}
 
  		.acc-card-header .btn {
- 			padding: 20px 0;
+ 			padding: 20px 0 0px;
+ 			margin-bottom: 10px;
  			color: white;
- 			font-size: 32px;
+ 			font-size: 1.5rem;
+ 			border-radius: 0;
+
+ 			&:hover {
+ 				text-decoration: none;
+ 				border-bottom: 1px solid white;
+ 			}
+
+ 			@media screen and (max-width: 767px) {
+				font-size: 1.6rem;
+			}
  		}
+
  		.btn {
  			text-align: left !important;
  		}
