@@ -113,9 +113,16 @@
 	background-position: center;
     background-size: cover;
 	background-color: #3A555D;
-	padding: 135px 50px;
+	padding: 90px 50px 80px;
 	border-radius: 8px;
 	box-shadow: $high-float;
+
+	p.small {
+		font-size: .8rem;
+		margin-top: 2rem;
+		max-width: 40rem;
+		font-weight: 300;
+	}
 
 	@media screen and (max-width: 767px) {
 		padding: 80px 30px;
