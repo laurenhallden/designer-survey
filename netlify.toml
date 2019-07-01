@@ -1,3 +1,5 @@
 [[redirects]]
-  from = "/*"
-  to = "https://designsurvey.us/philly/:splat"
+from = "/*"
+to = "https://designsurvey.us/philly/:splat"
+status = 301
+force = true 
