@@ -689,7 +689,7 @@ section + .bg-light {
   background-position: center;
   background-size: cover;
   background-color: #3A555D;
-  padding: 135px 50px;
+  padding: 75px 50px;
   border-radius: 8px;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
