@@ -561,19 +561,22 @@ section + .bg-light {
   }
 }
 /* line 26, ../sass/_layout.scss */
-.footer {
-  padding-bottom: 80px;
-}
-
-/* line 30, ../sass/_layout.scss */
 .hidden-md-up {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  /* line 30, ../sass/_layout.scss */
+  /* line 26, ../sass/_layout.scss */
   .hidden-md-up {
     display: block;
   }
+}
+
+/* line 34, ../sass/_layout.scss */
+.footer {
+  font-size: 0.75rem;
+  color: #8e8e9c;
+  margin-top: 50px !important;
+  padding: 40px;
 }
 
 /* Sections */
@@ -895,5 +898,4 @@ section + .bg-light {
   }
 }
 
-/* Footer */
 /* Standard */

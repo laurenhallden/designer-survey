@@ -23,14 +23,17 @@ section+.bg-light {
 	}
 }
 
-.footer {
-	padding-bottom: 80px;
-}
-
 .hidden-md-up {
 	display: none;
 
 	@media screen and (max-width: 767px) {
 		display: block;
 	}
+}
+
+.footer {
+	font-size: 0.75rem;
+	color: $gray-600;
+	margin-top: 50px !important;
+	padding: 40px;
 }
