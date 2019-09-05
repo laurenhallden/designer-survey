@@ -15,3 +15,10 @@ from = "/thanks"
 to = "https://designsurvey.us/philly/thanks"
 status = 301
 force = true
+
+
+[[redirects]]
+from = "https://designsurvey.us/philly/wip-wip"
+to = "https://designsurvey.us/philly"
+status = 301
+force = true
