@@ -25,7 +25,7 @@
         <div class="row text-left">
             <div class="col-lg-9">
                 <h3>Intro</h3>
-                <p>How do I use this?</p>
+                <p><em>(What is this report, and how do I use it?)<em></p>
             </div>
         </div>
     </div>
@@ -41,29 +41,18 @@
             <div class="charts">
               <div class="row">
                 <div class="col-md-3 col-space">
-                    <ul>
-                      <li>Visual Designer</li>
-                      <li>UX Designer or Researcher</li>
-                      <li>UX/UI</li>
-                      <li>Content Designer</li>
-                      <li>Front-End Designer</li>
-                      <li>Design Director</li>
-                      <li>Management</li>
+                    <ul class="job-categories">
+                      <li class="active" data-item="1">Visual Designer</li>
+                      <li data-item="2">UX Designer or Researcher</li>
+                      <li data-item="3">UX/UI</li>
+                      <li data-item="4">Content Designer</li>
+                      <li data-item="5">Front-End Designer</li>
+                      <li data-item="6">Design Director</li>
+                      <li data-item="7">Management</li>
                     </ul>
                 </div>
 
-                <div class="col-md-3 col-space">
-                  <div class="card text-white bg-secondary">
-                    <div class="card-header">Job category
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">UX/UI Designer</h4>
-                      <p class="card-text">Median compensation: <strong>$89,750</strong></p>
-                      <p class="card-text">Median years of experience: <strong>6</strong></p>
-                    </div>
-                  </div>
-                </div>    
-                <div class="col-md-6 col-space">
+                <div class="col-md-9 col-space">
                   <div class="card text-white bg-secondary">
                     <div class="card-header">Salary distribution
                     </div>
@@ -117,5 +106,9 @@
 
 
 {% include footer.html %}
+
+<!-- JS -->
+<script src="/js/data.js"></script>
+<script src="/js/functions.js"></script>
 </body>
 </html>

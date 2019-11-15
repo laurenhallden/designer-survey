@@ -1,1 +1,11 @@
-/* Standard */
+/* Results */
+
+.job-categories {
+	li {
+		cursor: pointer;
+
+		&.active {
+			font-weight: bold;
+		}
+	}
+}

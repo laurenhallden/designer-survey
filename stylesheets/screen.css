@@ -898,4 +898,12 @@ section + .bg-light {
   }
 }
 
-/* Standard */
+/* Results */
+/* line 4, ../sass/_views.scss */
+.job-categories li {
+  cursor: pointer;
+}
+/* line 7, ../sass/_views.scss */
+.job-categories li.active {
+  font-weight: bold;
+}
