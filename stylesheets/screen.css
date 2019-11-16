@@ -738,37 +738,37 @@ section + .bg-light {
   }
 }
 /* Buttons */
-/* line 181, ../sass/_components.scss */
+/* line 182, ../sass/_components.scss */
 .btn {
   border-radius: 5px;
   color: #2C2C32;
   font-weight: 500;
   font-size: 1rem;
 }
-/* line 187, ../sass/_components.scss */
+/* line 188, ../sass/_components.scss */
 .btn .fa-angle-right {
   font-weight: bold;
   margin-left: 5px;
 }
 
-/* line 193, ../sass/_components.scss */
+/* line 194, ../sass/_components.scss */
 .btn-primary {
   background-color: #5FD0FF;
   color: #2C2C32;
   font-weight: 600;
 }
-/* line 198, ../sass/_components.scss */
+/* line 199, ../sass/_components.scss */
 .btn-primary:hover {
   background-color: #13baff !important;
   color: #2C2C32;
 }
-/* line 203, ../sass/_components.scss */
+/* line 204, ../sass/_components.scss */
 .btn-primary:active {
   background-color: #008bc5 !important;
 }
 
 /* Cards */
-/* line 210, ../sass/_components.scss */
+/* line 211, ../sass/_components.scss */
 .hero-card {
   background-image: url("/images/hero-bg.png");
   background-position: center;
@@ -778,7 +778,7 @@ section + .bg-light {
   border-radius: 8px;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
-/* line 219, ../sass/_components.scss */
+/* line 220, ../sass/_components.scss */
 .hero-card p.small {
   font-size: .8rem;
   margin-top: 2rem;
@@ -786,18 +786,18 @@ section + .bg-light {
   font-weight: 300;
 }
 @media screen and (max-width: 767px) {
-  /* line 210, ../sass/_components.scss */
+  /* line 211, ../sass/_components.scss */
   .hero-card {
     padding: 80px 30px;
   }
 }
 
-/* line 232, ../sass/_components.scss */
+/* line 233, ../sass/_components.scss */
 .hero p {
   font-size: 1.2rem;
 }
 
-/* line 237, ../sass/_components.scss */
+/* line 238, ../sass/_components.scss */
 .card {
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
@@ -805,55 +805,55 @@ section + .bg-light {
   font-weight: 400;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
-/* line 244, ../sass/_components.scss */
+/* line 245, ../sass/_components.scss */
 .card strong {
   font-weight: 700;
 }
-/* line 248, ../sass/_components.scss */
+/* line 249, ../sass/_components.scss */
 .card h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-/* line 253, ../sass/_components.scss */
+/* line 254, ../sass/_components.scss */
 .card a {
   color: #89EBD7 !important;
   font-weight: 600;
 }
-/* line 257, ../sass/_components.scss */
+/* line 258, ../sass/_components.scss */
 .card a:hover {
   border-bottom: 0;
   color: #48e0c1 !important;
 }
-/* line 262, ../sass/_components.scss */
+/* line 263, ../sass/_components.scss */
 .card a:active {
   color: #20bb9c !important;
 }
 
-/* line 268, ../sass/_components.scss */
+/* line 269, ../sass/_components.scss */
 .card-text {
   margin-bottom: .5rem;
 }
 
-/* line 272, ../sass/_components.scss */
+/* line 273, ../sass/_components.scss */
 .bg-primary {
   background-color: #13baff !important;
 }
 
-/* line 277, ../sass/_components.scss */
+/* line 278, ../sass/_components.scss */
 .bg-secondary .card-header, .bg-light .card-header {
   background-color: #4D4D59;
 }
-/* line 281, ../sass/_components.scss */
+/* line 282, ../sass/_components.scss */
 .bg-secondary .card-body, .bg-light .card-body {
   background-color: #3A3A43;
 }
 
-/* line 287, ../sass/_components.scss */
+/* line 288, ../sass/_components.scss */
 .charts h1, .charts h2, .charts h3 {
   margin: 0 0 0.5em 0;
 }
 
-/* line 293, ../sass/_components.scss */
+/* line 294, ../sass/_components.scss */
 #accordion .acc-card {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -864,7 +864,7 @@ section + .bg-light {
   padding: 0;
   max-width: 45rem;
 }
-/* line 303, ../sass/_components.scss */
+/* line 304, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header, #accordion .acc-card .acc-card-body {
   background-color: transparent;
   border: 0px;
@@ -872,20 +872,20 @@ section + .bg-light {
   color: white;
   padding: 0;
 }
-/* line 311, ../sass/_components.scss */
+/* line 312, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body {
   margin-bottom: 30px;
 }
-/* line 314, ../sass/_components.scss */
+/* line 315, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a {
   color: #5FD0FF !important;
 }
-/* line 317, ../sass/_components.scss */
+/* line 318, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a:active {
   color: #13baff !important;
   text-decoration: none;
 }
-/* line 324, ../sass/_components.scss */
+/* line 325, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn {
   padding: 20px 0 0px;
   margin-bottom: 10px;
@@ -893,45 +893,45 @@ section + .bg-light {
   font-size: 1.5rem;
   border-radius: 0;
 }
-/* line 331, ../sass/_components.scss */
+/* line 332, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:hover {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
 @media screen and (max-width: 767px) {
-  /* line 331, ../sass/_components.scss */
+  /* line 332, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn:hover {
     border-bottom: 0;
   }
 }
-/* line 339, ../sass/_components.scss */
+/* line 340, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:focus {
   text-decoration: none !important;
 }
 @media screen and (max-width: 767px) {
-  /* line 324, ../sass/_components.scss */
+  /* line 325, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn {
     font-size: 1.6rem;
   }
 }
-/* line 348, ../sass/_components.scss */
+/* line 349, ../sass/_components.scss */
 #accordion .acc-card .btn {
   text-align: left !important;
 }
 
-/* line 355, ../sass/_components.scss */
+/* line 356, ../sass/_components.scss */
 .charts .row {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-/* line 363, ../sass/_components.scss */
+/* line 364, ../sass/_components.scss */
 .divider hr {
   border-top: 1px solid #4D4D59;
 }
 
 /* Mailchimp signup */
-/* line 371, ../sass/_components.scss */
+/* line 372, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -940,11 +940,11 @@ section + .bg-light {
   font-weight: 500;
   width: 100%;
 }
-/* line 379, ../sass/_components.scss */
+/* line 380, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 383, ../sass/_components.scss */
+/* line 384, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -963,7 +963,7 @@ section + .bg-light {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 402, ../sass/_components.scss */
+/* line 403, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -982,7 +982,7 @@ section + .bg-light {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 421, ../sass/_components.scss */
+  /* line 422, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
