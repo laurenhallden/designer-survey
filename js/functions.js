@@ -20,6 +20,8 @@ $('.job-categories li').click(function(){
 
 $(document).ready(function() {
 	jobCategories();
+	myBarChart.data = jobCharts[0];
+	myBarChart.update();
 });
 
 

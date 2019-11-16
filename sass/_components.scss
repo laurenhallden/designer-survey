@@ -360,6 +360,24 @@
  }
 
 
+/* Pills */
+
+.pills {
+	list-style: none;
+	padding-inline-start: 0;
+	margin-top: 1rem;
+	li {
+		display: inline-block;
+		border-radius: 5px;
+		background: $green;
+		color: black;
+		font-size: 0.75rem;
+		font-weight: bold;
+		padding: 0.2rem 0.5rem;
+	}
+
+}
+
 .divider {
 	hr {
 		border-top: 1px solid $gray-700;
