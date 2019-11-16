@@ -4,6 +4,9 @@
 	background-color: $gray-800 !important;
 }
 
+
+/* Navs */
+
 .navbar {
 	font-size: 0.9rem;
 
@@ -71,6 +74,45 @@
 					&:active {
 						color: darken($green, 15%) !important;
 					}
+				}
+			}
+		}
+	}
+}
+
+/* Subnav */
+
+.subnav {
+	background: $darker-background-color;
+	margin-bottom: 2rem;
+
+	ul {
+	list-style: none;
+	padding-inline-start: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 0;
+
+		.nav-item {
+			margin-bottom: 0;
+			a {
+				background: transparent;
+				color: $white;
+				border-radius: 2rem;
+				padding: 0.5rem 1rem;
+
+				&:hover {
+					color: $blue !important;
+				}
+			}
+
+			&.active {
+
+				a,
+				a:hover {
+					background: $blue;
+					color: black !important;
 				}
 			}
 		}
@@ -252,6 +294,13 @@
  		margin-bottom: 30px;
  	}
  }
+
+
+.divider {
+	hr {
+		border-top: 1px solid $gray-700;
+	}
+}
 
 
  /* Mailchimp signup */

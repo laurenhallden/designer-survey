@@ -7,40 +7,29 @@
 </head>
 <body>
 {% include nav.html %}
+{% include subnav.html %}
 
 <section>
     <div class="container">
         <div class="row text-left">
             <div class="col-lg-9">
                 <h1>{{ page.title }}</h1>
-                <p></p>
+                <p>Choose a job from the list below:</p>
             </div>
         </div>
     </div>
 </section>
 
-
-<section>
-    <div class="container">
-        <div class="row text-left">
-            <div class="col-lg-9">
-                <h3>Intro</h3>
-                <p><em>(What is this report, and how do I use it?)</em></p>
-            </div>
-        </div>
-    </div>
-</section> 
+{% include divider.html %}
 
 <section>
     <div class="container">
         
           <div class="acc-card-body">
-            <h3>Job titles</h3>
-            <p>This is a profile for all UX/UI Designers who responded to the survey:</p>
 
             <div class="charts">
               <div class="row">
-                <div class="col-md-3 col-space">
+                <div class="col-md-4 col-space">
                     <ul class="job-categories">
                       <li class="active" data-item="1">Visual Designer</li>
                       <li data-item="2">UX Designer or Researcher</li>
@@ -52,7 +41,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-9 col-space">
+                <div class="col-md-8 col-space">
                   <div class="card text-white bg-secondary">
                     <div class="card-header">Salary distribution
                     </div>
@@ -68,42 +57,8 @@
           </div>
         </div>
 
-
-
     </div>
 </section>
-
-
-<section>
-    <div class="container">
-        <div class="row text-left">
-            <div class="col-lg-9">
-                <h3>Demographic trends</h3>
-                <p>Charts by...</p>
-                <ul>
-                  <li>Race</li>
-                  <li>Gender</li>
-                  <li>Sexuality</li>
-                  <li>Education</li>
-                  <li>Type of company</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section>
-    <div class="container">
-        <div class="row text-left">
-            <div class="col-lg-9">
-                <h3>Methodology</h3>
-                <p>What we did. What we did include, didn't include, and why. What we would do differently.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 
 {% include footer.html %}
 

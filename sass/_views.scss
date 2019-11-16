@@ -1,6 +1,9 @@
 /* Results */
 
 .job-categories {
+	list-style: none;
+	padding-inline-start: 0;
+
 	li {
 		cursor: pointer;
 

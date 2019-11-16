@@ -1,0 +1,18 @@
+## Subnav single links
+subnav:
+- title: Subnav
+  items:
+    - title: Intro
+      url: /philly/intro
+
+    - title: Salaries by Job
+      url: /philly/jobs
+
+    - title: Salaries by Company Type
+      url: /philly/companies
+
+    - title: Demographics and Salary
+      url: /philly/demographics
+
+    - title: Methodology
+      url: /philly/methodology
