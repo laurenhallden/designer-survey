@@ -14,7 +14,7 @@
         <div class="row text-left">
             <div class="col-lg-9">
                 <h1>{{ page.title }}</h1>
-                <p>Choose a job from the list below:</p>
+                <p>In aliquam sem fringilla ut morbi tincidunt augue. Viverra maecenas accumsan lacus vel facilisis. Lacus vel facilisis volutpat est velit egestas dui id. Eget sit amet tellus cras adipiscing enim eu turpis egestas.</p>
             </div>
         </div>
     </div>
@@ -23,41 +23,41 @@
 {% include divider.html %}
 
 <section>
-    <div class="container">
-        
-          <div class="acc-card-body">
+	<div class="container">
 
-            <div class="charts">
-              <div class="row">
-                <div class="col-md-4 col-space">
-                    <ul class="job-categories">
-                      <li class="active" data-item="1">Visual Designer</li>
-                      <li data-item="2">UX Designer or Researcher</li>
-                      <li data-item="3">UX/UI</li>
-                      <li data-item="4">Content Designer</li>
-                      <li data-item="5">Front-End Designer</li>
-                      <li data-item="6">Design Director</li>
-                      <li data-item="7">Management</li>
-                    </ul>
-                </div>
+		<div class="acc-card-body">
 
-                <div class="col-md-8 col-space">
-                  <div class="card text-white bg-secondary">
-                    <div class="card-header">Salary distribution
-                    </div>
-                    <div class="card-body">
-                      {% include wip-chart.html %}
-                    </div>
-                  </div>
-                </div>
+			<div class="charts">
+				<div class="row">
+					<div class="col-md-4 col-space">
+						<ul class="job-categories">
+							<li class="active" data-item="1">Visual Designer</li>
+							<li data-item="2">UX Designer or Researcher</li>
+							<li data-item="3">UX/UI Desginer</li>
+							<li data-item="4">Content Designer</li>
+							<li data-item="5">Front-End Designer</li>
+							<li data-item="6">Design Director</li>
+							<li data-item="7">Management</li>
+						</ul>
+					</div><!-- column-->
 
-              </div>
+					<div class="col-md-8 col-space">
+						<h3 id="job-category-heading">Visual Designer</h3>
+						<div class="card text-white bg-secondary">
+							<div class="card-header">
+								Salary distribution
+							</div>
+							<div class="card-body">
+								{% include wip-chart.html %}
+							</div>
+						</div>
 
-            </div>
-          </div>
-        </div>
+					</div><!-- column-->
 
-    </div>
+				</div><!-- row -->
+			</div><!-- charts -->
+		</div><!-- acc-card-body -->
+	</div><!-- container -->
 </section>
 
 {% include footer.html %}

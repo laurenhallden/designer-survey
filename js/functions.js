@@ -13,8 +13,9 @@ $('.job-categories li').click(function(){
 	$('.job-categories li').removeClass('active');
 	$(this).addClass('active');
 	var activeCat = $(this).attr("data-item");
+	var catName = $(this).html();
 	jobCategories();
-	loadChart(activeCat);
+	loadChart(activeCat,catName);
 });
 
 $(document).ready(function() {
@@ -23,11 +24,14 @@ $(document).ready(function() {
 
 
 // switch charts based on data item
-function loadChart(number) {
-	var chartNumber = ('datachart'+number).toString();
-	console.log(chartNumber);
-	myBarChart.data = datachart2;
+function loadChart(number,name) {
+	var chartArrayNumber = (number-1);
+	myBarChart.data = jobCharts[chartArrayNumber];
+	console.log(jobCharts[chartArrayNumber]);
 	myBarChart.update();
+	console.log(name);
+	$('#job-category-heading').html(name);
+
 }
 
 
