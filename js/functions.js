@@ -36,5 +36,3 @@ function loadChart(number,name) {
 
 }
 
-
-

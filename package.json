@@ -1,0 +1,7 @@
+{
+  "name": "please-work",
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "chartjs-chart-box-and-violin-plot": "^2.1.0"
+  }
+}
