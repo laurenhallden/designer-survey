@@ -444,3 +444,39 @@
 		}
 	}
 }
+
+.boxes {
+
+	li {
+		display: inline-block;
+		height: 50px;
+		width: 50px;
+		background: $gray-100;
+
+		&:nth-child(2) {
+			background: $gray-200;
+		}
+		&:nth-child(3) {
+			background: $gray-300;
+		}
+		&:nth-child(4) {
+			background: $gray-400;
+		}
+		&:nth-child(5) {
+			background: $gray-500;
+		}
+		&:nth-child(6) {
+			background: $gray-600;
+		}
+		&:nth-child(7) {
+			background: $gray-700;
+		}
+		&:nth-child(8) {
+			background: $gray-800;
+		}
+		&:nth-child(9) {
+			background: $gray-900;
+		}
+
+	}
+}

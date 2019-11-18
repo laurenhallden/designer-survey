@@ -1008,6 +1008,46 @@ section + .bg-light {
   }
 }
 
+/* line 450, ../sass/_components.scss */
+.boxes li {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: white;
+}
+/* line 456, ../sass/_components.scss */
+.boxes li:nth-child(2) {
+  background: #fbfbfb;
+}
+/* line 459, ../sass/_components.scss */
+.boxes li:nth-child(3) {
+  background: #e0e0e3;
+}
+/* line 462, ../sass/_components.scss */
+.boxes li:nth-child(4) {
+  background: #c4c4cc;
+}
+/* line 465, ../sass/_components.scss */
+.boxes li:nth-child(5) {
+  background: #a9a9b4;
+}
+/* line 468, ../sass/_components.scss */
+.boxes li:nth-child(6) {
+  background: #8e8e9c;
+}
+/* line 471, ../sass/_components.scss */
+.boxes li:nth-child(7) {
+  background: #4D4D59;
+}
+/* line 474, ../sass/_components.scss */
+.boxes li:nth-child(8) {
+  background: #3A3A43;
+}
+/* line 477, ../sass/_components.scss */
+.boxes li:nth-child(9) {
+  background: #2C2C32;
+}
+
 /* Results */
 /* line 3, ../sass/_views.scss */
 .job-categories {

@@ -3,11 +3,11 @@
 
 const boxplotData = {
   // define label tree
-  labels: ['Content Designer','Creative/Art Director','Front-end Designer','Manager','UX Designer/Researcher','UX/UI Designer','Visual Designer'],
+  labels: [['Content','Designer'],['Creative/Art','Director'],['Front-end','Designer'],'Manager',['UX Designer/','Researcher'],['UX/UI','Designer'],['Visual','Designer']],
   datasets: [{
     backgroundColor: 'rgba(137, 235, 215, .6)',
     borderColor: 'rgba(137, 235, 215, 1)',
-    borderWidth: 1,
+    borderWidth: 3,
     outlierColor: '#999999',
     padding: 10,
     itemRadius: 0,
@@ -70,18 +70,31 @@ window.onload = () => {
             display: false
         },
         scales: {
+          xAxes: [{
+            ticks: {
+              autoSkip: false,
+              fontColor: '#e0e0e3',
+              fontSize: 14,
+              fontStyle: 500,
+            },
+            gridLines: { display: false }
+          }],
           yAxes: [{
             display: true,
             scaleLabel: {
-              display: true,
-              labelString: 'Salary'
+              display: false
             },
+            gridLines: { color: "#4D4D59" },
             ticks: {
+              fontColor: '#e0e0e3',
+              fontSize: 14,
+              fontStyle: 500,
               stepSize: 20000, // <----- This prop sets the stepSize
-              beginAtZero:true,
+              beginAtZero: false,
               callback: function(value, index, values) {
                 if(parseInt(value) >= 1000){
-                   return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                  return Math.abs(value) > 999 ? Math.sign(value)*((Math.abs(value)/1000).toFixed(1)) + 'k' : Math.sign(value)*Math.abs(value)
+                   //return '$' + value2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 } else {
                    return '$' + value;
                 }
