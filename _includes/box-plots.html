@@ -1,27 +1,9 @@
 <canvas id="canvas"></canvas>
 <script>
 
-
-function randomValues(count, min, max) {
-  const delta = max - min;
-  return Array.from({length: count}).map(() => Math.random() * delta + min);
-}
-
-function randomBoxPlot(min, max) {
-  const values = randomValues(5, min, max).sort((a, b) => a - b);
-  
-  return {
-    min: values[0],
-    q1: values[1],
-    median: values[2],
-    q3: values[3],
-    max: values[4]
-  };
-}
-
 const boxplotData = {
   // define label tree
-  labels: ['Content Designer','Creative/Art Director','Front-end Designer','Manager','UX Designer/Researcher','UX/UI Designer','Visual'],
+  labels: ['Content Designer','Creative/Art Director','Front-end Designer','Manager','UX Designer/Researcher','UX/UI Designer','Visual Designer'],
   datasets: [{
     backgroundColor: 'rgba(137, 235, 215, .6)',
     borderColor: 'rgba(137, 235, 215, 1)',
@@ -76,7 +58,7 @@ const boxplotData = {
     ]
   }]
 };
-console.log(boxplotData);
+
 window.onload = () => {
   const ctx = document.getElementById("canvas").getContext("2d");
   window.myBar = new Chart(ctx, {
@@ -87,13 +69,32 @@ window.onload = () => {
       legend: {
             display: false
         },
+        scales: {
+          yAxes: [{
+            display: true,
+            scaleLabel: {
+              display: true,
+              labelString: 'Salary'
+            },
+            ticks: {
+              stepSize: 20000, // <----- This prop sets the stepSize
+              beginAtZero:true,
+              callback: function(value, index, values) {
+                if(parseInt(value) >= 1000){
+                   return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                } else {
+                   return '$' + value;
+                }
+              }, 
+            }
+          }]
+        },
       title: {
         display: false,
-        text: 'Chart.js Box Plot Chart'
+        text: 'Boxplots of all jobs'
       }
     }
   });
-
 };
 
 </script>
