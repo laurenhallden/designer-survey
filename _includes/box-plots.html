@@ -93,7 +93,7 @@ window.onload = () => {
               beginAtZero: false,
               callback: function(value, index, values) {
                 if(parseInt(value) >= 1000){
-                  return Math.abs(value) > 999 ? Math.sign(value)*((Math.abs(value)/1000).toFixed(1)) + 'k' : Math.sign(value)*Math.abs(value)
+                  return Math.abs(value) > 999 ? '$' + Math.sign(value)*((Math.abs(value)/1000).toFixed(1)) + 'k' : '$' + Math.sign(value)*Math.abs(value)
                    //return '$' + value2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
                 } else {
                    return '$' + value;
