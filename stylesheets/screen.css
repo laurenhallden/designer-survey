@@ -517,17 +517,24 @@ h3 {
 }
 
 /* line 55, ../sass/_type.scss */
+h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+/* line 61, ../sass/_type.scss */
 a {
   color: #5FD0FF;
   font-weight: 500;
 }
-/* line 59, ../sass/_type.scss */
+/* line 65, ../sass/_type.scss */
 a:hover {
   color: #5FD0FF;
   text-decoration: none;
   border-bottom: 1px solid #5FD0FF;
 }
-/* line 65, ../sass/_type.scss */
+/* line 71, ../sass/_type.scss */
 a:active {
   color: #13baff;
 }
@@ -554,29 +561,49 @@ section + .bg-light {
   margin-top: 40px;
 }
 
+/* line 19, ../sass/_layout.scss */
+.padded-left-row {
+  padding-left: 40px;
+}
 @media screen and (max-width: 767px) {
-  /* line 21, ../sass/_layout.scss */
+  /* line 19, ../sass/_layout.scss */
+  .padded-left-row {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 31, ../sass/_layout.scss */
   .col-space + .col-space {
     margin-top: 30px;
   }
 }
-/* line 26, ../sass/_layout.scss */
+/* line 36, ../sass/_layout.scss */
 .hidden-md-up {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  /* line 26, ../sass/_layout.scss */
+  /* line 36, ../sass/_layout.scss */
   .hidden-md-up {
     display: block;
   }
 }
 
-/* line 34, ../sass/_layout.scss */
+/* line 44, ../sass/_layout.scss */
 .footer {
   font-size: 0.75rem;
   color: #8e8e9c;
   margin-top: 50px !important;
   padding: 40px;
+}
+
+/* line 51, ../sass/_layout.scss */
+#most-common-skills {
+  margin-bottom: 5px;
+}
+/* line 53, ../sass/_layout.scss */
+#most-common-skills span {
+  border-bottom: 0px solid;
 }
 
 /* Sections */
@@ -919,37 +946,85 @@ section + .bg-light {
   text-align: left !important;
 }
 
-/* line 356, ../sass/_components.scss */
-.charts .row {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
+/*.charts {
+	.row {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}*/
 /* Pills */
 /* line 365, ../sass/_components.scss */
 .pills {
   list-style: none;
   padding-inline-start: 0;
-  margin-top: 1rem;
+  margin-top: 0px;
 }
 /* line 369, ../sass/_components.scss */
 .pills li {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.75rem;
+}
+/* line 374, ../sass/_components.scss */
+.pills li .bar-graph {
   display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 80px);
+  background: rgba(137, 235, 215, 0.25);
+  border-radius: 5px;
+  position: relative;
+  height: 6px;
+}
+/* line 383, ../sass/_components.scss */
+.pills li .bar-graph .bar {
   border-radius: 5px;
   background: #89EBD7;
-  color: black;
-  font-size: 0.75rem;
-  font-weight: bold;
-  padding: 0.2rem 0.5rem;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 393, ../sass/_components.scss */
+.pills li .caption {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  font-weight: 700;
+  color: #89EBD7;
+}
+/* line 401, ../sass/_components.scss */
+.pills li .skill-name {
+  margin-top: -5px;
+  font-weight: 500;
+}
+/* line 406, ../sass/_components.scss */
+.pills li:nth-child(1) .bar-graph .bar {
+  width: 73%;
+}
+/* line 409, ../sass/_components.scss */
+.pills li:nth-child(2) .bar-graph .bar {
+  width: 73%;
+}
+/* line 412, ../sass/_components.scss */
+.pills li:nth-child(3) .bar-graph .bar {
+  width: 33%;
+}
+/* line 415, ../sass/_components.scss */
+.pills li:nth-child(4) .bar-graph .bar {
+  width: 30%;
+}
+/* line 418, ../sass/_components.scss */
+.pills li:nth-child(5) .bar-graph .bar {
+  width: 21%;
 }
 
-/* line 382, ../sass/_components.scss */
+/* line 426, ../sass/_components.scss */
 .divider hr {
   border-top: 1px solid #4D4D59;
 }
 
 /* Mailchimp signup */
-/* line 390, ../sass/_components.scss */
+/* line 434, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -958,11 +1033,11 @@ section + .bg-light {
   font-weight: 500;
   width: 100%;
 }
-/* line 398, ../sass/_components.scss */
+/* line 442, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 402, ../sass/_components.scss */
+/* line 446, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -981,7 +1056,7 @@ section + .bg-light {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 421, ../sass/_components.scss */
+/* line 465, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -1000,7 +1075,7 @@ section + .bg-light {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 440, ../sass/_components.scss */
+  /* line 484, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
@@ -1008,42 +1083,42 @@ section + .bg-light {
   }
 }
 
-/* line 450, ../sass/_components.scss */
+/* line 494, ../sass/_components.scss */
 .boxes li {
   display: inline-block;
   height: 50px;
   width: 50px;
   background: white;
 }
-/* line 456, ../sass/_components.scss */
+/* line 500, ../sass/_components.scss */
 .boxes li:nth-child(2) {
   background: #fbfbfb;
 }
-/* line 459, ../sass/_components.scss */
+/* line 503, ../sass/_components.scss */
 .boxes li:nth-child(3) {
   background: #e0e0e3;
 }
-/* line 462, ../sass/_components.scss */
+/* line 506, ../sass/_components.scss */
 .boxes li:nth-child(4) {
   background: #c4c4cc;
 }
-/* line 465, ../sass/_components.scss */
+/* line 509, ../sass/_components.scss */
 .boxes li:nth-child(5) {
   background: #a9a9b4;
 }
-/* line 468, ../sass/_components.scss */
+/* line 512, ../sass/_components.scss */
 .boxes li:nth-child(6) {
   background: #8e8e9c;
 }
-/* line 471, ../sass/_components.scss */
+/* line 515, ../sass/_components.scss */
 .boxes li:nth-child(7) {
   background: #4D4D59;
 }
-/* line 474, ../sass/_components.scss */
+/* line 518, ../sass/_components.scss */
 .boxes li:nth-child(8) {
   background: #3A3A43;
 }
-/* line 477, ../sass/_components.scss */
+/* line 521, ../sass/_components.scss */
 .boxes li:nth-child(9) {
   background: #2C2C32;
 }

@@ -70,7 +70,7 @@
 
 			<div class="charts">
 				<div class="row">
-					<div class="col-md-4 col-space">
+					<div class="col-md-3 col-space">
 						<ul class="job-categories">
 							<li class="active" data-item="1">Visual Designer</li>
 							<li data-item="2">UX Designer or Researcher</li>
@@ -82,30 +82,80 @@
 						</ul>
 					</div><!-- column-->
 
-					<div class="col-md-8 col-space">
-						<h3 id="job-category-heading">Visual Designer</h3>
-						<div class="card text-white bg-secondary">
-							<div class="card-header">
-								Salary distribution
+					<div class="col-md-9 col-space">
+						<div class="row padded-left-row">
+							<div class="col-md-12 col-space">
+								<h3 id="job-category-heading">Visual Designer</h3>
 							</div>
-							<div class="card-body">
-								{% include sample-chart.html %}
-							</div>
-						</div><!-- card -->
 
-						<ul class="pills">
-							<li>Skill 1</li>
-							<li>Skill 2</li>
-							<li>Skill 3</li>
-						</ul>
-						
-					</div><!-- column -->
+							<div class="col-lg-7 col-md-12 col-space">
+								<div class="card text-white bg-secondary" style="min-height: 500px;">
+									<div class="card-header">
+										Salary distribution
+									</div>
+									<div class="card-body" style="padding: 30px 30px 10px 30px;">
+										{% include box-plot-1.html %}
+									</div>
+								</div><!-- card -->
+							</div>
+
+
+							<div class="col-lg-5 col-md-12 col-space">
+
+								<p>50% of Visual Designers make between <strong>$49,000</strong> and <strong>$76,000.</strong></p>
+								<p>25% make less than that&mdash;starting at <strong>$38,400</strong>&mdash;and 25% make more&mdash;up to <strong>$114,000.</strong></p>
+
+								<h4 id="most-common-skills"><span>Most common skills</span></h4>
+								<ul class="pills">
+									<li>
+										<div class="bar-graph">
+											<div class="bar"></div>
+										</div>
+										<div class="caption">73%</div>
+										<div class="skill-name">Visual Design</div>
+									</li>
+									<li>
+										<div class="bar-graph">
+											<div class="bar"></div>
+										</div>
+										<div class="caption">73%</div>
+										<div class="skill-name">Print Design</div>
+									</li>
+									<li>
+										<div class="bar-graph">
+											<div class="bar"></div>
+										</div>
+										<div class="caption">33%</div>
+										<div class="skill-name">Content Strategy</div>
+									</li>
+									<li>
+										<div class="bar-graph">
+											<div class="bar"></div>
+										</div>
+										<div class="caption">30%</div>
+										<div class="skill-name">Project Mgmt</div>
+									</li>
+									<li>
+										<div class="bar-graph">
+											<div class="bar"></div>
+										</div>
+										<div class="caption">73%</div>
+										<div class="skill-name">Research</div>
+									</li>
+								</ul>
+							</div>
+
+
+						</div> <!-- row -->
+					</div> <!-- column -->
 
 				</div><!-- row -->
 			</div><!-- charts -->
 		</div><!-- acc-card-body -->
 	</div><!-- container -->
 </section>
+
+
 
 {% include footer.html %}
 

@@ -16,6 +16,16 @@ section+.bg-light {
 	margin-top: 40px;
 }
 
+.padded-left-row {
+	padding-left: 40px;
+	
+	@media screen and (max-width: 767px) {
+	
+		padding-left: 0;
+	}
+
+}
+
 @media screen and (max-width: 767px) {
 
 	.col-space+.col-space {
@@ -36,4 +46,11 @@ section+.bg-light {
 	color: $gray-600;
 	margin-top: 50px !important;
 	padding: 40px;
+}
+
+#most-common-skills {
+	margin-bottom: 5px;
+	span {
+		border-bottom: 0px solid;
+	}
 }
