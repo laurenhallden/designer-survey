@@ -60,6 +60,132 @@ const boxplotDataAll = {
   }]
 };
 
+var jobCategoryData = [
+
+    // Content Designer
+    {
+        min: '$51,840',
+        q1: '$70,000',
+        median: '$79,500',
+        q3: '$92,500',
+        max: '$97,000',
+        skillName1: 'Content Strategy',
+        skillPercent1: 100,
+        skillName2: 'UX or Experience Design',
+        skillPercent2: 50,
+        skillName3: 'Research',
+        skillPercent3: 40
+    },
+
+    // Design Director
+    {
+        min: '$51,840',
+        q1: '$70,000',
+        median: '$79,500',
+        q3: '$92,500',
+        max:'$97,000',
+        skillName1: 'Visual Design',
+        skillPercent1: 82,
+        skillName2: 'Team Leadership',
+        skillPercent2: 79,
+        skillName3: 'Print Design',
+        skillPercent3: 61,
+        skillName4: 'UX Design',
+        skillPercent4: 50,
+        skillName5: 'Content Strategy',
+        skillPercent5: 46
+    },
+
+    // Front-end Designer
+    {
+        min: '$51,840',
+        q1: '$70,000',
+        median: '$79,500',
+        q3: '$92,500',
+        max: '$97,000',
+        skillName1: 'Front-end Development',
+        skillPercent1: 50,
+        skillName2: 'UX or Experience Design',
+        skillPercent2: 50,
+        skillName3: 'Visual Design',
+        skillPercent3: 50,
+        skillName4: 'Research',
+        skillPercent4: 50,
+        skillName5: 'Content Strategy',
+        skillPercent5: 50,
+        skillName6: 'Team Leadership',
+        skillPercent6: 38
+    },
+
+    // Management
+    {
+        min: '$51,840',
+        q1: '$70,000',
+        median: '$79,500',
+        q3: '$92,500',
+        max: '$97,000',
+        skillName1: 'UX or Experience Design',
+        skillPercent1: 100,
+        skillName2: 'Team Leadership',
+        skillPercent2: 100,
+        skillName3: 'Visual Design',
+        skillPercent3: 67,
+        skillName4: 'Project Mgmt',
+        skillPercent4: 54,
+        skillName5: 'Research',
+        skillPercent5: 46
+    },
+
+    // UX Designer or Researcher
+    {
+        min: '$51,840',
+        q1: '$70,000',
+        median: '$79,500',
+        q3: '$92,500',
+        max: '$97,000',
+        skillName1: 'UX or Experience Design',
+        skillPercent1: 88,
+        skillName2: 'Research',
+        skillPercent2: 60
+    },
+
+    // UX/UI Designer
+    {
+        min: '$51,840',
+        q1: '$70,000',
+        median: '$79,500',
+        q3: '$92,500',
+        max: '$97,000',
+        skillName1: 'UX or Experience Design',
+        skillPercent1: 100,
+        skillName2: 'Visual Design',
+        skillPercent2: 100,
+        skillName3: 'Research',
+        skillPercent3: 59,
+        skillName4: 'Team Leadership',
+        skillPercent4: 34
+    },
+
+    // Visual Designer
+    {
+        min: '$51,840',
+        q1: '$70,000',
+        median: '$79,500',
+        q3: '$92,500',
+        max: '$97,000',
+        skillName1: 'Visual Design',
+        skillPercent1: 73,
+        skillName2: 'Print Design',
+        skillPercent2: 73,
+        skillName3: 'Content Strat',
+        skillPercent3: 33,
+        skillName4: 'Project Mgmt',
+        skillPercent4: 30,
+        skillName5: 'Research',
+        skillPercent5: 21
+    }
+]
+
 var boxPlots = [
 
     // Box plot - Content Designer

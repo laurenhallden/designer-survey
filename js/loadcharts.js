@@ -51,10 +51,10 @@ window.onload = function () {
 	});
 
 	const ctx1 = document.getElementById("canvas-1").getContext("2d");
-	console.log(boxPlots[3]);
+	console.log(boxPlots[0]);
   window.myBox1 = new Chart(ctx1, {
     type: 'boxplot',
-    data: boxPlots[3],
+    data: boxPlots[0],
     options: {
       responsive: true,
       maintainAspectRatio: false,
@@ -101,4 +101,9 @@ window.onload = function () {
       }
     }
   });
+
+  $('#job-q1').html(jobCategoryData[0].q1);
+	$('#job-q3').html(jobCategoryData[0].q3);
+	$('#job-min').html(jobCategoryData[0].min);
+	$('#job-max').html(jobCategoryData[0].max);
 }
