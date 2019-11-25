@@ -51,9 +51,10 @@ window.onload = function () {
 	});
 
 	const ctx1 = document.getElementById("canvas-1").getContext("2d");
+	console.log(boxPlots[3]);
   window.myBox1 = new Chart(ctx1, {
     type: 'boxplot',
-    data: boxplotData1,
+    data: boxPlots[3],
     options: {
       responsive: true,
       maintainAspectRatio: false,

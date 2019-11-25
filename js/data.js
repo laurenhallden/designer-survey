@@ -1,4 +1,8 @@
-// All box plots
+// ALL THE DATA. for all charts goes in this file,
+// and loadcharts.js or changecharts.js calls it
+
+
+// All box plots together
 
 const boxplotDataAll = {
   // define label tree
@@ -7,10 +11,8 @@ const boxplotDataAll = {
     backgroundColor: 'rgba(137, 235, 215, .6)',
     borderColor: 'rgba(137, 235, 215, 1)',
     borderWidth: 3,
-    outlierColor: '#999999',
     padding: 10,
     itemRadius: 0,
-    outlierColor: '#999999',
     data: [
         {min: 38400,
             q1: 49000,
@@ -58,26 +60,148 @@ const boxplotDataAll = {
   }]
 };
 
-// plot 1
-const boxplotData1 = {
-  datasets: [{
-    backgroundColor: 'rgba(137, 235, 215, .25)',
-    borderColor: 'rgba(137, 235, 215, 1)',
-    borderWidth: 3,
-    outlierColor: '#999999',
-    padding: 10,
-    itemRadius: 0,
-    outlierColor: '#999999',
-    data: [
-        {min: 38400,
-            q1: 49000,
-            median: 64000,
-            q3: 76000,
-            max: 114000
-        }
-    ]
-  }]
-};
+var boxPlots = [
+
+    // Box plot - Content Designer
+    {
+      labels: [],
+      datasets: [{
+        backgroundColor: 'rgba(137, 235, 215, .25)',
+        borderColor: 'rgba(137, 235, 215, 1)',
+        borderWidth: 3,
+        padding: 10,
+        itemRadius: 0,
+        data: [
+            {min: 51840,
+                q1: 70000,
+                median: 79500,
+                q3: 92500,
+                max: 97000
+            }
+        ]
+      }]
+    },
+
+    // Box plot - Design Director
+    {
+      labels: [],
+      datasets: [{
+        backgroundColor: 'rgba(137, 235, 215, .25)',
+        borderColor: 'rgba(137, 235, 215, 1)',
+        borderWidth: 3,
+        padding: 10,
+        itemRadius: 0,
+        data: [
+            {min: 62000,
+                q1: 85490,
+                median: 101250,
+                q3: 120000,
+                max: 135000
+            }
+        ]
+      }]
+    },
+
+    // Box plot - Front-end Designer
+    {
+      labels: [],
+      datasets: [{
+        backgroundColor: 'rgba(137, 235, 215, .25)',
+        borderColor: 'rgba(137, 235, 215, 1)',
+        borderWidth: 3,
+        padding: 10,
+        itemRadius: 0,
+        data: [
+            {min: 48000,
+                q1: 63700,
+                median: 85250,
+                q3: 111420,
+                max: 174000
+            }
+        ]
+      }]
+    },
+
+    // Box plot - Management
+    {
+      labels: [],
+      datasets: [{
+        backgroundColor: 'rgba(137, 235, 215, .25)',
+        borderColor: 'rgba(137, 235, 215, 1)',
+        borderWidth: 3,
+        padding: 10,
+        itemRadius: 0,
+        data: [
+            {min: 53000,
+                q1: 81000,
+                median: 128500,
+                q3: 156000,
+                max: 240000
+            }
+        ]
+      }]
+    },
+
+    // Box plot - UX Designer or Researcher
+    {
+      labels: [],
+      datasets: [{
+        backgroundColor: 'rgba(137, 235, 215, .25)',
+        borderColor: 'rgba(137, 235, 215, 1)',
+        borderWidth: 3,
+        padding: 10,
+        itemRadius: 0,
+        data: [
+            {min: 48000,
+                q1: 78720,
+                median: 93588,
+                q3: 124800,
+                max: 154000
+            }
+        ]
+      }]
+    },
+
+    // Box plot - UX/UI Designer
+    {
+      labels: [],
+      datasets: [{
+        backgroundColor: 'rgba(137, 235, 215, .25)',
+        borderColor: 'rgba(137, 235, 215, 1)',
+        borderWidth: 3,
+        padding: 10,
+        itemRadius: 0,
+        data: [
+            {min: 35000,
+                q1: 71250,
+                median: 90500,
+                q3: 116000,
+                max: 175000
+            }
+        ]
+      }]
+    },
+
+    // Box plot - Visual Designer
+    {
+      labels: [],
+      datasets: [{
+        backgroundColor: 'rgba(137, 235, 215, .25)',
+        borderColor: 'rgba(137, 235, 215, 1)',
+        borderWidth: 3,
+        padding: 10,
+        itemRadius: 0,
+        data: [
+            {min: 38400,
+                q1: 49000,
+                median: 64000,
+                q3: 76000,
+                max: 114000
+            }
+        ]
+      }]
+    }
+]
 
 // histogram data
 
