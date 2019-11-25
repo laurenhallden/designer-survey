@@ -33,6 +33,4 @@ function loadChart(number,name) {
 	myBarChart.update();
 	console.log(name);
 	$('#job-category-heading').html(name);
-
 }
-

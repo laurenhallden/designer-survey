@@ -194,7 +194,6 @@
   }
 
   function whiskers(boxplot, arr) {
-    console.log(boxplot.q3);
     var iqr = boxplot.q3 - boxplot.q1; // since top left is max
 
     var whiskerMin = Math.max(boxplot.min, boxplot.q1 - iqr);

@@ -1,6 +1,85 @@
-// all the data
+// All box plots
 
-var testArray = ['first','second','third','fourth','fifth','sixth','seventh'];
+const boxplotDataAll = {
+  // define label tree
+  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],'Manager'],
+  datasets: [{
+    backgroundColor: 'rgba(137, 235, 215, .6)',
+    borderColor: 'rgba(137, 235, 215, 1)',
+    borderWidth: 3,
+    outlierColor: '#999999',
+    padding: 10,
+    itemRadius: 0,
+    outlierColor: '#999999',
+    data: [
+        {min: 38400,
+            q1: 49000,
+            median: 64000,
+            q3: 76000,
+            max: 114000
+        },
+        {min: 51840,
+            q1: 70000,
+            median: 79500,
+            q3: 92500,
+            max: 97000
+        },
+        {min: 48000,
+            q1: 63700,
+            median: 85250,
+            q3: 111420,
+            max: 174000
+        },
+        {min: 35000,
+            q1: 71250,
+            median: 90500,
+            q3: 116000,
+            max: 175000
+        },
+        {min: 48000,
+            q1: 78720,
+            median: 93588,
+            q3: 124800,
+            max: 154000
+        },
+        {min: 62000,
+            q1: 85490,
+            median: 101250,
+            q3: 120000,
+            max: 135000
+        },
+        {min: 53000,
+            q1: 81000,
+            median: 128500,
+            q3: 156000,
+            max: 240000
+        }
+    ]
+  }]
+};
+
+// plot 1
+const boxplotData1 = {
+  datasets: [{
+    backgroundColor: 'rgba(137, 235, 215, .25)',
+    borderColor: 'rgba(137, 235, 215, 1)',
+    borderWidth: 3,
+    outlierColor: '#999999',
+    padding: 10,
+    itemRadius: 0,
+    outlierColor: '#999999',
+    data: [
+        {min: 38400,
+            q1: 49000,
+            median: 64000,
+            q3: 76000,
+            max: 114000
+        }
+    ]
+  }]
+};
+
+// histogram data
 
 var jobCharts = [
 

@@ -49,7 +49,7 @@
 								Salary distribution
 							</div>
 							<div class="card-body">
-								{% include box-plots.html %}
+								<canvas id="canvas-all"></canvas>
 							</div>
 						</div><!-- card -->
 						
@@ -94,7 +94,7 @@
 										Salary distribution
 									</div>
 									<div class="card-body" style="padding: 30px 30px 10px 30px;">
-										{% include box-plot-1.html %}
+										<canvas id="canvas-1"></canvas>
 									</div>
 								</div><!-- card -->
 							</div>
@@ -161,6 +161,7 @@
 
 <!-- JS -->
 <script src="/js/data.js"></script>
-<script src="/js/functions.js"></script>
+<script src="/js/loadcharts.js"></script>
+<!--<script src="/js/functions.js"></script>-->
 </body>
 </html>
