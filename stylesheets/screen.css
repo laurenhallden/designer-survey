@@ -589,7 +589,12 @@ section + .bg-light {
   }
 }
 
-/* line 44, ../sass/_layout.scss */
+/* line 45, ../sass/_layout.scss */
+.col-space h4:first-of-type {
+  margin-top: 0;
+}
+
+/* line 50, ../sass/_layout.scss */
 .footer {
   font-size: 0.75rem;
   color: #8e8e9c;
@@ -597,11 +602,11 @@ section + .bg-light {
   padding: 40px;
 }
 
-/* line 51, ../sass/_layout.scss */
+/* line 57, ../sass/_layout.scss */
 #most-common-skills {
   margin-bottom: 5px;
 }
-/* line 53, ../sass/_layout.scss */
+/* line 59, ../sass/_layout.scss */
 #most-common-skills span {
   border-bottom: 0px solid;
 }

@@ -78,7 +78,7 @@ window.onload = function () {
           },
           gridLines: { color: "#4D4D59" },
           ticks: {
-            padding: 30,
+            padding: 20,
             fontColor: '#e0e0e3',
             fontSize: 14,
             fontStyle: 500,
