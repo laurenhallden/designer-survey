@@ -35,9 +35,64 @@ function loadJobChart(number,name) {
 
 function loadJobStats(number){
 	var chartArrayNumber = (number);
+
 	// update the job paragraph description
+	$('#this-job').html(jobCategoryData[chartArrayNumber].thisJob);
 	$('#job-q1').html(jobCategoryData[chartArrayNumber].q1);
 	$('#job-q3').html(jobCategoryData[chartArrayNumber].q3);
 	$('#job-min').html(jobCategoryData[chartArrayNumber].min);
 	$('#job-max').html(jobCategoryData[chartArrayNumber].max);
+
+	// update the skills
+	$('.pills li:nth-child(1) .skill-name').html(jobCategoryData[chartArrayNumber].skillName1);
+	var value = jobCategoryData[chartArrayNumber].skillPercent1 + '%';
+	$('.pills li:nth-child(1) .caption').html(value);
+	$('.pills li:nth-child(1) .bar-graph .bar').width(value);
+
+	$('.pills li:nth-child(2) .skill-name').html(jobCategoryData[chartArrayNumber].skillName2);
+	value = jobCategoryData[chartArrayNumber].skillPercent2 + '%';
+	$('.pills li:nth-child(2) .caption').html(value);
+	$('.pills li:nth-child(2) .bar-graph .bar').width(value);
+
+	if ('skillName3' in jobCategoryData[chartArrayNumber]) {
+		$('.pills li:nth-child(3) .skill-name').html(jobCategoryData[chartArrayNumber].skillName3);
+		value = jobCategoryData[chartArrayNumber].skillPercent3 + '%';
+		$('.pills li:nth-child(3) .caption').html(value);
+		$('.pills li:nth-child(3) .bar-graph .bar').width(value);
+		$('.pills li:nth-child(3)').show();
+	} else {
+		$('.pills li:nth-child(3)').hide();
+
+	}
+	if ('skillName4' in jobCategoryData[chartArrayNumber]) {
+		$('.pills li:nth-child(4) .skill-name').html(jobCategoryData[chartArrayNumber].skillName4);
+		value = jobCategoryData[chartArrayNumber].skillPercent4 + '%';
+		$('.pills li:nth-child(4) .caption').html(value);
+		$('.pills li:nth-child(4) .bar-graph .bar').width(value);
+		$('.pills li:nth-child(4)').show();
+	} else {
+		$('.pills li:nth-child(4)').hide();
+
+	}
+	if ('skillName5' in jobCategoryData[chartArrayNumber]) {
+		$('.pills li:nth-child(5) .skill-name').html(jobCategoryData[chartArrayNumber].skillName5);
+		value = jobCategoryData[chartArrayNumber].skillPercent5 + '%';
+		$('.pills li:nth-child(5) .caption').html(value);
+		$('.pills li:nth-child(5) .bar-graph .bar').width(value);
+		$('.pills li:nth-child(5)').show();
+	} else {
+		$('.pills li:nth-child(5)').hide();
+
+	}
+	if ('skillName6' in jobCategoryData[chartArrayNumber]) {
+		$('.pills li:nth-child(6) .skill-name').html(jobCategoryData[chartArrayNumber].skillName6);
+		value = jobCategoryData[chartArrayNumber].skillPercent6 + '%';
+		$('.pills li:nth-child(6) .caption').html(value);
+		$('.pills li:nth-child(6) .bar-graph .bar').width(value);
+		$('.pills li:nth-child(6)').show();
+	} else {
+		$('.pills li:nth-child(6)').hide();
+
+	}
+
 }

@@ -64,11 +64,13 @@ var jobCategoryData = [
 
     // Content Designer
     {
+        name: 'Content Designer',
         min: '$51,840',
         q1: '$70,000',
         median: '$79,500',
         q3: '$92,500',
         max: '$97,000',
+        thisJob: 'How information is communicated to audiences.',
         skillName1: 'Content Strategy',
         skillPercent1: 100,
         skillName2: 'UX or Experience Design',
@@ -79,11 +81,13 @@ var jobCategoryData = [
 
     // Design Director
     {
+        name: 'Design Director',
         min: '$51,840',
         q1: '$70,000',
         median: '$79,500',
         q3: '$92,500',
         max:'$97,000',
+        thisJob: 'Creating design systems used throughout their organization. (May also be called an Art Director or Creative Director).',
         skillName1: 'Visual Design',
         skillPercent1: 82,
         skillName2: 'Team Leadership',
@@ -98,11 +102,13 @@ var jobCategoryData = [
 
     // Front-end Designer
     {
+        name: 'Front-end Designer',
         min: '$51,840',
         q1: '$70,000',
         median: '$79,500',
         q3: '$92,500',
         max: '$97,000',
+        thisJob: 'Creating and coding websites and user interfaces.',
         skillName1: 'Front-end Development',
         skillPercent1: 50,
         skillName2: 'UX or Experience Design',
@@ -117,17 +123,19 @@ var jobCategoryData = [
         skillPercent6: 38
     },
 
-    // Management
+    // Manager
     {
+        name: 'Manager',
         min: '$51,840',
         q1: '$70,000',
         median: '$79,500',
         q3: '$92,500',
         max: '$97,000',
+        thisJob: 'Running design teams and managing team members.',
         skillName1: 'UX or Experience Design',
-        skillPercent1: 100,
+        skillPercent1: 10,
         skillName2: 'Team Leadership',
-        skillPercent2: 100,
+        skillPercent2: 10,
         skillName3: 'Visual Design',
         skillPercent3: 67,
         skillName4: 'Project Mgmt',
@@ -138,11 +146,13 @@ var jobCategoryData = [
 
     // UX Designer or Researcher
     {
+        name: 'UX Designer or Researcher',
         min: '$51,840',
         q1: '$70,000',
         median: '$79,500',
         q3: '$92,500',
         max: '$97,000',
+        thisJob: 'Designing the best ways for users to interact with and experience digital products.',
         skillName1: 'UX or Experience Design',
         skillPercent1: 88,
         skillName2: 'Research',
@@ -151,11 +161,13 @@ var jobCategoryData = [
 
     // UX/UI Designer
     {
+        name: 'UX/UI Designer',
         min: '$51,840',
         q1: '$70,000',
         median: '$79,500',
         q3: '$92,500',
         max: '$97,000',
+        thisJob: 'Both user experience design and visual interface design.',
         skillName1: 'UX or Experience Design',
         skillPercent1: 100,
         skillName2: 'Visual Design',
@@ -168,11 +180,13 @@ var jobCategoryData = [
 
     // Visual Designer
     {
+        name: 'Visual Designer',
         min: '$51,840',
         q1: '$70,000',
         median: '$79,500',
         q3: '$92,500',
         max: '$97,000',
+        thisJob: 'May include marketing, brand, print, or visual UI design (but not UX).',
         skillName1: 'Visual Design',
         skillPercent1: 73,
         skillName2: 'Print Design',

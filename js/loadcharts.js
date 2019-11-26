@@ -102,8 +102,6 @@ window.onload = function () {
     }
   });
 
-  $('#job-q1').html(jobCategoryData[0].q1);
-	$('#job-q3').html(jobCategoryData[0].q3);
-	$('#job-min').html(jobCategoryData[0].min);
-	$('#job-max').html(jobCategoryData[0].max);
+  // load the first job category's charts
+  loadJobChart(1,'Content Designer');
 }
