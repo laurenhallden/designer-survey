@@ -597,16 +597,34 @@ section + .bg-light {
   padding: 40px;
 }
 
-/* line 51, ../sass/_layout.scss */
+/* JOBS PAGE */
+/* line 53, ../sass/_layout.scss */
+.job-categories {
+  max-width: 10rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* line 59, ../sass/_layout.scss */
+#job-details {
+  padding-left: 25px;
+  font-size: 0.9rem;
+}
+/* line 63, ../sass/_layout.scss */
+#job-details h3 {
+  font-size: 1.8rem;
+}
+
+/* line 68, ../sass/_layout.scss */
 #most-common-skills {
   margin-bottom: 5px;
 }
-/* line 53, ../sass/_layout.scss */
+/* line 70, ../sass/_layout.scss */
 #most-common-skills span {
   border-bottom: 0px solid;
 }
 
-/* line 58, ../sass/_layout.scss */
+/* line 75, ../sass/_layout.scss */
 #job-category-heading {
   margin-bottom: 10px;
 }
