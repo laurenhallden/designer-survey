@@ -589,12 +589,7 @@ section + .bg-light {
   }
 }
 
-/* line 45, ../sass/_layout.scss */
-.col-space h4:first-of-type {
-  margin-top: 0;
-}
-
-/* line 50, ../sass/_layout.scss */
+/* line 44, ../sass/_layout.scss */
 .footer {
   font-size: 0.75rem;
   color: #8e8e9c;
@@ -602,13 +597,18 @@ section + .bg-light {
   padding: 40px;
 }
 
-/* line 57, ../sass/_layout.scss */
+/* line 51, ../sass/_layout.scss */
 #most-common-skills {
   margin-bottom: 5px;
 }
-/* line 59, ../sass/_layout.scss */
+/* line 53, ../sass/_layout.scss */
 #most-common-skills span {
   border-bottom: 0px solid;
+}
+
+/* line 58, ../sass/_layout.scss */
+#job-category-heading {
+  margin-bottom: 10px;
 }
 
 /* Sections */
@@ -1023,13 +1023,17 @@ section + .bg-light {
   width: 21%;
 }
 
-/* line 426, ../sass/_components.scss */
+/* line 425, ../sass/_components.scss */
+.divider {
+  padding: 50px 0;
+}
+/* line 428, ../sass/_components.scss */
 .divider hr {
   border-top: 1px solid #4D4D59;
 }
 
 /* Mailchimp signup */
-/* line 434, ../sass/_components.scss */
+/* line 436, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -1038,11 +1042,11 @@ section + .bg-light {
   font-weight: 500;
   width: 100%;
 }
-/* line 442, ../sass/_components.scss */
+/* line 444, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 446, ../sass/_components.scss */
+/* line 448, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -1061,7 +1065,7 @@ section + .bg-light {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 465, ../sass/_components.scss */
+/* line 467, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -1080,7 +1084,7 @@ section + .bg-light {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 484, ../sass/_components.scss */
+  /* line 486, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
@@ -1088,42 +1092,42 @@ section + .bg-light {
   }
 }
 
-/* line 494, ../sass/_components.scss */
+/* line 496, ../sass/_components.scss */
 .boxes li {
   display: inline-block;
   height: 50px;
   width: 50px;
   background: white;
 }
-/* line 500, ../sass/_components.scss */
+/* line 502, ../sass/_components.scss */
 .boxes li:nth-child(2) {
   background: #fbfbfb;
 }
-/* line 503, ../sass/_components.scss */
+/* line 505, ../sass/_components.scss */
 .boxes li:nth-child(3) {
   background: #e0e0e3;
 }
-/* line 506, ../sass/_components.scss */
+/* line 508, ../sass/_components.scss */
 .boxes li:nth-child(4) {
   background: #c4c4cc;
 }
-/* line 509, ../sass/_components.scss */
+/* line 511, ../sass/_components.scss */
 .boxes li:nth-child(5) {
   background: #a9a9b4;
 }
-/* line 512, ../sass/_components.scss */
+/* line 514, ../sass/_components.scss */
 .boxes li:nth-child(6) {
   background: #8e8e9c;
 }
-/* line 515, ../sass/_components.scss */
+/* line 517, ../sass/_components.scss */
 .boxes li:nth-child(7) {
   background: #4D4D59;
 }
-/* line 518, ../sass/_components.scss */
+/* line 520, ../sass/_components.scss */
 .boxes li:nth-child(8) {
   background: #3A3A43;
 }
-/* line 521, ../sass/_components.scss */
+/* line 523, ../sass/_components.scss */
 .boxes li:nth-child(9) {
   background: #2C2C32;
 }

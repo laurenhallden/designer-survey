@@ -41,12 +41,6 @@ section+.bg-light {
 	}
 }
 
-.col-space {
-	h4:first-of-type {
-		margin-top: 0;
-	}
-}
-
 .footer {
 	font-size: 0.75rem;
 	color: $gray-600;
@@ -59,4 +53,8 @@ section+.bg-light {
 	span {
 		border-bottom: 0px solid;
 	}
+}
+
+#job-category-heading {
+	margin-bottom: 10px;
 }
