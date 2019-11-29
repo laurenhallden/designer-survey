@@ -6,7 +6,7 @@
 
 const boxplotDataAll = {
   // define label tree
-  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],'Manager'],
+  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],['Manager','']],
   datasets: [{
     backgroundColor: 'rgba(137, 235, 215, .25)',
     borderColor: 'rgba(137, 235, 215, 1)',
