@@ -87,7 +87,7 @@ var jobCategoryData = [
         median: '$101,250',
         q3: '$120,000',
         max:'$135,000',
-        thisJob: 'Creates design systems used throughout their organization. (May also be called an Art Director or Creative Director).',
+        thisJob: 'Manages design systems used by other designers. (May also be called Creative or Art Director).',
         skillName1: 'Visual Design',
         skillPercent1: 82,
         skillName2: 'Team Leadership',
