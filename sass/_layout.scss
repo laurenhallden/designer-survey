@@ -41,17 +41,15 @@ section+.bg-light {
 	}
 }
 
-.col-space {
-	h4:first-of-type {
-		margin-top: 0;
-	}
-}
-
 .footer {
 	font-size: 0.75rem;
 	color: $gray-600;
 	margin-top: 50px !important;
 	padding: 40px;
+}
+
+#job-category-heading {
+	margin-bottom: 10px !important;
 }
 
 #most-common-skills {
