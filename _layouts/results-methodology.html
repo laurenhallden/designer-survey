@@ -16,6 +16,62 @@
                 <h1>{{ page.title }}</h1>
 				<p>What we did. What we did include, didn't include, and why. What we would do differently.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+	<div style="width:75%">
+		<div>
+			<canvas id="canvas"></canvas>
+		</div>
+	</div>
+	<script src="/js/data.js"></script>
+	<script>
+
+
+const el = document.getElementById('chart');
+
+const el2 = document.getElementById('canvas');
+
+const data1 = [];
+const data2 = [];
+
+new Chart(el2.getContext('2d'), {
+  'type': 'boxplot',
+  'data': {
+    'datasets': [{
+      'label': 'Box Plot',
+      'data': boxPlots[0],
+    }]
+  },
+  'options': {
+    'scales': {
+      'xAxes': [{
+        'type': 'time',
+        'time': {
+          'unit': 'year',
+        },
+      }]
+    }
+  }
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </div>
     </div>
@@ -34,7 +90,6 @@
 {% include footer.html %}
 
 <!-- JS -->
-<script src="/js/data.js"></script>
-<script src="/js/functions.js"></script>
+<script src="/js/annotation.js"></script>
 </body>
 </html>

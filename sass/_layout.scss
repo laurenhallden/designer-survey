@@ -50,6 +50,24 @@ section+.bg-light {
 
 #job-category-heading {
 	margin-bottom: 10px !important;
+
+}
+
+/* JOBS PAGE */
+
+.job-categories {
+	max-width: 10rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+#job-details {
+	padding-left: 25px;
+	font-size: 0.9rem;
+
+	h3 {
+		font-size: 1.8rem;
+	}
 }
 
 #most-common-skills {
@@ -57,4 +75,8 @@ section+.bg-light {
 	span {
 		border-bottom: 0px solid;
 	}
+}
+
+#job-category-heading {
+	margin-bottom: 10px;
 }

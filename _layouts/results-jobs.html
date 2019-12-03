@@ -14,13 +14,15 @@
         <div class="row text-left">
             <div class="col-lg-9">
                 <h1>{{ page.title }}</h1>
-                <p>In aliquam sem fringilla ut morbi tincidunt augue. Viverra maecenas accumsan lacus vel facilisis. Lacus vel facilisis volutpat est velit egestas dui id. Eget sit amet tellus cras adipiscing enim eu turpis egestas.</p>
+                <p>The clearest takeaway from our analysis work was that the <strong>job titles themselves</strong> are a major obstacle to understanding fair compensation in the design community. Titles were incredibly varied and inconsistent even within similar types of companies. The jumble of titles is a major issue that makes it hard for individuals to understand how their experience translates to other companies and compares to their peers.</p>
+
+				<p>We leaned heavily on the responsibilities that respondents selected to place responses in specific groups. For example, every individual contributor who did UX design and Visual design fit into “UX/UI Designer.” Without Visual design they became a “UX Designer/Researcher.” You might see job titles that you aren’t familiar with, but we’ve provided a small breakdown of the skills of each.</p>
             </div>
         </div>
     </div>
 </section>
 
-<ul class="boxes">
+<!--<ul class="boxes">
 	<li></li>
 	<li></li>
 	<li></li>
@@ -30,9 +32,7 @@
 	<li></li>
 	<li></li>
 	<li></li>
-</ul>
-
-{% include divider.html %}
+</ul>-->
 
 <section>
 	<div class="container">
@@ -43,7 +43,7 @@
 				<div class="row">
 
 					<div class="col-md-12 col-space">
-						<h3>All jobs</h3>
+						<h3>Salary ranges for all jobs</h3>
 						<div class="card text-white bg-secondary">
 							<div class="card-header">
 								Salary distribution
@@ -58,87 +58,97 @@
 				</div><!-- row -->
 			</div><!-- charts -->
 		</div><!-- acc-card-body -->
+		<p>Drill into the definitions and salary details for each job:</p>
 	</div><!-- container -->
 </section>
 
 {% include divider.html %}
 
-<section>
+<section class="job-category-details">
 	<div class="container">
 
 		<div class="acc-card-body">
 
 			<div class="charts">
 				<div class="row">
-					<div class="col-md-3 col-space">
+					<div class="col-lg-3 col-md-4 col-space">
 						<ul class="job-categories">
 							<li class="active" data-item="1">Content Designer</li>
 							<li data-item="2">Design Director</li>
 							<li data-item="3">Front-End Designer</li>
 							<li data-item="4">Manager</li>							
-							<li data-item="5">UX Designer or Researcher</li>
+							<li data-item="5">UX Designer / Researcher</li>
 							<li data-item="6">UX/UI Desginer</li>
 							<li data-item="7">Visual Designer</li>
 						</ul>
 					</div><!-- column-->
 
-							<div class="col-md-4  col-space">
-								<div class="card text-white bg-secondary" style="min-height: 580px;">
-									<div class="card-header">
-										Salary distribution
-									</div>
-									<div class="card-body">
-										<canvas id="canvas-1"></canvas>
-									</div>
-								</div><!-- card -->
+					<div class="col-md-9 col-space">
+						<div class="card text-white bg-secondary" style="height: 580px; width: 450px; float: right; margin-left: 30px;">
+							<div class="card-header">
+								Salary distribution
 							</div>
-
-
-							<div class="col-md-5 col-space">
-								<h3 id="job-category-heading">Content Designer</h3>
-								<p><span id="this-job">Does not produce visual design work, but designs content.</span></p>
-								<h4><span>Salary</span></h4>
-								<p>50% of <span id="job-category-title">Content Designer</span>s make between <strong><span id="job-q1">$70,000</span></strong> and <strong><span id="job-q3">$92,500</span></strong> per year. 25% make less (starting at <strong><span id="job-min">$51,840</span></strong>) and 25% make more (up to <strong><span id="job-max">$97,000</span></strong>).</p>
-
-								<h4 id="most-common-skills"><span>Most common skills</span></h4>
-								<ul class="pills">
-									<li>
-										<div class="bar-graph">
-											<div class="bar"></div>
-										</div>
-										<div class="caption">73%</div>
-										<div class="skill-name">Visual Design</div>
-									</li>
-									<li>
-										<div class="bar-graph">
-											<div class="bar"></div>
-										</div>
-										<div class="caption">73%</div>
-										<div class="skill-name">Print Design</div>
-									</li>
-									<li>
-										<div class="bar-graph">
-											<div class="bar"></div>
-										</div>
-										<div class="caption">33%</div>
-										<div class="skill-name">Content Strategy</div>
-									</li>
-									<li>
-										<div class="bar-graph">
-											<div class="bar"></div>
-										</div>
-										<div class="caption">30%</div>
-										<div class="skill-name">Project Mgmt</div>
-									</li>
-									<li>
-										<div class="bar-graph">
-											<div class="bar"></div>
-										</div>
-										<div class="caption">73%</div>
-										<div class="skill-name">Research</div>
-									</li>
+							<div class="card-body" style="padding-right: 40%;">
+								<div class="chart-subheadings">
+									<div class="sub">All responses</div>
+									<div class="sub">Medians by seniority</div>
+								</div>
+								<ul class="medians">
+									<li>Lead</li>
+									<li>Senior</li>
+									<li>Intermediate</li>
+									<li>Junior</li>
 								</ul>
+								<canvas id="canvas-1">
+									
+								</canvas>
 							</div>
+						</div><!-- card -->
+
+						<h3 id="job-category-heading">Content Designer</h3>
+						<p><span id="this-job">Does not produce visual design work, but designs content.</span></p>
+						<h4><span>Salary</span></h4>
+						<p>50% of <span id="job-category-title">Content Designer</span>s make between <strong><span id="job-q1">$70,000</span></strong> and <strong><span id="job-q3">$92,500</span></strong> per year. 25% make less (starting at <strong><span id="job-min">$51,840</span></strong>) and 25% make more (up to <strong><span id="job-max">$97,000</span></strong>).</p>
+
+						<h4 id="most-common-skills"><span>Most common skills</span></h4>
+						<ul class="pills">
+							<li>
+								<div class="bar-graph">
+									<div class="bar"></div>
+								</div>
+								<div class="caption">73%</div>
+								<div class="skill-name">Visual Design</div>
+							</li>
+							<li>
+								<div class="bar-graph">
+									<div class="bar"></div>
+								</div>
+								<div class="caption">73%</div>
+								<div class="skill-name">Print Design</div>
+							</li>
+							<li>
+								<div class="bar-graph">
+									<div class="bar"></div>
+								</div>
+								<div class="caption">33%</div>
+								<div class="skill-name">Content Strategy</div>
+							</li>
+							<li>
+								<div class="bar-graph">
+									<div class="bar"></div>
+								</div>
+								<div class="caption">30%</div>
+								<div class="skill-name">Project Mgmt</div>
+							</li>
+							<li>
+								<div class="bar-graph">
+									<div class="bar"></div>
+								</div>
+								<div class="caption">73%</div>
+								<div class="skill-name">Research</div>
+							</li>
+						</ul>
+					</div>
 
 				</div><!-- row -->
 			</div><!-- charts -->

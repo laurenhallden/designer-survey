@@ -6,10 +6,10 @@
 
 const boxplotDataAll = {
   // define label tree
-  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],'Manager'],
+  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],['Manager','']],
   datasets: [{
-    backgroundColor: 'rgba(137, 235, 215, .6)',
-    borderColor: 'rgba(137, 235, 215, 1)',
+    backgroundColor: 'rgba(97, 167, 208, .25)',
+    borderColor: 'rgba(97, 167, 208, 1)',
     borderWidth: 3,
     padding: 10,
     itemRadius: 0,
@@ -70,7 +70,7 @@ var jobCategoryData = [
         median: '$79,500',
         q3: '$92,500',
         max: '$97,000',
-        thisJob: 'Decides how information is communicated to audiences.',
+        thisJob: 'Determines how information is communicated to audiences.',
         skillName1: 'Content Strategy',
         skillPercent1: 100,
         skillName2: 'UX or Experience Design',
@@ -82,12 +82,12 @@ var jobCategoryData = [
     // Design Director
     {
         name: 'Design Director',
-        min: '$51,840',
-        q1: '$70,000',
-        median: '$79,500',
-        q3: '$92,500',
-        max:'$97,000',
-        thisJob: 'Creates design systems used throughout their organization. (May also be called an Art Director or Creative Director).',
+        min: '$62,000',
+        q1: '$85,490',
+        median: '$101,250',
+        q3: '$120,000',
+        max:'$135,000',
+        thisJob: 'Manages design systems used by other designers. (May also be called Creative or Art Director).',
         skillName1: 'Visual Design',
         skillPercent1: 82,
         skillName2: 'Team Leadership',
@@ -103,11 +103,11 @@ var jobCategoryData = [
     // Front-end Designer
     {
         name: 'Front-end Designer',
-        min: '$51,840',
-        q1: '$70,000',
-        median: '$79,500',
-        q3: '$92,500',
-        max: '$97,000',
+        min: '$48,000',
+        q1: '$63,700',
+        median: '$85,250',
+        q3: '$111,420',
+        max: '$174,000',
         thisJob: 'Creates and codes websites and user interfaces.',
         skillName1: 'Front-end Development',
         skillPercent1: 50,
@@ -126,12 +126,12 @@ var jobCategoryData = [
     // Manager
     {
         name: 'Manager',
-        min: '$51,840',
-        q1: '$70,000',
-        median: '$79,500',
-        q3: '$92,500',
-        max: '$97,000',
-        thisJob: 'Runa design teams and manages team members.',
+        min: '$53,000',
+        q1: '$81,000',
+        median: '$128,500',
+        q3: '$156,000',
+        max: '$240,000',
+        thisJob: 'Runs design teams and manages team members.',
         skillName1: 'UX or Experience Design',
         skillPercent1: 10,
         skillName2: 'Team Leadership',
@@ -147,11 +147,11 @@ var jobCategoryData = [
     // UX Designer or Researcher
     {
         name: 'UX Designer or Researcher',
-        min: '$51,840',
-        q1: '$70,000',
-        median: '$79,500',
-        q3: '$92,500',
-        max: '$97,000',
+        min: '$48,000',
+        q1: '$78,720',
+        median: '$93,588',
+        q3: '$124,800',
+        max: '$154,000',
         thisJob: 'Designs the best ways for users to interact with and experience digital products.',
         skillName1: 'UX or Experience Design',
         skillPercent1: 88,
@@ -162,12 +162,12 @@ var jobCategoryData = [
     // UX/UI Designer
     {
         name: 'UX/UI Designer',
-        min: '$51,840',
-        q1: '$70,000',
-        median: '$79,500',
-        q3: '$92,500',
-        max: '$97,000',
-        thisJob: 'Contributes to both user experience design and visual interface design.',
+        min: '$35,000',
+        q1: '$71,250',
+        median: '$90,500',
+        q3: '$116,000',
+        max: '$175,000',
+        thisJob: 'Works on both user experience design and visual interface design.',
         skillName1: 'UX or Experience Design',
         skillPercent1: 100,
         skillName2: 'Visual Design',
@@ -181,12 +181,12 @@ var jobCategoryData = [
     // Visual Designer
     {
         name: 'Visual Designer',
-        min: '$51,840',
-        q1: '$70,000',
-        median: '$79,500',
-        q3: '$92,500',
-        max: '$97,000',
-        thisJob: 'Works on marketing, brand, print, or visual UI design (but not UX).',
+        min: '$38,400',
+        q1: '$49,000',
+        median: '$64,000',
+        q3: '$76,000',
+        max: '$114,000',
+        thisJob: 'May include marketing, brand, print, or visual UI design (but not UX).',
         skillName1: 'Visual Design',
         skillPercent1: 73,
         skillName2: 'Print Design',
@@ -217,8 +217,9 @@ var boxPlots = [
                 median: 79500,
                 q3: 92500,
                 max: 97000
-            }
+            },
         ]
+
       }]
     },
 

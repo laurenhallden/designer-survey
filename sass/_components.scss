@@ -236,6 +236,7 @@
 }
 
 .card {
+	margin-bottom: 30px;
 	font-family: 'Source Code Pro', monospace;
 	line-height: 1.6;
 	font-size: 16px;
@@ -360,12 +361,55 @@
  }*/
 
 
+ /* Medians */
+
+.chart-subheadings {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	width: 160%;
+ 	margin-bottom: 20px;
+ 	.sub {
+ 		justify-content: space-between;
+ 	}
+ }
+
+.medians {
+	list-style: none;
+	padding-inline-start: 0;
+		position: absolute;
+		top: 20%;
+		right: 0;
+		text-align: right;
+		width: calc(100% - 125px);
+		li {
+			width: 90%;
+			position: absolute;
+			border-bottom: 1px dashed $green;
+
+		&:nth-child(1) {
+			top: 80px;
+		}
+		&:nth-child(2) {
+			top: 120px;
+		}
+		&:nth-child(3) {
+			top: 160px;
+		}
+		&:nth-child(4) {
+			top: 200px;
+		}
+		}
+}
+
+
 /* Pills */
 
 .pills {
 	list-style: none;
 	padding-inline-start: 0;
 	margin-top: 0px;
+	max-width: 18rem;
+
 	li {
 		display: block;
 		margin-bottom: 5px;
@@ -399,7 +443,7 @@
 		}
 
 		.skill-name {
-			margin-top: -5px;
+			margin-top: -8px;
 			font-weight: 500;
 		}
 
@@ -423,6 +467,8 @@
 }
 
 .divider {
+	padding: 0px 0 50px;
+
 	hr {
 		border-top: 1px solid $gray-700;
 	}
@@ -486,41 +532,5 @@
 			width: 100%;
 			margin-bottom: 1rem;
 		}
-	}
-}
-
-.boxes {
-
-	li {
-		display: inline-block;
-		height: 50px;
-		width: 50px;
-		background: $gray-100;
-
-		&:nth-child(2) {
-			background: $gray-200;
-		}
-		&:nth-child(3) {
-			background: $gray-300;
-		}
-		&:nth-child(4) {
-			background: $gray-400;
-		}
-		&:nth-child(5) {
-			background: $gray-500;
-		}
-		&:nth-child(6) {
-			background: $gray-600;
-		}
-		&:nth-child(7) {
-			background: $gray-700;
-		}
-		&:nth-child(8) {
-			background: $gray-800;
-		}
-		&:nth-child(9) {
-			background: $gray-900;
-		}
-
 	}
 }
