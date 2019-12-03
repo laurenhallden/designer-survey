@@ -52,12 +52,9 @@ section+.bg-light {
 	padding: 40px;
 }
 
-#job-category-heading {
-	margin-bottom: 10px !important;
-
-}
 
 /* JOBS PAGE */
+
 
 .job-categories {
 	max-width: 10rem;
@@ -65,9 +62,18 @@ section+.bg-light {
 	font-weight: 300;
 }
 
+.job-details-column {
+	font-size: 0.9rem;
+}
+
+#job-category-heading {
+	margin-bottom: 10px !important;
+
+}
+
 #job-details {
 	padding-left: 25px;
-	font-size: 0.9rem;
+	font-size: 0.9rem !important;
 
 	h3 {
 		font-size: 1.8rem;

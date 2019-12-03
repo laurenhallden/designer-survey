@@ -10,82 +10,54 @@
 {% include subnav.html %}
 
 <section>
-    <div class="container">
-        <div class="row text-left">
-            <div class="col-lg-9">
-                <h1>{{ page.title }}</h1>
-				<p>What we did. What we did include, didn't include, and why. What we would do differently.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="container">
+		<div class="row text-left">
+			<div class="col-lg-9">
+				<h1>{{ page.title }}</h1>
+				<h3 id="questions">Questions</h3>
+				<p>We knew that for this survey, we were dealing with a sensitive dataset: in order to answer our research question, we would have to ask respondents to provide their personal demographics and compensation information.</p>
 
+				<p>The focus then became on making the survey easy to answer, as well as minimizing the pain that can come with trying to reconcile identity with the survey questions. We referenced several sources for best practices in writing asking identity questions, including <a href="https://medium.com/@anna.sarai.rosenberg/respectful-collection-of-demographic-data-56de9fcb80e2">“Respectful Collection of Demographic Data”</a> by Sarai Rosenberg and <a href="https://c.ymcdn.com/sites/www.psichi.org/resource/resmgr/journal_2016/21_3Fall16JN-Hughes.pdf">Rethinking and Updating Demographic Questions”</a> by Jennifer L. Huges, Abigail A. Camden, and Tenzin Yangchen.</a></p>
 
-	<div style="width:75%">
-		<div>
-			<canvas id="canvas"></canvas>
+				<p>We used an open input for as many questions as possible. This requires more analysis and the chance for error, but ultimately felt like the responsible decision for our relatively small data set. In a survey with more reach, that would have been a more difficult decision to make.</p>
+
+				<p>For some questions, where it felt like we needed to seed some options, we consulted the materials to find the best practices to represent the groups we were asking about, and always provided a “Type a Free Response” option for participants to capture what we didn’t ask about.</p>
+
+				<a href="">Link to all questions</a>
+
+				<h3 id="group-resonses">Coding and grouping responses</h3>
+				<p>Once we collected all results, we had to prepare the responses for analysis. This meant coding the free responses to all share the same language. For example, from the question “How do you currently describe your gender identity?” we coded <em>Female</em> responses as <em>Woman</em> to use consistent language, in this case gender identity terms. Where people wrote something specific, such as <em>Non-binary</em> or <em>Non-conforming</em>, we used the language that they chose.</p>
+
+				<p>With a relatively small dataset (331 total responses), the specifics of respondents identity can come through in a raw presentation of data. We decided to group responses together in meaningful ways that still provided answers to our core questions. (If we were unable to do so, we excluded that data from our analysis.)</p>
+
+				<p>When looking at pay disparity, it is well-reported naitonally that cisgender straight white men earn more than their counterparts across gender and racial/ethnic identities. We therefore did analysis of this majority against all other groups, such as “Men vs. Non-Men” and “White vs. Non-white.” This has two unfortunate effects:</p>
+
+				<p>
+					<ul>
+						<li>It centers those already centered identities by putting everything in relation to them and</li>
+						<li>It hides the representation of already underrepresented identities.</li>
+					</ul>
+				</p>
+
+				<p>However, the potential harm from either completely removing this data or exposing the compensation profiles of a small set of responses outweighed these concerns for our team.</p>
+
+				<p>Job titles were a major hurdle for analysis, and required significant effort. Job titles vary considerably, and we were left to lean heavily on the responsibilities that respondents selected to place responses in specific groups. For example, every individual contributor who did <em>UX design</em> and <em>Visual design</em> fit into “UX/UI Designer.” Without Visual design they became a “UX Designer/Researcher.” If they added <em>Front-end development</em> they became a “Front-end Designer,” a category we didn’t expect but was quite large. Once combined, we validated our groups by comparing the data in years of experience, responsibilities, and compensation.</p>
+
+				<h3 id="tools">Tools</h3>
+				<p>We used this site as a critical entry point to survey, because we knew that we needed to provide a lot of context to prepare participants for what they were to be asked. In terms of the survey itself, we tried out multiple survey platforms, ultimately selecting Typeform due to their pricing plan and accessible surveys. Results were then exported to Airtable for coding and grouping of responses, before ultimately pulling results into Tableau for analysis.</p>
+
+				<h3>What we didn’t include</h3>
+				<p>There were many categories of information that we were unable to include due to limited responses, including <strong>Transgender Identity</strong> and <strong>Disability Status.</strong> It was important to ask about these, and we would do so again, but would have been irresponsible to make claims about the data from such a small set.</p>
+
+				<p>Likewise, the data of <strong>Freelance</strong> and <strong>Unemployed</strong> designers was too small and varied to responsibly share.</p>
+
+			</div>
 		</div>
 	</div>
-	<script src="/js/data.js"></script>
-	<script>
-
-
-const el = document.getElementById('chart');
-
-const el2 = document.getElementById('canvas');
-
-const data1 = [];
-const data2 = [];
-
-new Chart(el2.getContext('2d'), {
-  'type': 'boxplot',
-  'data': {
-    'datasets': [{
-      'label': 'Box Plot',
-      'data': boxPlots[0],
-    }]
-  },
-  'options': {
-    'scales': {
-      'xAxes': [{
-        'type': 'time',
-        'time': {
-          'unit': 'year',
-        },
-      }]
-    }
-  }
-});
-
-
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div>
-        </div>
-    </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="row text-left">
-            <div class="col-lg-9">
-                <p></p>
-            </div>
-        </div>
-    </div>
-</section>
+
+	
 
 {% include footer.html %}
 

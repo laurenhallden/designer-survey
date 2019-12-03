@@ -607,39 +607,44 @@ section + .bg-light {
   padding: 40px;
 }
 
-/* line 55, ../sass/_layout.scss */
-#job-category-heading {
-  margin-bottom: 10px !important;
-}
-
 /* JOBS PAGE */
-/* line 62, ../sass/_layout.scss */
+/* line 59, ../sass/_layout.scss */
 .job-categories {
   max-width: 10rem;
   font-size: 0.9rem;
   font-weight: 300;
 }
 
-/* line 68, ../sass/_layout.scss */
-#job-details {
-  padding-left: 25px;
+/* line 65, ../sass/_layout.scss */
+.job-details-column {
   font-size: 0.9rem;
 }
-/* line 72, ../sass/_layout.scss */
+
+/* line 69, ../sass/_layout.scss */
+#job-category-heading {
+  margin-bottom: 10px !important;
+}
+
+/* line 74, ../sass/_layout.scss */
+#job-details {
+  padding-left: 25px;
+  font-size: 0.9rem !important;
+}
+/* line 78, ../sass/_layout.scss */
 #job-details h3 {
   font-size: 1.8rem;
 }
 
-/* line 77, ../sass/_layout.scss */
+/* line 83, ../sass/_layout.scss */
 #most-common-skills {
   margin-bottom: 5px;
 }
-/* line 79, ../sass/_layout.scss */
+/* line 85, ../sass/_layout.scss */
 #most-common-skills span {
   border-bottom: 0px solid;
 }
 
-/* line 84, ../sass/_layout.scss */
+/* line 90, ../sass/_layout.scss */
 #job-category-heading {
   margin-bottom: 10px;
 }
@@ -864,7 +869,7 @@ section + .bg-light {
 
 /* line 238, ../sass/_components.scss */
 .card {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   font-family: 'Source Code Pro', monospace;
   line-height: 1.6;
   font-size: 16px;
@@ -1106,7 +1111,7 @@ section + .bg-light {
 
 /* line 469, ../sass/_components.scss */
 .divider {
-  padding: 0px 0 50px;
+  padding: 0px 0 30px;
 }
 /* line 472, ../sass/_components.scss */
 .divider hr {
