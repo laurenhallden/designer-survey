@@ -10,13 +10,49 @@
 {% include subnav.html %}
 
 <section>
-    <div class="container">
+    <div class="container article">
         <div class="row text-left">
             <div class="col-lg-9">
                 <h1>{{ page.title }}</h1>
-                <p>(What is this report, and how do I use it?)</p>
-                <p>Leo duis ut diam quam nulla. Adipiscing elit duis tristique sollicitudin. Sed velit dignissim sodales ut eu sem. Felis eget velit aliquet sagittis id consectetur purus. Ultrices tincidunt arcu non sodales neque sodales ut etiam. In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Tellus rutrum tellus pellentesque eu. Vitae congue mauris rhoncus aenean vel elit scelerisque. Tortor consequat id porta nibh venenatis. Volutpat lacus laoreet non curabitur gravida arcu ac. Dui faucibus in ornare quam viverra. Mauris in aliquam sem fringilla ut morbi tincidunt augue. In aliquam sem fringilla ut morbi tincidunt augue. Viverra maecenas accumsan lacus vel facilisis. Lacus vel facilisis volutpat est velit egestas dui id. Eget sit amet tellus cras adipiscing enim eu turpis egestas.</p>
+                <p>The Philly Design Compensation Census was designed to help our members of our community answer two questions:</p>
+                <p>
+                    <ul>
+                        <li>Am I being paid fairly for my role?</li>
+                        <li>What does pay disparity look like for designers in Philly?</li>
+                    </ul>
+                </p>
+                <p>These results represent how we are trying to answer those questions.</p>
+
+                <p>If you’re interested in how we selected the questions and our research methodology, read our <a href="/methodology" title="Chapter: Methodology">methodology.</a> In that section we also discuss the things that we could have done better, and some questions we were unable to answer.</p>
+
+                <p>For questions, suggestions, and discussion, you can reach us at phillydesigncomp AT gmail DOT com.</p>
+
+                <h3>How to read these results</h3>
+                <p>The results are meant to give you more information when advocating for yourself and your peers. We do not recommend citing this survey in a negotiating situation as it will likely not be effective.</p>
+
+                <p>Employers often use salary ranges from large-scale, national databases and will always have more information than employees. Instead, we recommend using these results as a benchmark to give you a point of reference in negotiations.</p>
             </div>
+        </div>
+        <div class="row no-margin">
+            <div class="col-md-6 col-space">
+
+                <p>We use <strong>box plots</strong> to show compensation ranges:</p>
+
+                <p>The center line represents the median of the set, the center-most value and a good average. The “box” on either side of it represents 50% of all the values: 25% above and 25% below the median. The smaller the box, the more clustered the data around the median.</p>
+
+                <p>The “whiskers” on either end of the box represent the remaining 25% of data above and below the center.</p>
+            </div>
+
+            <div class="col-md-4 col-space">
+                <div class="card text-white bg-secondary" style="min-height: 400px;">
+                    <div class="card-header">
+                        Salary distribution
+                    </div>
+                    <div class="card-body">
+                        <canvas id="canvas-1"></canvas>
+                    </div>
+                </div><!-- card -->
+            </div><!-- column-->
         </div>
     </div>
 </section>
@@ -35,6 +71,104 @@
 
 <!-- JS -->
 <script src="/js/data.js"></script>
-<script src="/js/functions.js"></script>
+<script>
+    const ctx1 = document.getElementById("canvas-1").getContext("2d");
+  window.myBox1 = new Chart(ctx1, {
+    type: 'boxplot',
+    data: {
+      labels: [],
+      datasets: [{
+        backgroundColor: 'rgba(137, 235, 215, .25)',
+        borderColor: 'rgba(137, 235, 215, 1)',
+        borderWidth: 3,
+        padding: 10,
+        itemRadius: 0,
+        data: [
+            {min: 55000,
+                q1: 70000,
+                median: 80000,
+                q3: 90000,
+                max: 105000
+            }
+        ]
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
+          tooltips: {
+            displayColors: false,
+            footerFontStyle: 'regular',
+            bodyFontSize: 14,
+            footerSpacing: 12,
+            backgroundColor: 'rgba(0, 0, 0, 0.9)',
+            xPadding: 15,
+            yPadding: 15,
+            position: 'nearest',
+            cornerRadius: 4,
+            callbacks: {
+              // use label callback to return the desired label
+              label: function(tooltipItem, data) {
+                return;
+              },
+              title: function(tooltipItem, data) {
+                return;
+              },
+              footer: function(tooltipItems, data) {
+                var thisItem = data.datasets[0].data[0];
+                var line1 = 'Lower whisker (lowest 25%): down to $55k';
+                var line2 = '"Box" (middle 50%): 70k to 90k';
+                var line3 = 'Upper whisker (highest 25%): up to 105k';
+                var line4 = 'Median (middle value): $80k'
+                return [line4, line2, line3, line1];
+              }
+            }
+        },
+      scales: {
+        xAxes: [{
+          ticks: {
+            autoSkip: false,
+            fontColor: '#e0e0e3',
+            fontSize: 14,
+            fontStyle: 500,
+          },
+          gridLines: { display: false }
+        }],
+        yAxes: [{
+          display: true,
+          scaleLabel: {
+            display: false
+          },
+          gridLines: { color: "#4D4D59" },
+          ticks: {
+            padding: 20,
+            fontColor: '#e0e0e3',
+            fontSize: 14,
+            fontStyle: 500,
+            stepSize: 10000, // <----- This prop sets the stepSize
+            suggestedMin: 50000,
+            suggestedMax: 110000,
+            beginAtZero: false,
+            callback: function(value, index, values) {
+              if(parseInt(value) >= 1000){
+                return Math.abs(value) > 999 ? '$' + Math.sign(value)*((Math.abs(value)/1000).toFixed(1)) + 'k' : '$' + Math.sign(value)*Math.abs(value)
+                 //return '$' + value2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+              } else {
+                 return '$' + value;
+              }
+            }, 
+          }
+        }]
+      },
+      title: {
+        display: false,
+        text: 'Boxplots of 1 job'
+      }
+    }
+  });
+</script>
 </body>
 </html>
