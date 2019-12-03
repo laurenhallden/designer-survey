@@ -528,3 +528,72 @@
 
 	}
 }
+
+.gender-barbells {
+	list-style: none;
+	padding-inline-start: 0;
+
+	li {
+		border-bottom: 3px solid $green;
+		position: relative;
+		height: 50px;
+		overflow-x: visible;
+        white-space: nowrap;
+
+		&:before,
+		&:after {
+			position: absolute;
+			top: 38px;
+			content: '';
+			width: 20px;
+			height: 20px;
+			border-radius: 1em;
+		}
+
+		&:before {
+			left: 0;
+			background-color: $gray-900;
+			border: 3px solid $green;
+		}
+
+		&:after {
+			right: 0;
+			background-color: $green;
+		}
+		&:nth-child(1) {
+			width: 0.48%;
+			left: 43.59%;
+		}
+
+		&:nth-child(2) {
+			width: 9.25%;
+			left: 45.75%;
+		}
+		&:nth-child(3) {
+			width: 21.25%;
+			left: 36%;
+		}
+		&:nth-child(4) {
+			width: 10.7%;
+			left: 35%;
+		}
+		&:nth-child(5) {
+			width: 9%;
+			left: 7.75%;
+		}
+		&:nth-child(6) {
+			width: 24.43%;
+			left: 70.58%;
+		}
+		&:nth-child(7) {
+			width: 20%;
+			left: 20%;
+		}
+		&:nth-child(8) {
+
+		}
+		&:nth-child(9) {
+
+		}
+	}
+}
