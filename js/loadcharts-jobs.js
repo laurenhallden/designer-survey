@@ -1,5 +1,7 @@
 window.onload = function () {
 
+	Chart.defaults.global.defaultFontFamily = "'Source Code Pro', monospace";
+
 	// Load all box plots together
 	const ctxAll = document.getElementById("canvas-all").getContext("2d");
 	window.myBoxAll = new Chart(ctxAll, {
@@ -12,6 +14,13 @@ window.onload = function () {
 	  },
 	  tooltips: {
       displayColors: false,
+      footerFontStyle: 'regular',
+      bodyFontSize: 14,
+      footerSpacing: 12,
+      backgroundColor: 'rgba(0, 0, 0, 0.9)',
+      xPadding: 15,
+      yPadding: 15,
+      cornerRadius: 4,
       callbacks: {
         // use label callback to return the desired label
         label: function(tooltipItem, data) {
@@ -30,7 +39,7 @@ window.onload = function () {
 	        autoSkip: false,
 	        fontColor: '#e0e0e3',
 	        fontSize: 14,
-	        fontStyle: 500,
+	        fontStyle: 600,
 	      },
 	      gridLines: { display: false }
 	    }],
@@ -43,9 +52,10 @@ window.onload = function () {
 	      ticks: {
 	        fontColor: '#e0e0e3',
 	        fontSize: 14,
-	        fontStyle: 500,
+	        fontStyle: 600,
 	        stepSize: 20000, // <----- This prop sets the stepSize
 	        beginAtZero: false,
+	        padding: 10,
 	        callback: function(value, index, values) {
 	          if(parseInt(value) >= 1000){
 	            return Math.abs(value) > 999 ? '$' + Math.sign(value)*((Math.abs(value)/1000).toFixed(1)) + 'k' : '$' + Math.sign(value)*Math.abs(value)
@@ -91,9 +101,14 @@ window.onload = function () {
 						}]
 					},
 			tooltips: {
-	      displayColors: false,
-	      footerFontStyle: 'regular',
-	      footerSpacing: 5,
+        displayColors: false,
+        footerFontStyle: 'regular',
+        bodyFontSize: 14,
+        footerSpacing: 12,
+        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+        xPadding: 15,
+        yPadding: 15,
+        cornerRadius: 4,
 	      callbacks: {
 	        // use label callback to return the desired label
 	        label: function(tooltipItem, data) {
@@ -119,7 +134,7 @@ window.onload = function () {
             autoSkip: false,
             fontColor: '#e0e0e3',
             fontSize: 14,
-            fontStyle: 500,
+            fontStyle: 600,
           },
           gridLines: { display: false }
         }],
@@ -133,9 +148,10 @@ window.onload = function () {
             padding: 20,
             fontColor: '#e0e0e3',
             fontSize: 14,
-            fontStyle: 500,
+            fontStyle: 600,
             stepSize: 20000, // <----- This prop sets the stepSize
             beginAtZero: false,
+            padding: 10,
             callback: function(value, index, values) {
               if(parseInt(value) >= 1000){
                 return Math.abs(value) > 999 ? '$' + Math.sign(value)*((Math.abs(value)/1000).toFixed(1)) + 'k' : '$' + Math.sign(value)*Math.abs(value)

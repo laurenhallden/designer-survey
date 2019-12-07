@@ -24,7 +24,7 @@
 	</div>
 </section>
 
-<section>
+<section id="gender">
     <div class="container">
         <div class="row text-left">
             <div class="col-lg-9">
@@ -44,15 +44,183 @@
 
             <div class="col-lg-9">
 
-				<div class="card text-white bg-secondary" style="height: 400px">
+				<div class="card text-white bg-secondary">
 					<div class="card-header">
-						Percentage difference between average salaries for men and non-men, by job
+						Compensation gap by role
 					</div>
 					<div class="card-body">
-						<canvas id="canvas-gender"></canvas>
+                        <div class="chart-container" style="position: relative; height: 280px;">
+						  <canvas id="canvas-gender"></canvas>
+                        </div>
 					</div>
 				</div><!-- card -->
 
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9">
+                Pay gaps vary by other factors as well, such as company type and size, as well as by an individual's seniority level.
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">            
+                <table style="width:100%">
+                    <tr>
+                        <th>Company size</th>
+                        <th>Men</th>
+                        <th>Non-men</th>
+                        <th>Gap</th>
+                    </tr>
+                     <tr class="highlight">
+                        <td>11-50 people</td>
+                        <td>$88,800</td>
+                        <td>$73,500</td>
+                        <td><strong>20.8%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>51-249 people</td>
+                        <td>$95,000</td>
+                        <td>$81,500</td>
+                        <td>16.6%</td>
+                    </tr>
+                    <tr>
+                        <td>250+ people</td>
+                        <td>$98,500</td>
+                        <td>$96,900</td>
+                        <td>1.7%</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-lg-6">  
+                <table style="width:100%">
+                    <tr>
+                        <th>Company type</th>
+                        <th>Men</th>
+                        <th>Non-men</th>
+                        <th>Gap</th>
+                    </tr>
+                     <tr class="highlight">
+                        <td>Agency</td>
+                        <td>$92,500</td>
+                        <td>$81,200</td>
+                        <td><strong>13.9%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>In-house</td>
+                        <td>$102,100</td>
+                        <td>$95,000</td>
+                        <td>7.5%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row no-margin">
+            <div class="col-lg-6">
+                <table style="width:100%">
+                    <tr>
+                        <th>Seniority Level</th>
+                        <th>Men</th>
+                        <th>Non-men</th>
+                        <th>Gap</th>
+                    </tr>
+                    <tr>
+                        <td>Junior</td>
+                        <td>$47,900</td>
+                        <td>$49,000</td>
+                        <td>-2.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>$78,000</td>
+                        <td>$77,000</td>
+                        <td>1.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Senior</td>
+                        <td>$95,500</td>
+                        <td>$100,500</td>
+                        <td>-5.2%</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Lead</td>
+                        <td>$134,000</td>
+                        <td>$119,400</td>
+                        <td><strong>12.2%</strong></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="race">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2>Race & Ethnicity</h2>
+                <p>In total, only 64 survey participants identified as non-white. Since our sample size is small, we'll be dividing our respnses in fewer ways.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <table style="width:100%">
+                    <tr>
+                        <th>Seniority Level</th>
+                        <th>White</th>
+                        <th>Non-white</th>
+                        <th>Gap</th>
+                    </tr>
+                    <tr>
+                        <td>Junior</td>
+                        <td>$49,000</td>
+                        <td>$48,900</td>
+                        <td>0.2%</td>
+                    </tr>
+                    <tr>
+                        <td>Intermediate</td>
+                        <td>$75,200</td>
+                        <td>$78,400</td>
+                        <td>-4.3%</td>
+                    </tr>
+                    <tr>
+                        <td>Senior</td>
+                        <td>$100,500</td>
+                        <td>$95,000</td>
+                        <td>5.8%</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Lead</td>
+                        <td>$133,500</td>
+                        <td>$109,000</td>
+                        <td><strong>22.5%</strong></td>
+                    </tr>
+                </table>
+
+                <table style="width:100%">
+                    <tr>
+                        <th>Gender Identity</th>
+                        <th>White</th>
+                        <th>Non-white</th>
+                        <th>Gap</th>
+                    </tr>
+                    <tr>
+                        <td>Men</td>
+                        <td>$93,300</td>
+                        <td>$88,800</td>
+                        <td>5.1%</td>
+                    </tr>
+                    <tr class="highlight">
+                        <td>Non-men</td>
+                        <td>$95,300</td>
+                        <td>$79,500</td>
+                        <td><strong>19.9%</strong></td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>

@@ -72,7 +72,8 @@
 <!-- JS -->
 <script src="/js/data.js"></script>
 <script>
-    const ctx1 = document.getElementById("canvas-1").getContext("2d");
+  Chart.defaults.global.defaultFontFamily = "'Source Code Pro', monospace";
+  const ctx1 = document.getElementById("canvas-1").getContext("2d");
   window.myBox1 = new Chart(ctx1, {
     type: 'boxplot',
     data: {
@@ -107,7 +108,6 @@
             backgroundColor: 'rgba(0, 0, 0, 0.9)',
             xPadding: 15,
             yPadding: 15,
-            position: 'nearest',
             cornerRadius: 4,
             callbacks: {
               // use label callback to return the desired label
@@ -119,10 +119,10 @@
               },
               footer: function(tooltipItems, data) {
                 var thisItem = data.datasets[0].data[0];
-                var line1 = 'Lower whisker (lowest 25%): down to $55k';
-                var line2 = '"Box" (middle 50%): 70k to 90k';
-                var line3 = 'Upper whisker (highest 25%): up to 105k';
-                var line4 = 'Median (middle value): $80k'
+                var line1 = 'Lowest 25%: down to $55k';
+                var line2 = 'Middle 50%: 70k to 90k';
+                var line3 = 'Highest 25%: up to 105k';
+                var line4 = 'Median: $80k'
                 return [line4, line2, line3, line1];
               }
             }
@@ -133,7 +133,7 @@
             autoSkip: false,
             fontColor: '#e0e0e3',
             fontSize: 14,
-            fontStyle: 500,
+            fontStyle: 600,
           },
           gridLines: { display: false }
         }],
@@ -144,10 +144,10 @@
           },
           gridLines: { color: "#4D4D59" },
           ticks: {
-            padding: 20,
+            padding: 10,
             fontColor: '#e0e0e3',
             fontSize: 14,
-            fontStyle: 500,
+            fontStyle: 600,
             stepSize: 10000, // <----- This prop sets the stepSize
             suggestedMin: 50000,
             suggestedMax: 110000,

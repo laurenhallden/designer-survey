@@ -353,12 +353,36 @@
  	}
  }
 
- /*.charts {
- 	.row {
- 		margin-top: 30px;
- 		margin-bottom: 30px;
- 	}
- }*/
+
+/* Tavles */
+
+table {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	td, th {
+		padding: 10px;
+		border: 1px solid $gray-700;
+	}
+	tr {
+		background: $gray-800;
+
+		&.highlight {
+			background: #3498db5e;
+			strong {
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.demographics-tables {
+	table {
+		tr,td {
+		}
+	}
+}
 
 
  /* Medians */
