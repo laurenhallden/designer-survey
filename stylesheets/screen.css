@@ -913,18 +913,19 @@ section + .bg-light {
 /* line 279, ../sass/_components.scss */
 .bg-secondary .card-header, .bg-light .card-header {
   background-color: #4D4D59;
+  font-weight: 700;
 }
-/* line 283, ../sass/_components.scss */
+/* line 284, ../sass/_components.scss */
 .bg-secondary .card-body, .bg-light .card-body {
   background-color: #3A3A43;
 }
 
-/* line 289, ../sass/_components.scss */
+/* line 290, ../sass/_components.scss */
 .charts h1, .charts h2, .charts h3 {
   margin: 0 0 0.5em 0;
 }
 
-/* line 295, ../sass/_components.scss */
+/* line 296, ../sass/_components.scss */
 #accordion .acc-card {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -935,7 +936,7 @@ section + .bg-light {
   padding: 0;
   max-width: 45rem;
 }
-/* line 305, ../sass/_components.scss */
+/* line 306, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header, #accordion .acc-card .acc-card-body {
   background-color: transparent;
   border: 0px;
@@ -943,20 +944,20 @@ section + .bg-light {
   color: white;
   padding: 0;
 }
-/* line 313, ../sass/_components.scss */
+/* line 314, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body {
   margin-bottom: 30px;
 }
-/* line 316, ../sass/_components.scss */
+/* line 317, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a {
   color: #5FD0FF !important;
 }
-/* line 319, ../sass/_components.scss */
+/* line 320, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a:active {
   color: #13baff !important;
   text-decoration: none;
 }
-/* line 326, ../sass/_components.scss */
+/* line 327, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn {
   padding: 20px 0 0px;
   margin-bottom: 10px;
@@ -964,72 +965,72 @@ section + .bg-light {
   font-size: 1.5rem;
   border-radius: 0;
 }
-/* line 333, ../sass/_components.scss */
+/* line 334, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:hover {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
 @media screen and (max-width: 767px) {
-  /* line 333, ../sass/_components.scss */
+  /* line 334, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn:hover {
     border-bottom: 0;
   }
 }
-/* line 341, ../sass/_components.scss */
+/* line 342, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:focus {
   text-decoration: none !important;
 }
 @media screen and (max-width: 767px) {
-  /* line 326, ../sass/_components.scss */
+  /* line 327, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn {
     font-size: 1.6rem;
   }
 }
-/* line 350, ../sass/_components.scss */
+/* line 351, ../sass/_components.scss */
 #accordion .acc-card .btn {
   text-align: left !important;
 }
 
 /* Tavles */
-/* line 359, ../sass/_components.scss */
+/* line 360, ../sass/_components.scss */
 table {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-/* line 364, ../sass/_components.scss */
+/* line 365, ../sass/_components.scss */
 table td, table th {
   padding: 10px;
   border: 1px solid #4D4D59;
 }
-/* line 368, ../sass/_components.scss */
+/* line 369, ../sass/_components.scss */
 table tr {
   background: #3A3A43;
 }
-/* line 371, ../sass/_components.scss */
+/* line 372, ../sass/_components.scss */
 table tr.highlight {
   background: #3498db5e;
 }
-/* line 373, ../sass/_components.scss */
+/* line 374, ../sass/_components.scss */
 table tr.highlight strong {
   font-weight: 700;
 }
 
 /* Medians */
-/* line 390, ../sass/_components.scss */
+/* line 391, ../sass/_components.scss */
 .chart-subheadings {
   display: flex;
   justify-content: space-between;
   width: 160%;
   margin-bottom: 20px;
 }
-/* line 395, ../sass/_components.scss */
+/* line 396, ../sass/_components.scss */
 .chart-subheadings .sub {
   justify-content: space-between;
 }
 
-/* line 400, ../sass/_components.scss */
+/* line 401, ../sass/_components.scss */
 .medians {
   list-style: none;
   padding-inline-start: 0;
@@ -1039,44 +1040,44 @@ table tr.highlight strong {
   text-align: right;
   width: calc(100% - 125px);
 }
-/* line 408, ../sass/_components.scss */
+/* line 409, ../sass/_components.scss */
 .medians li {
   width: 90%;
   position: absolute;
   border-bottom: 1px dashed #89EBD7;
 }
-/* line 413, ../sass/_components.scss */
+/* line 414, ../sass/_components.scss */
 .medians li:nth-child(1) {
   top: 80px;
 }
-/* line 416, ../sass/_components.scss */
+/* line 417, ../sass/_components.scss */
 .medians li:nth-child(2) {
   top: 120px;
 }
-/* line 419, ../sass/_components.scss */
+/* line 420, ../sass/_components.scss */
 .medians li:nth-child(3) {
   top: 160px;
 }
-/* line 422, ../sass/_components.scss */
+/* line 423, ../sass/_components.scss */
 .medians li:nth-child(4) {
   top: 200px;
 }
 
 /* Pills */
-/* line 431, ../sass/_components.scss */
+/* line 432, ../sass/_components.scss */
 .pills {
   list-style: none;
   padding-inline-start: 0;
   margin-top: 0px;
   max-width: 18rem;
 }
-/* line 437, ../sass/_components.scss */
+/* line 438, ../sass/_components.scss */
 .pills li {
   display: block;
   margin-bottom: 5px;
   font-size: 0.75rem;
 }
-/* line 442, ../sass/_components.scss */
+/* line 443, ../sass/_components.scss */
 .pills li .bar-graph {
   display: inline-block;
   vertical-align: middle;
@@ -1086,7 +1087,7 @@ table tr.highlight strong {
   position: relative;
   height: 6px;
 }
-/* line 451, ../sass/_components.scss */
+/* line 452, ../sass/_components.scss */
 .pills li .bar-graph .bar {
   border-radius: 5px;
   background: #89EBD7;
@@ -1095,7 +1096,7 @@ table tr.highlight strong {
   top: 0;
   left: 0;
 }
-/* line 461, ../sass/_components.scss */
+/* line 462, ../sass/_components.scss */
 .pills li .caption {
   display: inline-block;
   vertical-align: middle;
@@ -1103,43 +1104,43 @@ table tr.highlight strong {
   font-weight: 700;
   color: #89EBD7;
 }
-/* line 469, ../sass/_components.scss */
+/* line 470, ../sass/_components.scss */
 .pills li .skill-name {
   margin-top: -8px;
   font-weight: 500;
 }
-/* line 474, ../sass/_components.scss */
+/* line 475, ../sass/_components.scss */
 .pills li:nth-child(1) .bar-graph .bar {
   width: 73%;
 }
-/* line 477, ../sass/_components.scss */
+/* line 478, ../sass/_components.scss */
 .pills li:nth-child(2) .bar-graph .bar {
   width: 73%;
 }
-/* line 480, ../sass/_components.scss */
+/* line 481, ../sass/_components.scss */
 .pills li:nth-child(3) .bar-graph .bar {
   width: 33%;
 }
-/* line 483, ../sass/_components.scss */
+/* line 484, ../sass/_components.scss */
 .pills li:nth-child(4) .bar-graph .bar {
   width: 30%;
 }
-/* line 486, ../sass/_components.scss */
+/* line 487, ../sass/_components.scss */
 .pills li:nth-child(5) .bar-graph .bar {
   width: 21%;
 }
 
-/* line 493, ../sass/_components.scss */
+/* line 494, ../sass/_components.scss */
 .divider {
   padding: 0px 0 30px;
 }
-/* line 496, ../sass/_components.scss */
+/* line 497, ../sass/_components.scss */
 .divider hr {
   border-top: 1px solid #4D4D59;
 }
 
 /* Mailchimp signup */
-/* line 504, ../sass/_components.scss */
+/* line 505, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -1148,11 +1149,11 @@ table tr.highlight strong {
   font-weight: 500;
   width: 100%;
 }
-/* line 512, ../sass/_components.scss */
+/* line 513, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 516, ../sass/_components.scss */
+/* line 517, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -1171,7 +1172,7 @@ table tr.highlight strong {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 535, ../sass/_components.scss */
+/* line 536, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -1190,7 +1191,7 @@ table tr.highlight strong {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 554, ../sass/_components.scss */
+  /* line 555, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
@@ -1198,12 +1199,12 @@ table tr.highlight strong {
   }
 }
 
-/* line 562, ../sass/_components.scss */
+/* line 563, ../sass/_components.scss */
 .gender-barbells {
   list-style: none;
   padding-inline-start: 0;
 }
-/* line 566, ../sass/_components.scss */
+/* line 567, ../sass/_components.scss */
 .gender-barbells li {
   border-bottom: 3px solid #89EBD7;
   position: relative;
@@ -1211,7 +1212,7 @@ table tr.highlight strong {
   overflow-x: visible;
   white-space: nowrap;
 }
-/* line 573, ../sass/_components.scss */
+/* line 574, ../sass/_components.scss */
 .gender-barbells li:before, .gender-barbells li:after {
   position: absolute;
   top: 38px;
@@ -1220,48 +1221,48 @@ table tr.highlight strong {
   height: 20px;
   border-radius: 1em;
 }
-/* line 583, ../sass/_components.scss */
+/* line 584, ../sass/_components.scss */
 .gender-barbells li:before {
   left: 0;
   background-color: #2C2C32;
   border: 3px solid #89EBD7;
 }
-/* line 589, ../sass/_components.scss */
+/* line 590, ../sass/_components.scss */
 .gender-barbells li:after {
   right: 0;
   background-color: #89EBD7;
 }
-/* line 593, ../sass/_components.scss */
+/* line 594, ../sass/_components.scss */
 .gender-barbells li:nth-child(1) {
   width: 0.48%;
   left: 43.59%;
 }
-/* line 598, ../sass/_components.scss */
+/* line 599, ../sass/_components.scss */
 .gender-barbells li:nth-child(2) {
   width: 9.25%;
   left: 45.75%;
 }
-/* line 602, ../sass/_components.scss */
+/* line 603, ../sass/_components.scss */
 .gender-barbells li:nth-child(3) {
   width: 21.25%;
   left: 36%;
 }
-/* line 606, ../sass/_components.scss */
+/* line 607, ../sass/_components.scss */
 .gender-barbells li:nth-child(4) {
   width: 10.7%;
   left: 35%;
 }
-/* line 610, ../sass/_components.scss */
+/* line 611, ../sass/_components.scss */
 .gender-barbells li:nth-child(5) {
   width: 9%;
   left: 7.75%;
 }
-/* line 614, ../sass/_components.scss */
+/* line 615, ../sass/_components.scss */
 .gender-barbells li:nth-child(6) {
   width: 24.43%;
   left: 70.58%;
 }
-/* line 618, ../sass/_components.scss */
+/* line 619, ../sass/_components.scss */
 .gender-barbells li:nth-child(7) {
   width: 20%;
   left: 20%;
