@@ -1,3 +1,6 @@
+// DELTE THIS
+
+
 var chartData = {
   datasets: [{
     type: "scatter",

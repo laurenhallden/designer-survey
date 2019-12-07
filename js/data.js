@@ -2,6 +2,8 @@
 // and loadcharts.js or changecharts.js calls it
 
 
+// JOBS PAGE DATA
+
 // All box plots together
 
 const boxplotDataAll = {
@@ -344,7 +346,24 @@ var boxPlots = [
     }
 ]
 
-// histogram data
+// DEMOGRAPHICS PAGE DATA
+
+// Gaps by job category and gender
+
+const categoryAndGender = {
+  // define label tree
+  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],['Manager',''],['Overall','']],
+  datasets: [{
+    backgroundColor: 'rgba(97, 167, 208, .25)',
+    borderColor: 'rgba(97, 167, 208, 1)',
+    borderWidth: 3,
+    padding: 10,
+    itemRadius: 0,
+    data: [15.6,11.7,30.4,12.6,-0.5,9.6,20.2,9.9]
+  }]
+};
+
+// histogram data DLETE THIS
 
 var jobCharts = [
 

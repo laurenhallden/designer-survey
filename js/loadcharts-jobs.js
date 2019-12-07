@@ -154,8 +154,6 @@ window.onload = function () {
     }
   });
 
-
-
   // load the first job category's charts
   loadJobChart(1,'Content Designer');
 }

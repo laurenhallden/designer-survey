@@ -27,24 +27,29 @@
 <section>
     <div class="container">
         <div class="row text-left">
-            <div class="col-lg-6">
+            <div class="col-lg-9">
 
 				<h2>Gender Identity</h2>
 
 				<p>Nationally, the gender pay gap between men and women in relevant fields (Arts & Design-related and Computer-related) is 13-15%. What does that look like for Philly?</p>
 
-				<p>From our data, across all roles, men earned <strong>9.9%</strong> more than other gender identities. But as you’ll see, this varies greatly by role and is brought down considerably by UX Designer or Researcher, which represents the only job category where men make less than other gender identities.</p>
+            </div>
+        </div>
 
+        <div class="row">
+
+            <div class="col-lg-3">
+                <p>From our data, across all roles, men earned <strong>9.9%</strong> more than other gender identities. But as you’ll see, this varies greatly by role and is brought down considerably by UX Designer or Researcher, which represents the only job category where men make less than other gender identities.</p>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-9">
 
 				<div class="card text-white bg-secondary" style="height: 400px">
 					<div class="card-header">
-						Percentage difference between average salaries for men and non-men
+						Percentage difference between average salaries for men and non-men, by job
 					</div>
 					<div class="card-body">
-						[data goes here]
+						<canvas id="canvas-gender"></canvas>
 					</div>
 				</div><!-- card -->
 
@@ -66,5 +71,7 @@
 {% include footer.html %}
 
 <!-- JS -->
+<script src="/js/data.js"></script>
+<script src="/js/loadcharts-demographics.js"></script>
 </body>
 </html>
