@@ -370,7 +370,8 @@ table {
 		background: $gray-800;
 
 		&.highlight {
-			background: #3498db5e;
+			background: rgba(97, 167, 208, .3);
+			border: 0px solid rgba(97, 167, 208, 1);
 			strong {
 				font-weight: 700;
 			}
