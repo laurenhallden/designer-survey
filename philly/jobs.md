@@ -1,6 +1,6 @@
 ---
 layout: results-jobs
-title: Salaries by Job
+title: Compensation by Job
 permalink: /philly/jobs
-summary: Salaries by Job
+summary: Compensation by Job
 ---

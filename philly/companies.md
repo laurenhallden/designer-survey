@@ -1,6 +1,6 @@
 ---
 layout: results-companies
-title: Salaries by Company Type
+title: Compensation by Company Type
 permalink: /philly/companies
-summary: Salaries by Company Type
+summary: Compensation by Company Type
 ---
