@@ -16,45 +16,45 @@ const boxplotDataAll = {
     padding: 10,
     itemRadius: 0,
     data: [
-        {min: 38400,
+        {min: 38000,
             q1: 49000,
             median: 64000,
-            q3: 76000,
-            max: 114000
+            q3: 74000,
+            max: 95000
         },
-        {min: 51840,
+        {min: 52000,
             q1: 70000,
-            median: 79500,
-            q3: 92500,
+            median: 80000,
+            q3: 93000,
             max: 97000
         },
         {min: 48000,
-            q1: 63700,
-            median: 85250,
-            q3: 111420,
-            max: 174000
+            q1: 63000,
+            median: 83000,
+            q3: 107000,
+            max: 160000
         },
         {min: 35000,
-            q1: 71250,
-            median: 90500,
-            q3: 116000,
-            max: 175000
+            q1: 71000,
+            median: 90000,
+            q3: 111000,
+            max: 170000
         },
         {min: 48000,
-            q1: 78720,
-            median: 93588,
-            q3: 124800,
+            q1: 81000,
+            median: 95000,
+            q3: 125000,
             max: 154000
         },
         {min: 62000,
-            q1: 85490,
-            median: 101250,
+            q1: 84000,
+            median: 100000,
             q3: 120000,
             max: 135000
         },
         {min: 53000,
             q1: 81000,
-            median: 128500,
+            median: 129000,
             q3: 156000,
             max: 240000
         }
@@ -67,10 +67,10 @@ var jobCategoryData = [
     // Content Designer
     {
         name: 'Content Designer',
-        min: '$51,840',
+        min: '$52,000',
         q1: '$70,000',
-        median: '$79,500',
-        q3: '$92,500',
+        median: '$80,000',
+        q3: '$93,000',
         max: '$97,000',
         thisJob: 'Determines how information is communicated to audiences.',
         skillName1: 'Content Strategy',
@@ -85,8 +85,8 @@ var jobCategoryData = [
     {
         name: 'Design Director',
         min: '$62,000',
-        q1: '$85,490',
-        median: '$101,250',
+        q1: '$84,000',
+        median: '$100,000',
         q3: '$120,000',
         max:'$135,000',
         thisJob: 'Manages design systems used by other designers. (May also be called Creative or Art Director).',
@@ -106,10 +106,10 @@ var jobCategoryData = [
     {
         name: 'Front-end Designer',
         min: '$48,000',
-        q1: '$63,700',
-        median: '$85,250',
-        q3: '$111,420',
-        max: '$174,000',
+        q1: '$63,000',
+        median: '$83,000',
+        q3: '$107,000',
+        max: '$160,000',
         thisJob: 'Creates and codes websites and user interfaces.',
         skillName1: 'Front-end Development',
         skillPercent1: 50,
@@ -130,7 +130,7 @@ var jobCategoryData = [
         name: 'Manager',
         min: '$53,000',
         q1: '$81,000',
-        median: '$128,500',
+        median: '$129,000',
         q3: '$156,000',
         max: '$240,000',
         thisJob: 'Runs design teams and manages team members.',
@@ -150,9 +150,9 @@ var jobCategoryData = [
     {
         name: 'UX Designer or Researcher',
         min: '$48,000',
-        q1: '$78,720',
-        median: '$93,588',
-        q3: '$124,800',
+        q1: '$81,000',
+        median: '$95,000',
+        q3: '$125,000',
         max: '$154,000',
         thisJob: 'Designs the best ways for users to interact with and experience digital products.',
         skillName1: 'UX or Experience Design',
@@ -165,10 +165,10 @@ var jobCategoryData = [
     {
         name: 'UX/UI Designer',
         min: '$35,000',
-        q1: '$71,250',
-        median: '$90,500',
-        q3: '$116,000',
-        max: '$175,000',
+        q1: '$71,000',
+        median: '$90,000',
+        q3: '$111,000',
+        max: '$170,000',
         thisJob: 'Works on both user experience design and visual interface design.',
         skillName1: 'UX or Experience Design',
         skillPercent1: 100,
@@ -183,11 +183,11 @@ var jobCategoryData = [
     // Visual Designer
     {
         name: 'Visual Designer',
-        min: '$38,400',
+        min: '$38,000',
         q1: '$49,000',
         median: '$64,000',
-        q3: '$76,000',
-        max: '$114,000',
+        q3: '$74,000',
+        max: '$95,000',
         thisJob: 'May include marketing, brand, print, or visual UI design (but not UX).',
         skillName1: 'Visual Design',
         skillPercent1: 73,
@@ -214,10 +214,10 @@ var boxPlots = [
         padding: 10,
         itemRadius: 0,
         data: [
-            {min: 51840,
+            {min: 52000,
                 q1: 70000,
-                median: 79500,
-                q3: 92500,
+                median: 80000,
+                q3: 93000,
                 max: 97000
             },
         ]
@@ -236,8 +236,8 @@ var boxPlots = [
         itemRadius: 0,
         data: [
             {min: 62000,
-                q1: 85490,
-                median: 101250,
+                q1: 84000,
+                median: 100000,
                 q3: 120000,
                 max: 135000
             }
@@ -256,10 +256,10 @@ var boxPlots = [
         itemRadius: 0,
         data: [
             {min: 48000,
-                q1: 63700,
-                median: 85250,
-                q3: 111420,
-                max: 174000
+                q1: 63000,
+                median: 83000,
+                q3: 107000,
+                max: 160000
             }
         ]
       }]
@@ -277,7 +277,7 @@ var boxPlots = [
         data: [
             {min: 53000,
                 q1: 81000,
-                median: 128500,
+                median: 129000,
                 q3: 156000,
                 max: 240000
             }
@@ -296,9 +296,9 @@ var boxPlots = [
         itemRadius: 0,
         data: [
             {min: 48000,
-                q1: 78720,
-                median: 93588,
-                q3: 124800,
+                q1: 81000,
+                median: 95000,
+                q3: 125000,
                 max: 154000
             }
         ]
@@ -316,10 +316,10 @@ var boxPlots = [
         itemRadius: 0,
         data: [
             {min: 35000,
-                q1: 71250,
-                median: 90500,
-                q3: 116000,
-                max: 175000
+                q1: 71000,
+                median: 90000,
+                q3: 111000,
+                max: 170000
             }
         ]
       }]
@@ -335,11 +335,11 @@ var boxPlots = [
         padding: 10,
         itemRadius: 0,
         data: [
-            {min: 38400,
+            {min: 38000,
                 q1: 49000,
                 median: 64000,
-                q3: 76000,
-                max: 114000
+                q3: 74000,
+                max: 95000
             }
         ]
       }]
@@ -352,14 +352,53 @@ var boxPlots = [
 
 const categoryAndGender = {
   // define label tree
-  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],['Manager',''],['Overall','']],
+  labels: [['Visual','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],['Manager',''],['Overall','']],
   datasets: [{
     backgroundColor: 'rgba(97, 167, 208, .25)',
     borderColor: 'rgba(97, 167, 208, 1)',
     borderWidth: 3,
     padding: 10,
     itemRadius: 0,
-    data: [15.6,11.7,30.4,12.6,-0.5,9.6,20.2,9.9]
+    data: [28.2,35.4,17.8,-4.1,8.8,23.2,17.1]
+  }]
+};
+
+
+const boxplotDataGenderAndRace = {
+  // define label tree
+  labels: [['Men:','white'],['Men:','non-white'],['Non-men:','white'],['Non-men:','non-white']],
+  datasets: [{
+    backgroundColor: 'rgba(97, 167, 208, .25)',
+    borderColor: 'rgba(97, 167, 208, 1)',
+    borderWidth: 3,
+    padding: 10,
+    itemRadius: 0,
+    data: [
+        {min: 38000,
+            q1: 74000,
+            median: 95000,
+            q3: 123000,
+            max: 192000
+        },
+        {min: 46000,
+            q1: 73000,
+            median: 95000,
+            q3: 123000,
+            max: 185000
+        },
+        {min: 35000,
+            q1: 67000,
+            median: 82000,
+            q3: 114000,
+            max: 180000
+        },
+        {min: 40000,
+            q1: 62000,
+            median: 78000,
+            q3: 94000,
+            max: 140000
+        }
+    ]
   }]
 };
 

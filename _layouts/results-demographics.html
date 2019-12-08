@@ -10,13 +10,13 @@
 {% include subnav.html %}
 
 <section>
-    <div class="container">
+    <div class="container article">
         <div class="row text-left">
             <div class="col-lg-9">
                 <h1>{{ page.title }}</h1>
                 <p>When looking at pay disparity, it is well-reported nationally that cisgender straight white men earn more than their counterparts across gender and racial/ethnic identities. We therefore did analysis of this majority against all other groups, such as “Men vs. Non-Men” and “White vs. Non-white.” (Read more about why we did this in our <a href="/philly/methodology#group-responses" title="Chapter: Methodoloy - Group Responses">methodology.)</a></p>
 
-                <p>In almost all cases other than gender identity, the datasets we’re dealing with are very imbalanced: straight responses (219) represent over four times the number of other identities (53), likewise with white responses (208) versus other identities (64). It means that our averages are more susceptible to variation, and we’ve removed some with highly imbalanced datasets. In particular, while some findings here show no disparity or an average above the majority group, <strong>this does not in any way negate the experiences of individuals.</strong> Privilege is intersectional and manifests in many ways that are not represented by the questions we’ve asked.</p>
+                <p>In almost all cases other than gender identity, the datasets we’re dealing with are very imbalanced: straight responses (219) represent over four times the number of other identities (53), likewise with white responses (208) versus other identities (64). It means that our medians are more susceptible to variation, and we’ve removed some categories with highly imbalanced datasets. In particular, while some findings here show no disparity or a median above the majority group, <strong>this does not in any way negate the experiences of individuals.</strong> Privilege is intersectional and manifests in many ways that are not represented by the questions we’ve asked.</p>
 
 				<p>From the lens of compensation, these findings are meant to help us to focus and hone our efforts towards the most critical problems.</p>
 			</div>
@@ -41,7 +41,7 @@
         <div class="row">
 
             <div class="col-lg-3">
-                <p>From our data, across all roles, men earned <strong>9.9%</strong> more than other gender identities. But as you’ll see, this varies greatly by role and is brought down considerably by UX Designer or Researcher, which represents the only job category where men make less than other gender identities.</p>
+                <p>From our data, across all roles, men earned <strong>17.1%</strong> more than other gender identities. But as you’ll see, this varies greatly by role and is brought down considerably by UX Designer or Researcher, which represents the only job category where men make less than other gender identities.</p>
             </div>
 
             <div class="col-lg-9">
@@ -75,23 +75,29 @@
                         <th>Non-men</th>
                         <th>Gap</th>
                     </tr>
-                     <tr class="highlight">
+                     <tr>
+                        <td>1-10 people</td>
+                        <td style="border-right: 0px">Not enough data</td>
+                        <td style="border-left: 0px; border-right: 0px;"></td>
+                        <td style="border-left: 0px;"></td>
+                    </tr>
+                    <tr class="highlight">
                         <td>11-50 people</td>
-                        <td>$88,800</td>
-                        <td>$73,500</td>
-                        <td><strong>20.8%</strong></td>
+                        <td>$88,000</td>
+                        <td>$70,000</td>
+                        <td><strong>25.7%</strong></td>
                     </tr>
                     <tr>
                         <td>51-249 people</td>
                         <td>$95,000</td>
-                        <td>$81,500</td>
-                        <td>16.6%</td>
+                        <td>$80,900</td>
+                        <td>17.4%</td>
                     </tr>
                     <tr>
                         <td>250+ people</td>
-                        <td>$98,500</td>
-                        <td>$96,900</td>
-                        <td>1.7%</td>
+                        <td>$107,800</td>
+                        <td>$91,000</td>
+                        <td>18.5%</td>
                     </tr>
                 </table>
             </div>
@@ -104,17 +110,17 @@
                         <th>Non-men</th>
                         <th>Gap</th>
                     </tr>
-                     <tr class="highlight">
-                        <td>Agency</td>
-                        <td>$92,500</td>
-                        <td>$81,200</td>
-                        <td><strong>13.9%</strong></td>
-                    </tr>
                     <tr>
+                        <td>Agency</td>
+                        <td>$91,600</td>
+                        <td>$81,000</td>
+                        <td>13.1%</td>
+                    </tr>
+                    <tr class="highlight">
                         <td>In-house</td>
-                        <td>$102,100</td>
-                        <td>$95,000</td>
-                        <td>7.5%</td>
+                        <td>$102,000</td>
+                        <td>$82,400</td>
+                        <td><strong>23.8%</strong></td>
                     </tr>
                 </table>
             </div>
@@ -131,27 +137,27 @@
                     </tr>
                     <tr>
                         <td>Junior</td>
-                        <td>$47,900</td>
+                        <td>$47,800</td>
                         <td>$49,000</td>
-                        <td>-2.3%</td>
+                        <td>-2.5%</td>
                     </tr>
                     <tr>
                         <td>Intermediate</td>
-                        <td>$78,000</td>
-                        <td>$77,000</td>
-                        <td>1.3%</td>
+                        <td>$75,000</td>
+                        <td>$75,100</td>
+                        <td>-0.1%</td>
                     </tr>
                     <tr>
                         <td>Senior</td>
-                        <td>$95,500</td>
-                        <td>$100,500</td>
-                        <td>-5.2%</td>
+                        <td>$100,000</td>
+                        <td>$95,700</td>
+                        <td>4.5%</td>
                     </tr>
                     <tr class="highlight">
                         <td>Lead</td>
-                        <td>$134,000</td>
-                        <td>$119,400</td>
-                        <td><strong>12.2%</strong></td>
+                        <td>$135,000</td>
+                        <td>$117,700</td>
+                        <td><strong>14.7%</strong></td>
                     </tr>
                 </table>
             </div>
@@ -166,7 +172,29 @@
         <div class="row">
             <div class="col-lg-9">
                 <h2>Race & Ethnicity</h2>
-                <p>In total, only 64 survey participants identified as non-white. Since our sample size is small, we'll be dividing our respnses in fewer ways.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>When we looked at disparities betweed racial identities, we saw that white respondents had a higher median pay by <strong>6.8%</strong>. However, the analyses we're able to perform are limited by a small sample size; in total, only 64 survey participants identified as non-white.</p>
+            </div>
+            <div class="col-lg-6">
+                <div class="card text-white bg-secondary">
+                    <div class="card-header">
+                        Compensation distributions by gender and racial identities
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container" style="position: relative; height: 460px;">
+                          <canvas id="canvas-gender-race"></canvas>
+                        </div>
+                    </div>
+                </div><!-- card -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9">
+                Gaps by other factors were harder to consistently identify, which may be a result of the smaller sample size.
             </div>
         </div>
 
@@ -181,48 +209,50 @@
                     </tr>
                     <tr>
                         <td>Junior</td>
-                        <td>$49,000</td>
-                        <td>$48,900</td>
-                        <td>0.2%</td>
+                        <td>$48,500</td>
+                        <td>$48,800</td>
+                        <td>-0.6%</td>
                     </tr>
                     <tr>
                         <td>Intermediate</td>
-                        <td>$75,200</td>
-                        <td>$78,400</td>
-                        <td>-4.3%</td>
+                        <td>$73,000</td>
+                        <td>$78,300</td>
+                        <td>-7.3%</td>
                     </tr>
                     <tr>
                         <td>Senior</td>
-                        <td>$100,500</td>
+                        <td>$100,000</td>
                         <td>$95,000</td>
-                        <td>5.8%</td>
+                        <td>5.4%</td>
                     </tr>
-                    <tr class="highlight">
+                    <tr>
                         <td>Lead</td>
-                        <td>$133,500</td>
-                        <td>$109,000</td>
-                        <td><strong>22.5%</strong></td>
+                        <td>$125,600</td>
+                        <td>$133,000</td>
+                        <td>-6.0%</td>
                     </tr>
                 </table>
+            </div>
 
+            <div class="col-lg-6">
                 <table style="width:100%">
                     <tr>
-                        <th>Gender Identity</th>
+                        <th>Company type</th>
                         <th>White</th>
                         <th>Non-white</th>
                         <th>Gap</th>
                     </tr>
                     <tr>
-                        <td>Men</td>
-                        <td>$93,300</td>
-                        <td>$88,800</td>
-                        <td>5.1%</td>
+                        <td>Agency</td>
+                        <td>$85,000</td>
+                        <td>$82,200</td>
+                        <td>3.4%</td>
                     </tr>
                     <tr class="highlight">
-                        <td>Non-men</td>
-                        <td>$95,300</td>
-                        <td>$79,500</td>
-                        <td><strong>19.9%</strong></td>
+                        <td>In-house</td>
+                        <td>$95,000</td>
+                        <td>$84,000</td>
+                        <td><strong>13.1%</strong></td>
                     </tr>
                 </table>
             </div>
