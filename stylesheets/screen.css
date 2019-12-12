@@ -826,19 +826,39 @@ section + .bg-light {
   background-color: #5FD0FF;
   color: #2C2C32;
   font-weight: 600;
+  border: 2px solid #5FD0FF;
 }
-/* line 199, ../sass/_components.scss */
+/* line 200, ../sass/_components.scss */
 .btn-primary:hover {
   background-color: #13baff !important;
+  border-color: #13baff !important;
   color: #2C2C32;
 }
-/* line 204, ../sass/_components.scss */
+/* line 206, ../sass/_components.scss */
 .btn-primary:active {
   background-color: #008bc5 !important;
+  border-color: #13baff !important;
+}
+
+/* line 212, ../sass/_components.scss */
+.btn-outline-primary {
+  color: #5FD0FF;
+  border: 2px solid #5FD0FF;
+}
+/* line 216, ../sass/_components.scss */
+.btn-outline-primary:hover {
+  color: #13baff !important;
+  border-color: #13baff !important;
+  background: transparent;
+}
+/* line 222, ../sass/_components.scss */
+.btn-outline-primary:active {
+  color: #008bc5 !important;
+  border-color: #13baff !important;
 }
 
 /* Cards */
-/* line 211, ../sass/_components.scss */
+/* line 230, ../sass/_components.scss */
 .hero-card {
   background-image: url("/images/hero-bg.png");
   background-position: center;
@@ -848,7 +868,7 @@ section + .bg-light {
   border-radius: 8px;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
-/* line 220, ../sass/_components.scss */
+/* line 239, ../sass/_components.scss */
 .hero-card p.small {
   font-size: .8rem;
   margin-top: 2rem;
@@ -856,18 +876,18 @@ section + .bg-light {
   font-weight: 300;
 }
 @media screen and (max-width: 767px) {
-  /* line 211, ../sass/_components.scss */
+  /* line 230, ../sass/_components.scss */
   .hero-card {
     padding: 80px 30px;
   }
 }
 
-/* line 233, ../sass/_components.scss */
+/* line 252, ../sass/_components.scss */
 .hero p {
   font-size: 1.2rem;
 }
 
-/* line 238, ../sass/_components.scss */
+/* line 257, ../sass/_components.scss */
 .card {
   margin-bottom: 10px;
   font-family: 'Source Code Pro', monospace;
@@ -876,56 +896,56 @@ section + .bg-light {
   font-weight: 400;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
-/* line 246, ../sass/_components.scss */
+/* line 265, ../sass/_components.scss */
 .card strong {
   font-weight: 700;
 }
-/* line 250, ../sass/_components.scss */
+/* line 269, ../sass/_components.scss */
 .card h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-/* line 255, ../sass/_components.scss */
+/* line 274, ../sass/_components.scss */
 .card a {
   color: #89EBD7 !important;
   font-weight: 600;
 }
-/* line 259, ../sass/_components.scss */
+/* line 278, ../sass/_components.scss */
 .card a:hover {
   border-bottom: 0;
   color: #48e0c1 !important;
 }
-/* line 264, ../sass/_components.scss */
+/* line 283, ../sass/_components.scss */
 .card a:active {
   color: #20bb9c !important;
 }
 
-/* line 270, ../sass/_components.scss */
+/* line 289, ../sass/_components.scss */
 .card-text {
   margin-bottom: .5rem;
 }
 
-/* line 274, ../sass/_components.scss */
+/* line 293, ../sass/_components.scss */
 .bg-primary {
   background-color: #13baff !important;
 }
 
-/* line 279, ../sass/_components.scss */
+/* line 298, ../sass/_components.scss */
 .bg-secondary .card-header, .bg-light .card-header {
   background-color: #4D4D59;
   font-weight: 700;
 }
-/* line 284, ../sass/_components.scss */
+/* line 303, ../sass/_components.scss */
 .bg-secondary .card-body, .bg-light .card-body {
   background-color: #3A3A43;
 }
 
-/* line 290, ../sass/_components.scss */
+/* line 309, ../sass/_components.scss */
 .charts h1, .charts h2, .charts h3 {
   margin: 0 0 0.5em 0;
 }
 
-/* line 296, ../sass/_components.scss */
+/* line 315, ../sass/_components.scss */
 #accordion .acc-card {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -936,7 +956,7 @@ section + .bg-light {
   padding: 0;
   max-width: 45rem;
 }
-/* line 306, ../sass/_components.scss */
+/* line 325, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header, #accordion .acc-card .acc-card-body {
   background-color: transparent;
   border: 0px;
@@ -944,20 +964,20 @@ section + .bg-light {
   color: white;
   padding: 0;
 }
-/* line 314, ../sass/_components.scss */
+/* line 333, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body {
   margin-bottom: 30px;
 }
-/* line 317, ../sass/_components.scss */
+/* line 336, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a {
   color: #5FD0FF !important;
 }
-/* line 320, ../sass/_components.scss */
+/* line 339, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a:active {
   color: #13baff !important;
   text-decoration: none;
 }
-/* line 327, ../sass/_components.scss */
+/* line 346, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn {
   padding: 20px 0 0px;
   margin-bottom: 10px;
@@ -965,73 +985,73 @@ section + .bg-light {
   font-size: 1.5rem;
   border-radius: 0;
 }
-/* line 334, ../sass/_components.scss */
+/* line 353, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:hover {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
 @media screen and (max-width: 767px) {
-  /* line 334, ../sass/_components.scss */
+  /* line 353, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn:hover {
     border-bottom: 0;
   }
 }
-/* line 342, ../sass/_components.scss */
+/* line 361, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:focus {
   text-decoration: none !important;
 }
 @media screen and (max-width: 767px) {
-  /* line 327, ../sass/_components.scss */
+  /* line 346, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn {
     font-size: 1.6rem;
   }
 }
-/* line 351, ../sass/_components.scss */
+/* line 370, ../sass/_components.scss */
 #accordion .acc-card .btn {
   text-align: left !important;
 }
 
 /* Tavles */
-/* line 360, ../sass/_components.scss */
+/* line 379, ../sass/_components.scss */
 table {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-/* line 365, ../sass/_components.scss */
+/* line 384, ../sass/_components.scss */
 table td, table th {
   padding: 10px;
   border: 1px solid #4D4D59;
 }
-/* line 369, ../sass/_components.scss */
+/* line 388, ../sass/_components.scss */
 table tr {
   background: #3A3A43;
 }
-/* line 372, ../sass/_components.scss */
+/* line 391, ../sass/_components.scss */
 table tr.highlight {
   background: rgba(97, 167, 208, 0.3);
   border: 0px solid #61a7d0;
 }
-/* line 375, ../sass/_components.scss */
+/* line 394, ../sass/_components.scss */
 table tr.highlight strong {
   font-weight: 700;
 }
 
 /* Medians */
-/* line 392, ../sass/_components.scss */
+/* line 411, ../sass/_components.scss */
 .chart-subheadings {
   display: flex;
   justify-content: space-between;
   width: 160%;
   margin-bottom: 20px;
 }
-/* line 397, ../sass/_components.scss */
+/* line 416, ../sass/_components.scss */
 .chart-subheadings .sub {
   justify-content: space-between;
 }
 
-/* line 402, ../sass/_components.scss */
+/* line 421, ../sass/_components.scss */
 .medians {
   list-style: none;
   padding-inline-start: 0;
@@ -1041,44 +1061,44 @@ table tr.highlight strong {
   text-align: right;
   width: calc(100% - 125px);
 }
-/* line 410, ../sass/_components.scss */
+/* line 429, ../sass/_components.scss */
 .medians li {
   width: 90%;
   position: absolute;
   border-bottom: 1px dashed #89EBD7;
 }
-/* line 415, ../sass/_components.scss */
+/* line 434, ../sass/_components.scss */
 .medians li:nth-child(1) {
   top: 80px;
 }
-/* line 418, ../sass/_components.scss */
+/* line 437, ../sass/_components.scss */
 .medians li:nth-child(2) {
   top: 120px;
 }
-/* line 421, ../sass/_components.scss */
+/* line 440, ../sass/_components.scss */
 .medians li:nth-child(3) {
   top: 160px;
 }
-/* line 424, ../sass/_components.scss */
+/* line 443, ../sass/_components.scss */
 .medians li:nth-child(4) {
   top: 200px;
 }
 
 /* Pills */
-/* line 433, ../sass/_components.scss */
+/* line 452, ../sass/_components.scss */
 .pills {
   list-style: none;
   padding-inline-start: 0;
   margin-top: 0px;
   max-width: 18rem;
 }
-/* line 439, ../sass/_components.scss */
+/* line 458, ../sass/_components.scss */
 .pills li {
   display: block;
   margin-bottom: 5px;
   font-size: 0.75rem;
 }
-/* line 444, ../sass/_components.scss */
+/* line 463, ../sass/_components.scss */
 .pills li .bar-graph {
   display: inline-block;
   vertical-align: middle;
@@ -1088,7 +1108,7 @@ table tr.highlight strong {
   position: relative;
   height: 6px;
 }
-/* line 453, ../sass/_components.scss */
+/* line 472, ../sass/_components.scss */
 .pills li .bar-graph .bar {
   border-radius: 5px;
   background: #89EBD7;
@@ -1097,7 +1117,7 @@ table tr.highlight strong {
   top: 0;
   left: 0;
 }
-/* line 463, ../sass/_components.scss */
+/* line 482, ../sass/_components.scss */
 .pills li .caption {
   display: inline-block;
   vertical-align: middle;
@@ -1105,43 +1125,52 @@ table tr.highlight strong {
   font-weight: 700;
   color: #89EBD7;
 }
-/* line 471, ../sass/_components.scss */
+/* line 490, ../sass/_components.scss */
 .pills li .skill-name {
   margin-top: -8px;
   font-weight: 500;
 }
-/* line 476, ../sass/_components.scss */
+/* line 495, ../sass/_components.scss */
 .pills li:nth-child(1) .bar-graph .bar {
   width: 73%;
 }
-/* line 479, ../sass/_components.scss */
+/* line 498, ../sass/_components.scss */
 .pills li:nth-child(2) .bar-graph .bar {
   width: 73%;
 }
-/* line 482, ../sass/_components.scss */
+/* line 501, ../sass/_components.scss */
 .pills li:nth-child(3) .bar-graph .bar {
   width: 33%;
 }
-/* line 485, ../sass/_components.scss */
+/* line 504, ../sass/_components.scss */
 .pills li:nth-child(4) .bar-graph .bar {
   width: 30%;
 }
-/* line 488, ../sass/_components.scss */
+/* line 507, ../sass/_components.scss */
 .pills li:nth-child(5) .bar-graph .bar {
   width: 21%;
 }
 
-/* line 495, ../sass/_components.scss */
+/* line 514, ../sass/_components.scss */
 .divider {
   padding: 0px 0 30px;
 }
-/* line 498, ../sass/_components.scss */
+/* line 517, ../sass/_components.scss */
 .divider hr {
   border-top: 1px solid #4D4D59;
 }
 
+/* line 523, ../sass/_components.scss */
+.code {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
+  padding: 0px 5px;
+  background: #4D4D59;
+  border-radius: 5px;
+}
+
 /* Mailchimp signup */
-/* line 506, ../sass/_components.scss */
+/* line 534, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -1150,11 +1179,11 @@ table tr.highlight strong {
   font-weight: 500;
   width: 100%;
 }
-/* line 514, ../sass/_components.scss */
+/* line 542, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 518, ../sass/_components.scss */
+/* line 546, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -1173,7 +1202,7 @@ table tr.highlight strong {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 537, ../sass/_components.scss */
+/* line 565, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -1192,7 +1221,7 @@ table tr.highlight strong {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 556, ../sass/_components.scss */
+  /* line 584, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
@@ -1200,12 +1229,12 @@ table tr.highlight strong {
   }
 }
 
-/* line 564, ../sass/_components.scss */
+/* line 592, ../sass/_components.scss */
 .gender-barbells {
   list-style: none;
   padding-inline-start: 0;
 }
-/* line 568, ../sass/_components.scss */
+/* line 596, ../sass/_components.scss */
 .gender-barbells li {
   border-bottom: 3px solid #89EBD7;
   position: relative;
@@ -1213,7 +1242,7 @@ table tr.highlight strong {
   overflow-x: visible;
   white-space: nowrap;
 }
-/* line 575, ../sass/_components.scss */
+/* line 603, ../sass/_components.scss */
 .gender-barbells li:before, .gender-barbells li:after {
   position: absolute;
   top: 38px;
@@ -1222,48 +1251,48 @@ table tr.highlight strong {
   height: 20px;
   border-radius: 1em;
 }
-/* line 585, ../sass/_components.scss */
+/* line 613, ../sass/_components.scss */
 .gender-barbells li:before {
   left: 0;
   background-color: #2C2C32;
   border: 3px solid #89EBD7;
 }
-/* line 591, ../sass/_components.scss */
+/* line 619, ../sass/_components.scss */
 .gender-barbells li:after {
   right: 0;
   background-color: #89EBD7;
 }
-/* line 595, ../sass/_components.scss */
+/* line 623, ../sass/_components.scss */
 .gender-barbells li:nth-child(1) {
   width: 0.48%;
   left: 43.59%;
 }
-/* line 600, ../sass/_components.scss */
+/* line 628, ../sass/_components.scss */
 .gender-barbells li:nth-child(2) {
   width: 9.25%;
   left: 45.75%;
 }
-/* line 604, ../sass/_components.scss */
+/* line 632, ../sass/_components.scss */
 .gender-barbells li:nth-child(3) {
   width: 21.25%;
   left: 36%;
 }
-/* line 608, ../sass/_components.scss */
+/* line 636, ../sass/_components.scss */
 .gender-barbells li:nth-child(4) {
   width: 10.7%;
   left: 35%;
 }
-/* line 612, ../sass/_components.scss */
+/* line 640, ../sass/_components.scss */
 .gender-barbells li:nth-child(5) {
   width: 9%;
   left: 7.75%;
 }
-/* line 616, ../sass/_components.scss */
+/* line 644, ../sass/_components.scss */
 .gender-barbells li:nth-child(6) {
   width: 24.43%;
   left: 70.58%;
 }
-/* line 620, ../sass/_components.scss */
+/* line 648, ../sass/_components.scss */
 .gender-barbells li:nth-child(7) {
   width: 20%;
   left: 20%;
@@ -1283,4 +1312,13 @@ table tr.highlight strong {
 .job-categories li.active {
   font-weight: bold;
   color: #89EBD7;
+}
+
+/* JOBS PAGE */
+/* line 21, ../sass/_views.scss */
+.job-buttons button {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 5px 3px;
+  padding: 5px 10px;
 }
