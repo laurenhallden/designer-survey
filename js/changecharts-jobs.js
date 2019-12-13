@@ -1,27 +1,32 @@
-// Functions for displayig jobs cards
+// Controlling the display of each job description card
 
 $('.job-buttons button').click(function(){
+	$('.job-card').hide();
 	var activeSkill = $(this).attr('class');
 	$('.job-buttons button').removeClass('active');
 	$(this).addClass('active');
 
+	$('.job-card').hide();
+	fadeIn(activeSkill);
+});
+
+function fadeIn(activeSkill) {
 	$('.job-card').each(function(i, obj) {
 		var cardId = $(this).attr('id');
 	    if (activeSkill.includes(cardId)) {
-	      $(this).removeClass('hidden');
+	       $(this).fadeIn();
 	    } else {
-	      $(this).addClass('hidden');
-	    }
+	      $(this).hide();
+	    };
 	});
-});
-
+}
 
 // Functions for changing box plot charts and all their accompanying info
 
 // first, find the active job cateogory in the list
 function jobCategories() {
 	var activeCat = $('.job-categories li.active').attr("data-item");
-}
+};
 
 // add active classes when new category is clicked
 $('.job-categories li').click(function(){
@@ -47,7 +52,7 @@ function loadJobChart(number,name) {
 
 	// update the stats appearing alongside this chart
 	loadJobStats(chartArrayNumber);
-}
+};
 
 function loadJobStats(number){
 	var chartArrayNumber = (number);
@@ -58,5 +63,4 @@ function loadJobStats(number){
 	$('#job-q3').html(jobCategoryData[chartArrayNumber].q3);
 	$('#job-min').html(jobCategoryData[chartArrayNumber].min);
 	$('#job-max').html(jobCategoryData[chartArrayNumber].max)
-
 }

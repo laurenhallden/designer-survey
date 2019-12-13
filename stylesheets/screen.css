@@ -1005,7 +1005,7 @@ section + .bg-light {
     border-bottom: 0;
   }
 }
-/* line 367, ../sass/_components.scss */
+/* line 368, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:focus {
   text-decoration: none !important;
 }
@@ -1015,141 +1015,48 @@ section + .bg-light {
     font-size: 1.6rem;
   }
 }
-/* line 376, ../sass/_components.scss */
+/* line 377, ../sass/_components.scss */
 #accordion .acc-card .btn {
   text-align: left !important;
 }
 
-/* Tavles */
-/* line 385, ../sass/_components.scss */
+/* Tables */
+/* line 386, ../sass/_components.scss */
 table {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-/* line 390, ../sass/_components.scss */
+/* line 391, ../sass/_components.scss */
 table td, table th {
   padding: 10px;
   border: 1px solid #4D4D59;
 }
-/* line 394, ../sass/_components.scss */
+/* line 395, ../sass/_components.scss */
 table tr {
   background: #3A3A43;
 }
-/* line 397, ../sass/_components.scss */
+/* line 398, ../sass/_components.scss */
 table tr.highlight {
   background: rgba(97, 167, 208, 0.3);
   border: 0px solid #61a7d0;
 }
-/* line 400, ../sass/_components.scss */
+/* line 401, ../sass/_components.scss */
 table tr.highlight strong {
   font-weight: 700;
 }
 
-/* Medians */
-/* line 417, ../sass/_components.scss */
-.chart-subheadings {
-  display: flex;
-  justify-content: space-between;
-  width: 160%;
-  margin-bottom: 20px;
-}
-/* line 422, ../sass/_components.scss */
-.chart-subheadings .sub {
-  justify-content: space-between;
-}
-
-/* line 427, ../sass/_components.scss */
-.medians {
-  list-style: none;
-  padding-inline-start: 0;
-  position: absolute;
-  top: 20%;
-  right: 0;
-  text-align: right;
-  width: calc(100% - 125px);
-}
-/* line 435, ../sass/_components.scss */
-.medians li {
-  width: 90%;
-  position: absolute;
-  border-bottom: 1px dashed #89EBD7;
-}
-/* line 440, ../sass/_components.scss */
-.medians li:nth-child(1) {
-  top: 80px;
-}
-/* line 443, ../sass/_components.scss */
-.medians li:nth-child(2) {
-  top: 120px;
-}
-/* line 446, ../sass/_components.scss */
-.medians li:nth-child(3) {
-  top: 160px;
-}
-/* line 449, ../sass/_components.scss */
-.medians li:nth-child(4) {
-  top: 200px;
-}
-
-/* Pills */
-/* line 458, ../sass/_components.scss */
-.pills {
-  list-style: none;
-  padding-inline-start: 0;
-  margin-top: 0px;
-  max-width: 18rem;
-}
-/* line 464, ../sass/_components.scss */
-.pills li {
-  display: block;
-  margin-bottom: 5px;
-  font-size: 0.75rem;
-}
-/* line 469, ../sass/_components.scss */
-.pills li .bar-graph {
-  display: inline-block;
-  vertical-align: middle;
-  width: calc(100% - 60px);
-  background: rgba(137, 235, 215, 0.25);
-  border-radius: 5px;
-  position: relative;
-  height: 6px;
-}
-/* line 478, ../sass/_components.scss */
-.pills li .bar-graph .bar {
-  border-radius: 5px;
-  background: #89EBD7;
-  height: 6px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-/* line 488, ../sass/_components.scss */
-.pills li .caption {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 15px;
-  font-weight: 700;
-  color: #89EBD7;
-}
-/* line 496, ../sass/_components.scss */
-.pills li .skill-name {
-  margin-top: -8px;
-  font-weight: 500;
-}
-
-/* line 504, ../sass/_components.scss */
+/* line 415, ../sass/_components.scss */
 .divider {
   padding: 0px 0 30px;
 }
-/* line 507, ../sass/_components.scss */
+/* line 418, ../sass/_components.scss */
 .divider hr {
   border-top: 1px solid #4D4D59;
 }
 
-/* line 513, ../sass/_components.scss */
+/* line 423, ../sass/_components.scss */
 .code {
   font-family: 'Source Code Pro', monospace;
   font-weight: 500;
@@ -1159,7 +1066,7 @@ table tr.highlight strong {
 }
 
 /* Mailchimp signup */
-/* line 524, ../sass/_components.scss */
+/* line 433, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -1168,11 +1075,11 @@ table tr.highlight strong {
   font-weight: 500;
   width: 100%;
 }
-/* line 532, ../sass/_components.scss */
+/* line 441, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 536, ../sass/_components.scss */
+/* line 445, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -1191,7 +1098,7 @@ table tr.highlight strong {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 555, ../sass/_components.scss */
+/* line 464, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -1210,81 +1117,12 @@ table tr.highlight strong {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 574, ../sass/_components.scss */
+  /* line 483, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
     margin-bottom: 1rem;
   }
-}
-
-/* line 582, ../sass/_components.scss */
-.gender-barbells {
-  list-style: none;
-  padding-inline-start: 0;
-}
-/* line 586, ../sass/_components.scss */
-.gender-barbells li {
-  border-bottom: 3px solid #89EBD7;
-  position: relative;
-  height: 50px;
-  overflow-x: visible;
-  white-space: nowrap;
-}
-/* line 593, ../sass/_components.scss */
-.gender-barbells li:before, .gender-barbells li:after {
-  position: absolute;
-  top: 38px;
-  content: '';
-  width: 20px;
-  height: 20px;
-  border-radius: 1em;
-}
-/* line 603, ../sass/_components.scss */
-.gender-barbells li:before {
-  left: 0;
-  background-color: #2C2C32;
-  border: 3px solid #89EBD7;
-}
-/* line 609, ../sass/_components.scss */
-.gender-barbells li:after {
-  right: 0;
-  background-color: #89EBD7;
-}
-/* line 613, ../sass/_components.scss */
-.gender-barbells li:nth-child(1) {
-  width: 0.48%;
-  left: 43.59%;
-}
-/* line 618, ../sass/_components.scss */
-.gender-barbells li:nth-child(2) {
-  width: 9.25%;
-  left: 45.75%;
-}
-/* line 622, ../sass/_components.scss */
-.gender-barbells li:nth-child(3) {
-  width: 21.25%;
-  left: 36%;
-}
-/* line 626, ../sass/_components.scss */
-.gender-barbells li:nth-child(4) {
-  width: 10.7%;
-  left: 35%;
-}
-/* line 630, ../sass/_components.scss */
-.gender-barbells li:nth-child(5) {
-  width: 9%;
-  left: 7.75%;
-}
-/* line 634, ../sass/_components.scss */
-.gender-barbells li:nth-child(6) {
-  width: 24.43%;
-  left: 70.58%;
-}
-/* line 638, ../sass/_components.scss */
-.gender-barbells li:nth-child(7) {
-  width: 20%;
-  left: 20%;
 }
 
 /* Results */
@@ -1310,4 +1148,61 @@ table tr.highlight strong {
   font-size: 0.8rem;
   margin: 5px 3px;
   padding: 5px 10px;
+}
+/* line 29, ../sass/_views.scss */
+.job-buttons .btn-outline-primary.active:hover {
+  background-color: #5FD0FF !important;
+  border-color: #5FD0FF !important;
+}
+
+/* line 36, ../sass/_views.scss */
+.skills-header {
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+/* Pills */
+/* line 43, ../sass/_views.scss */
+.pills {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-top: 0px;
+  max-width: 18rem;
+}
+/* line 49, ../sass/_views.scss */
+.pills li {
+  display: block;
+  margin-bottom: 5px;
+}
+/* line 53, ../sass/_views.scss */
+.pills li .bar-graph {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 70px);
+  background: rgba(137, 235, 215, 0.25);
+  border-radius: 5px;
+  position: relative;
+  height: 6px;
+}
+/* line 62, ../sass/_views.scss */
+.pills li .bar-graph .bar {
+  border-radius: 5px;
+  background: #89EBD7;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 72, ../sass/_views.scss */
+.pills li .caption {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+  font-weight: 700;
+  color: #89EBD7;
+}
+/* line 80, ../sass/_views.scss */
+.pills li .skill-name {
+  margin-top: -8px;
+  font-weight: 500;
 }

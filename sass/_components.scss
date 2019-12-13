@@ -293,8 +293,8 @@
 }
 
 .bg-primary {
- 	background-color: darken($blue, 15%) !important;
- }
+	background-color: darken($blue, 15%) !important;
+}
 
 .bg-secondary, .bg-light {
 	.card-header {
@@ -305,82 +305,83 @@
 	.card-body {
 		background-color: $gray-800;
 	}
- }
+}
 
- .charts {
- 	h1, h2, h3 {
- 		margin: 0 0 0.5em 0;
- 	}
- }
+.charts {
+	h1, h2, h3 {
+		margin: 0 0 0.5em 0;
+	}
+}
 
- .hidden {
- 	display: none;
- }
+.hidden {
+	display: none;
+}
 
- #accordion {
- 	.acc-card {
- 		font-family: 'Open Sans', sans-serif;
- 		font-size: 1rem;
- 		font-weight: 300;
- 		background-color: transparent;
- 		box-shadow: none;
- 		border: 0px;
- 		padding: 0;
- 		max-width: 45rem;
+#accordion {
+	.acc-card {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: 300;
+		background-color: transparent;
+		box-shadow: none;
+		border: 0px;
+		padding: 0;
+		max-width: 45rem;
 
- 		.acc-card-header, .acc-card-body {
- 			background-color: transparent;
- 			border: 0px;
- 			box-shadow: none;
- 			color: white;
- 			padding: 0;
- 		}
+		.acc-card-header, .acc-card-body {
+			background-color: transparent;
+			border: 0px;
+			box-shadow: none;
+			color: white;
+			padding: 0;
+		}
 
- 		.acc-card-body {
- 			margin-bottom: 30px;
+		.acc-card-body {
+			margin-bottom: 30px;
 
- 			a {
- 				color: $blue !important;
+			a {
+				color: $blue !important;
 
- 				&:active {
- 					color: darken($blue, 15%) !important;
- 					text-decoration: none;
- 				}
- 			}
- 		}
+				&:active {
+					color: darken($blue, 15%) !important;
+					text-decoration: none;
+				}
+			}
+		}
 
- 		.acc-card-header .btn {
- 			padding: 20px 0 0px;
- 			margin-bottom: 10px;
- 			color: white;
- 			font-size: 1.5rem;
- 			border-radius: 0;
+		.acc-card-header .btn {
+			padding: 20px 0 0px;
+			margin-bottom: 10px;
+			color: white;
+			font-size: 1.5rem;
+			border-radius: 0;
 
- 			&:hover {
- 				text-decoration: none;
- 				border-bottom: 1px solid white;
+			&:hover {
+				text-decoration: none;
+				border-bottom: 1px solid white;
+
 	  			@media screen and (max-width: 767px) {
 					border-bottom: 0;
 				}
- 			}
+			}
 
- 			 &:focus {
+			&:focus {
 				text-decoration: none !important;
 			}
 
- 			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 767px) {
 				font-size: 1.6rem;
 			}
- 		}
+		}
 
- 		.btn {
- 			text-align: left !important;
- 		}
- 	}
- }
+		.btn {
+			text-align: left !important;
+		}
+	}
+}
 
 
-/* Tavles */
+/* Tables */
 
 table {
 	font-family: 'Source Code Pro', monospace;
@@ -411,96 +412,6 @@ table {
 	}
 }
 
-
- /* Medians */
-
-.chart-subheadings {
- 	display: flex;
- 	justify-content: space-between;
- 	width: 160%;
- 	margin-bottom: 20px;
- 	.sub {
- 		justify-content: space-between;
- 	}
- }
-
-.medians {
-	list-style: none;
-	padding-inline-start: 0;
-		position: absolute;
-		top: 20%;
-		right: 0;
-		text-align: right;
-		width: calc(100% - 125px);
-		li {
-			width: 90%;
-			position: absolute;
-			border-bottom: 1px dashed $green;
-
-		&:nth-child(1) {
-			top: 80px;
-		}
-		&:nth-child(2) {
-			top: 120px;
-		}
-		&:nth-child(3) {
-			top: 160px;
-		}
-		&:nth-child(4) {
-			top: 200px;
-		}
-		}
-}
-
-
-/* Pills */
-
-.pills {
-	list-style: none;
-	padding-inline-start: 0;
-	margin-top: 0px;
-	max-width: 18rem;
-
-	li {
-		display: block;
-		margin-bottom: 5px;
-		font-size: 0.75rem;
-
-		.bar-graph {
-			display: inline-block;
-			vertical-align: middle;
-			width: calc(100% - 60px);
-			background: rgba(137, 235, 215, .25);
-			border-radius: 5px;
-			position: relative;
-			height: 6px;
-
-			.bar {
-				border-radius: 5px;
-				background: $green;
-				height: 6px;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-		}
-
-		.caption {
-			display: inline-block;
-			vertical-align: middle;
-			margin-left: 15px;
-			font-weight: 700;
-			color: $green;
-		}
-
-		.skill-name {
-			margin-top: -8px;
-			font-weight: 500;
-		}
-	}
-
-}
-
 .divider {
 	padding: 0px 0 30px;
 
@@ -508,7 +419,6 @@ table {
 		border-top: 1px solid $gray-700;
 	}
 }
-
 
 .code {
 	font-family: 'Source Code Pro', monospace;
@@ -518,8 +428,7 @@ table {
 	border-radius: 5px;
 }
 
-
- /* Mailchimp signup */
+/* Mailchimp signup */
 
 #mc_embed_signup {
 	text-align: left;
@@ -575,75 +484,6 @@ table {
 			display: block;
 			width: 100%;
 			margin-bottom: 1rem;
-		}
-	}
-}
-
-.gender-barbells {
-	list-style: none;
-	padding-inline-start: 0;
-
-	li {
-		border-bottom: 3px solid $green;
-		position: relative;
-		height: 50px;
-		overflow-x: visible;
-        white-space: nowrap;
-
-		&:before,
-		&:after {
-			position: absolute;
-			top: 38px;
-			content: '';
-			width: 20px;
-			height: 20px;
-			border-radius: 1em;
-		}
-
-		&:before {
-			left: 0;
-			background-color: $gray-900;
-			border: 3px solid $green;
-		}
-
-		&:after {
-			right: 0;
-			background-color: $green;
-		}
-		&:nth-child(1) {
-			width: 0.48%;
-			left: 43.59%;
-		}
-
-		&:nth-child(2) {
-			width: 9.25%;
-			left: 45.75%;
-		}
-		&:nth-child(3) {
-			width: 21.25%;
-			left: 36%;
-		}
-		&:nth-child(4) {
-			width: 10.7%;
-			left: 35%;
-		}
-		&:nth-child(5) {
-			width: 9%;
-			left: 7.75%;
-		}
-		&:nth-child(6) {
-			width: 24.43%;
-			left: 70.58%;
-		}
-		&:nth-child(7) {
-			width: 20%;
-			left: 20%;
-		}
-		&:nth-child(8) {
-
-		}
-		&:nth-child(9) {
-
 		}
 	}
 }

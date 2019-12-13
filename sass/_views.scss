@@ -24,4 +24,63 @@
 		margin: 5px 3px;
 		padding: 5px 10px;
 	}
+	.btn-outline-primary.active {
+
+		&:hover {
+			background-color: $blue !important;
+			border-color: $blue !important;
+		}
+	}
+}
+
+.skills-header {
+	margin-bottom: 0px;
+	margin-top: 40px;
+}
+
+/* Pills */
+
+.pills {
+	list-style: none;
+	padding-inline-start: 0;
+	margin-top: 0px;
+	max-width: 18rem;
+
+	li {
+		display: block;
+		margin-bottom: 5px;
+
+		.bar-graph {
+			display: inline-block;
+			vertical-align: middle;
+			width: calc(100% - 70px);
+			background: rgba(137, 235, 215, .25);
+			border-radius: 5px;
+			position: relative;
+			height: 6px;
+
+			.bar {
+				border-radius: 5px;
+				background: $green;
+				height: 6px;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+
+		.caption {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 15px;
+			font-weight: 700;
+			color: $green;
+		}
+
+		.skill-name {
+			margin-top: -8px;
+			font-weight: 500;
+		}
+	}
+
 }
