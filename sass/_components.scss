@@ -191,21 +191,23 @@
 	}
 }
 
-.btn-primary {
-	background-color: $blue;
-	color: $gray-900;
-	font-weight: 600;
-	border: 2px solid $blue;
+.btn-primary,
+.btn-outline-primary.active {
+	background-color: $blue !important;
+	color: $gray-900 !important;
+	font-weight: 600 !important;
+	border: 2px solid $blue !important;
 
 	&:hover {
 		background-color: darken($blue, 15%) !important;
 		border-color: darken($blue, 15%) !important;
-		color: $gray-900;
+		color: $gray-900 !important;
 	}
 
 	&:active {
 		background-color: darken($blue, 30%) !important;
 		border-color: darken($blue, 15%) !important;
+		color: $gray-900 !important;
 	}
 }
 
@@ -309,6 +311,10 @@
  	h1, h2, h3 {
  		margin: 0 0 0.5em 0;
  	}
+ }
+
+ .hidden {
+ 	display: none;
  }
 
  #accordion {
@@ -463,7 +469,7 @@ table {
 		.bar-graph {
 			display: inline-block;
 			vertical-align: middle;
-			width: calc(100% - 80px);
+			width: calc(100% - 60px);
 			background: rgba(137, 235, 215, .25);
 			border-radius: 5px;
 			position: relative;
@@ -490,22 +496,6 @@ table {
 		.skill-name {
 			margin-top: -8px;
 			font-weight: 500;
-		}
-
-		&:nth-child(1) .bar-graph .bar {
-			width: 73%;
-		}
-		&:nth-child(2) .bar-graph .bar {
-			width: 73%;
-		}
-		&:nth-child(3) .bar-graph .bar {
-			width: 33%;
-		}
-		&:nth-child(4) .bar-graph .bar {
-			width: 30%;
-		}
-		&:nth-child(5) .bar-graph .bar {
-			width: 21%;
 		}
 	}
 

@@ -71,14 +71,7 @@ var jobCategoryData = [
         q1: '$70,000',
         median: '$80,000',
         q3: '$93,000',
-        max: '$97,000',
-        thisJob: 'Determines how information is communicated to audiences. This person works on content strategy, but not typically visual design.',
-        skillName1: 'Content Strategy',
-        skillPercent1: 100,
-        skillName2: 'UX or Experience Design',
-        skillPercent2: 50,
-        skillName3: 'Research',
-        skillPercent3: 40
+        max: '$97,000'
     },
 
     // Design Director
@@ -88,18 +81,7 @@ var jobCategoryData = [
         q1: '$84,000',
         median: '$100,000',
         q3: '$120,000',
-        max:'$135,000',
-        thisJob: 'Manages the design systems that are used by other designers at an organization. (This job may also be called Creative or Art Director).',
-        skillName1: 'Visual Design',
-        skillPercent1: 82,
-        skillName2: 'Team Leadership',
-        skillPercent2: 79,
-        skillName3: 'Print Design',
-        skillPercent3: 61,
-        skillName4: 'UX Design',
-        skillPercent4: 50,
-        skillName5: 'Content Strategy',
-        skillPercent5: 46
+        max:'$135,000'
     },
 
     // Front-end Designer
@@ -109,20 +91,7 @@ var jobCategoryData = [
         q1: '$63,000',
         median: '$83,000',
         q3: '$107,000',
-        max: '$160,000',
-        thisJob: 'Creates and codes websites and user interfaces.',
-        skillName1: 'Front-end Development',
-        skillPercent1: 50,
-        skillName2: 'UX or Experience Design',
-        skillPercent2: 88,
-        skillName3: 'Visual Design',
-        skillPercent3: 88,
-        skillName4: 'Research',
-        skillPercent4: 53,
-        skillName5: 'Content Strategy',
-        skillPercent5: 38,
-        skillName6: 'Team Leadership',
-        skillPercent6: 38
+        max: '$160,000'
     },
 
     // Manager
@@ -132,18 +101,7 @@ var jobCategoryData = [
         q1: '$81,000',
         median: '$129,000',
         q3: '$156,000',
-        max: '$240,000',
-        thisJob: 'Runs design teams and manages team members.',
-        skillName1: 'UX or Experience Design',
-        skillPercent1: 10,
-        skillName2: 'Team Leadership',
-        skillPercent2: 10,
-        skillName3: 'Visual Design',
-        skillPercent3: 67,
-        skillName4: 'Project Mgmt',
-        skillPercent4: 54,
-        skillName5: 'Research',
-        skillPercent5: 46
+        max: '$240,000'
     },
 
     // UX Designer or Researcher
@@ -153,12 +111,7 @@ var jobCategoryData = [
         q1: '$81,000',
         median: '$95,000',
         q3: '$125,000',
-        max: '$154,000',
-        thisJob: 'Designs the best ways for users to interact with and experience digital products. This job is distinct from the UX-UI designer, who also works in visual designs and interfaces.',
-        skillName1: 'UX or Experience Design',
-        skillPercent1: 88,
-        skillName2: 'Research',
-        skillPercent2: 60
+        max: '$154,000'
     },
 
     // UX/UI Designer
@@ -168,16 +121,7 @@ var jobCategoryData = [
         q1: '$71,000',
         median: '$90,000',
         q3: '$111,000',
-        max: '$170,000',
-        thisJob: 'Works on both user experience design and visual interface design.',
-        skillName1: 'UX or Experience Design',
-        skillPercent1: 100,
-        skillName2: 'Visual Design',
-        skillPercent2: 100,
-        skillName3: 'Research',
-        skillPercent3: 59,
-        skillName4: 'Team Leadership',
-        skillPercent4: 34
+        max: '$170,000'
     },
 
     // Visual Designer
@@ -187,18 +131,7 @@ var jobCategoryData = [
         q1: '$49,000',
         median: '$64,000',
         q3: '$74,000',
-        max: '$95,000',
-        thisJob: 'May include marketing, brand, print, or visual UI design (but not UX).',
-        skillName1: 'Visual Design',
-        skillPercent1: 73,
-        skillName2: 'Print Design',
-        skillPercent2: 73,
-        skillName3: 'Content Strat',
-        skillPercent3: 33,
-        skillName4: 'Project Mgmt',
-        skillPercent4: 30,
-        skillName5: 'Research',
-        skillPercent5: 21
+        max: '$95,000'
     }
 ]
 
