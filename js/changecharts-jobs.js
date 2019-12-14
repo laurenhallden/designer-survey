@@ -14,7 +14,7 @@ function fadeIn(activeSkill) {
 	$('.job-card').each(function(i, obj) {
 		var cardId = $(this).attr('id');
 	    if (activeSkill.includes(cardId)) {
-	       $(this).fadeIn();
+	       $(this).fadeIn('slow');
 	    } else {
 	      $(this).hide();
 	    };

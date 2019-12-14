@@ -6,10 +6,13 @@
 
 	li {
 		cursor: pointer;
+		padding-left: 10px;
+		border-left: 4px solid transparent;
 
 		&.active {
 			font-weight: bold;
 			color: $green;
+			border-left: 4px solid $green;
 		}
 	}
 }
@@ -20,9 +23,9 @@
 .job-buttons {
 	button {
 		font-weight: 600;
-		font-size: 0.8rem;
+		font-size: 0.75rem;
 		margin: 5px 3px;
-		padding: 5px 10px;
+		padding: 5px 7px;
 	}
 	.btn-outline-primary.active {
 
@@ -33,9 +36,19 @@
 	}
 }
 
+.job-description {
+	min-height: 6.5rem;
+	border-bottom: 1px solid $gray-700;
+	padding-bottom: 10px;
+
+	@media screen and (max-width: 767px) {
+		min-height: auto;
+	}
+}
+
 .skills-header {
 	margin-bottom: 0px;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 /* Pills */
@@ -45,6 +58,7 @@
 	padding-inline-start: 0;
 	margin-top: 0px;
 	max-width: 18rem;
+	min-height: 15rem;
 
 	li {
 		display: block;
@@ -54,15 +68,15 @@
 			display: inline-block;
 			vertical-align: middle;
 			width: calc(100% - 70px);
-			background: rgba(137, 235, 215, .25);
-			border-radius: 5px;
+			background: $gray-700;
+			border-radius: 10px;
 			position: relative;
-			height: 6px;
+			height: 10px;
 
 			.bar {
-				border-radius: 5px;
-				background: $green;
-				height: 6px;
+				border-radius: 10px;
+				background: $blue;
+				height: 10px;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -74,13 +88,20 @@
 			vertical-align: middle;
 			margin-left: 15px;
 			font-weight: 700;
-			color: $green;
+			color: $blue;
 		}
 
 		.skill-name {
-			margin-top: -8px;
+			margin-top: -5px;
 			font-weight: 500;
+			color: $gray-200;
+			font-size: 0.75rem;
 		}
+
+		@media screen and (max-width: 767px) {
+			min-height: auto;
+		}
+
 	}
 
 }
