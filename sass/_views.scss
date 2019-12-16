@@ -140,41 +140,45 @@
 	font-family: 'Source Code Pro', monospace;
 	font-size: 14px;
 	font-weight: 600;
+	max-width: 400px;
 
 	.bar {
 		border-top: 3px solid $green;
+		width: calc(100% - 2rem);
+	}
+
+	.dot-container {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.dot {
-		position: absolute;
-		top: -8px;
-		border-radius: 100%;
-		width: 20px;
-		height: 20px;
-		border: 3px solid $green;
-		background: $gray-900;
+		margin-top: -12px;
+		position: relative;
 
-		&:nth-of-type(2) {
-			background: transparent;
-			border: 3px solid transparent;
+		&:before {
+			position: absolute;
+			top: 0px;
+			border-radius: 100%;
+			width: 20px;
+			height: 20px;
+			border: 3px solid $green;
+			background: $gray-900;
+			content: ' ';
+			left: calc(2rem - 10px);
+		}
+
+		&:nth-of-type(1) {
+			&:before {
+				border: 3px solid transparent;
+				background: transparent;
+			}
 			
 			div {
-				width: 120px;
 				text-align: left;
-				left: -2px;
+				margin-left: 0rem;
+				min-width: 120px;
 			}
-		}
-
-		&:nth-of-type(3) {
-			left: 160px;
-		}
-
-		&:nth-of-type(4) {
-			left: 260px;
-		}
-
-		&:nth-of-type(5) {
-			left: 360px;
 		}
 
 		div {
@@ -182,7 +186,6 @@
 			width: 4rem;
 			margin-top: -40px;
 			position: relative;
-			left: -1.5rem;
 
 			&:first-of-type {
 				margin-bottom: 90px;

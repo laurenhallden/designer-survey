@@ -1233,53 +1233,54 @@ table tr.highlight strong {
   font-family: 'Source Code Pro', monospace;
   font-size: 14px;
   font-weight: 600;
+  max-width: 400px;
 }
-/* line 144, ../sass/_views.scss */
+/* line 145, ../sass/_views.scss */
 .seniority .bar {
   border-top: 3px solid #89EBD7;
+  width: calc(100% - 2rem);
 }
-/* line 148, ../sass/_views.scss */
+/* line 150, ../sass/_views.scss */
+.seniority .dot-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 155, ../sass/_views.scss */
 .seniority .dot {
+  margin-top: -12px;
+  position: relative;
+}
+/* line 159, ../sass/_views.scss */
+.seniority .dot:before {
   position: absolute;
-  top: -8px;
+  top: 0px;
   border-radius: 100%;
   width: 20px;
   height: 20px;
   border: 3px solid #89EBD7;
   background: #2C2C32;
-}
-/* line 157, ../sass/_views.scss */
-.seniority .dot:nth-of-type(2) {
-  background: transparent;
-  border: 3px solid transparent;
-}
-/* line 161, ../sass/_views.scss */
-.seniority .dot:nth-of-type(2) div {
-  width: 120px;
-  text-align: left;
-  left: -2px;
-}
-/* line 168, ../sass/_views.scss */
-.seniority .dot:nth-of-type(3) {
-  left: 160px;
+  content: ' ';
+  left: calc(2rem - 10px);
 }
 /* line 172, ../sass/_views.scss */
-.seniority .dot:nth-of-type(4) {
-  left: 260px;
+.seniority .dot:nth-of-type(1):before {
+  border: 3px solid transparent;
+  background: transparent;
 }
-/* line 176, ../sass/_views.scss */
-.seniority .dot:nth-of-type(5) {
-  left: 360px;
+/* line 177, ../sass/_views.scss */
+.seniority .dot:nth-of-type(1) div {
+  text-align: left;
+  margin-left: 0rem;
+  min-width: 120px;
 }
-/* line 180, ../sass/_views.scss */
+/* line 184, ../sass/_views.scss */
 .seniority .dot div {
   text-align: center;
   width: 4rem;
   margin-top: -40px;
   position: relative;
-  left: -1.5rem;
 }
-/* line 187, ../sass/_views.scss */
+/* line 190, ../sass/_views.scss */
 .seniority .dot div:first-of-type {
   margin-bottom: 90px;
 }

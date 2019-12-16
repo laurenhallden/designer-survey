@@ -101,7 +101,7 @@ function loadJobStats(number){
 		};
 
 		$('.seniority').show();
-		$('.available-seniority').html("Here's how the median pay for this job increases with experience.");
+		$('.available-seniority').html("How median pay increases with experience.");
 
 	}
 
