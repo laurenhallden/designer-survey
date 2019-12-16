@@ -101,7 +101,88 @@
 		@media screen and (max-width: 767px) {
 			min-height: auto;
 		}
+	}
+}
 
+.job-categories {
+	max-width: 10rem;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+#job-category-heading {
+	margin-bottom: 10px !important;
+}
+
+#job-details {
+	padding-left: 25px;
+
+	h3 {
+		font-size: 1.8rem;
+	}
+}
+
+#most-common-skills {
+	margin-bottom: 5px;
+	span {
+		border-bottom: 0px solid;
+	}
+}
+
+#job-category-heading {
+	margin-bottom: 10px;
+}
+
+.seniority {
+	margin-top: 60px;
+	width: 100%;
+	position: relative;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 14px;
+	font-weight: 600;
+
+	.bar {
+		border-top: 3px solid $green;
 	}
 
+	.dot {
+		position: absolute;
+		top: -8px;
+		border-radius: 100%;
+		width: 20px;
+		height: 20px;
+		border: 3px solid $green;
+		background: $gray-900;
+
+		&:nth-of-type(2) {
+			background: transparent;
+			border: 3px solid transparent;
+			
+			div {
+				width: 200px;
+				text-align: left;
+				left: -2px;
+			}
+		}
+
+		&:nth-of-type(3) {
+			left: 220px;
+		}
+
+		&:nth-of-type(4) {
+			left: 320px;
+		}
+
+		div {
+			text-align: center;
+			width: 4rem;
+			margin-top: -40px;
+			position: relative;
+			left: -30px;
+
+			&:first-of-type {
+				margin-bottom: 90px;
+			}
+		}
+	}
 }

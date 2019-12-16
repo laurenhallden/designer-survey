@@ -523,9 +523,9 @@ h3 {
 
 /* line 59, ../sass/_type.scss */
 h4 {
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 }
 
 /* line 65, ../sass/_type.scss */
@@ -605,48 +605,6 @@ section + .bg-light {
   color: #8e8e9c;
   margin-top: 50px !important;
   padding: 40px;
-}
-
-/* JOBS PAGE */
-/* line 59, ../sass/_layout.scss */
-.job-categories {
-  max-width: 10rem;
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-
-/* line 65, ../sass/_layout.scss */
-.job-details-column {
-  font-size: 0.9rem;
-}
-
-/* line 69, ../sass/_layout.scss */
-#job-category-heading {
-  margin-bottom: 10px !important;
-}
-
-/* line 74, ../sass/_layout.scss */
-#job-details {
-  padding-left: 25px;
-  font-size: 0.9rem !important;
-}
-/* line 78, ../sass/_layout.scss */
-#job-details h3 {
-  font-size: 1.8rem;
-}
-
-/* line 83, ../sass/_layout.scss */
-#most-common-skills {
-  margin-bottom: 5px;
-}
-/* line 85, ../sass/_layout.scss */
-#most-common-skills span {
-  border-bottom: 0px solid;
-}
-
-/* line 90, ../sass/_layout.scss */
-#job-category-heading {
-  margin-bottom: 10px;
 }
 
 /* Sections */
@@ -1230,4 +1188,94 @@ table tr.highlight strong {
   .pills li {
     min-height: auto;
   }
+}
+
+/* line 107, ../sass/_views.scss */
+.job-categories {
+  max-width: 10rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* line 113, ../sass/_views.scss */
+#job-category-heading {
+  margin-bottom: 10px !important;
+}
+
+/* line 117, ../sass/_views.scss */
+#job-details {
+  padding-left: 25px;
+}
+/* line 120, ../sass/_views.scss */
+#job-details h3 {
+  font-size: 1.8rem;
+}
+
+/* line 125, ../sass/_views.scss */
+#most-common-skills {
+  margin-bottom: 5px;
+}
+/* line 127, ../sass/_views.scss */
+#most-common-skills span {
+  border-bottom: 0px solid;
+}
+
+/* line 132, ../sass/_views.scss */
+#job-category-heading {
+  margin-bottom: 10px;
+}
+
+/* line 136, ../sass/_views.scss */
+.seniority {
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* line 144, ../sass/_views.scss */
+.seniority .bar {
+  border-top: 3px solid #89EBD7;
+}
+/* line 148, ../sass/_views.scss */
+.seniority .dot {
+  position: absolute;
+  top: -8px;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #89EBD7;
+  background: #2C2C32;
+}
+/* line 157, ../sass/_views.scss */
+.seniority .dot:nth-of-type(2) {
+  background: transparent;
+  border: 3px solid transparent;
+}
+/* line 161, ../sass/_views.scss */
+.seniority .dot:nth-of-type(2) div {
+  width: 200px;
+  text-align: left;
+  left: -2px;
+}
+/* line 168, ../sass/_views.scss */
+.seniority .dot:nth-of-type(3) {
+  left: 220px;
+}
+/* line 172, ../sass/_views.scss */
+.seniority .dot:nth-of-type(4) {
+  left: 320px;
+}
+/* line 176, ../sass/_views.scss */
+.seniority .dot div {
+  text-align: center;
+  width: 4rem;
+  margin-top: -40px;
+  position: relative;
+  left: -30px;
+}
+/* line 183, ../sass/_views.scss */
+.seniority .dot div:first-of-type {
+  margin-bottom: 90px;
 }

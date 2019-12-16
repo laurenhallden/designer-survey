@@ -30,17 +30,22 @@ function jobCategories() {
 
 // add active classes when new category is clicked
 $('.job-categories li').click(function(){
+
 	$('.job-categories li').removeClass('active');
 	$(this).addClass('active');
 	var activeCat = $(this).attr("data-item");
 	var catName = $(this).html();
-	jobCategories();
-	loadJobChart(activeCat,catName);
+
+	// fade out the last set of details
+	$('.job-details-column').fadeOut(function() {
+		jobCategories();
+		loadJobChart(activeCat,catName);
+	});
 });
 
 // switch cateogry data based on list item
 function loadJobChart(number,name) {
-	var chartArrayNumber = (number-1);
+	var chartArrayNumber = (number-1)
 
 	// update the box plot chart
 	myBox1.data = boxPlots[chartArrayNumber];
@@ -52,6 +57,9 @@ function loadJobChart(number,name) {
 
 	// update the stats appearing alongside this chart
 	loadJobStats(chartArrayNumber);
+
+	// fade it all in
+	$('.job-details-column').fadeIn();
 };
 
 function loadJobStats(number){
@@ -62,5 +70,7 @@ function loadJobStats(number){
 	$('#job-q1').html(jobCategoryData[chartArrayNumber].q1);
 	$('#job-q3').html(jobCategoryData[chartArrayNumber].q3);
 	$('#job-min').html(jobCategoryData[chartArrayNumber].min);
-	$('#job-max').html(jobCategoryData[chartArrayNumber].max)
+	$('#job-max').html(jobCategoryData[chartArrayNumber].max);
+	$('#job-median').html(jobCategoryData[chartArrayNumber].median);
+
 }
