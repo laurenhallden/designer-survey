@@ -36,6 +36,7 @@ $('.job-categories li').click(function(){
 	var activeCat = $(this).attr("data-item");
 	var catName = $(this).html();
 
+
 	// fade out the last set of details
 	$('.job-details-column').fadeOut(function() {
 		jobCategories();
@@ -64,13 +65,44 @@ function loadJobChart(number,name) {
 
 function loadJobStats(number){
 	var chartArrayNumber = (number);
+	$('.level-dot').hide();
 
 	// update the job paragraph description
-	$('#this-job').html(jobCategoryData[chartArrayNumber].thisJob);
 	$('#job-q1').html(jobCategoryData[chartArrayNumber].q1);
 	$('#job-q3').html(jobCategoryData[chartArrayNumber].q3);
 	$('#job-min').html(jobCategoryData[chartArrayNumber].min);
 	$('#job-max').html(jobCategoryData[chartArrayNumber].max);
 	$('#job-median').html(jobCategoryData[chartArrayNumber].median);
+
+	console.log(jobCategoryData[chartArrayNumber].name);
+
+	if (jobCategoryData[chartArrayNumber].name == "Content Designer") {
+		$('.seniority').hide();
+		$('.available-seniority').html("<em>There weren't enough reponses to look at compensation by seniority for this job.</em>");
+	} else {
+
+		// update seniority
+		if (jobCategoryData[chartArrayNumber].lev1Name) {
+			$('#level1 div:first-of-type').html(jobCategoryData[chartArrayNumber].lev1Name);
+			$('#level1 div:nth-child(2)').html(jobCategoryData[chartArrayNumber].lev1Years + "<br/>" + jobCategoryData[chartArrayNumber].lev1Pay);
+			$('#level1').show();
+		};
+
+		if (jobCategoryData[chartArrayNumber].lev2Name) {
+			$('#level2 div:first-of-type').html(jobCategoryData[chartArrayNumber].lev2Name);
+			$('#level2 div:nth-child(2)').html(jobCategoryData[chartArrayNumber].lev2Years + "<br/>" + jobCategoryData[chartArrayNumber].lev2Pay);
+			$('#level2').show();
+		};
+
+		if (jobCategoryData[chartArrayNumber].lev3Name) {
+			$('#level3 div:first-of-type').html(jobCategoryData[chartArrayNumber].lev3Name);
+			$('#level3 div:nth-child(2)').html(jobCategoryData[chartArrayNumber].lev3Years + "<br/>" + jobCategoryData[chartArrayNumber].lev3Pay);
+			$('#level3').show();
+		};
+
+		$('.seniority').show();
+		$('.available-seniority').html("Here's how the median pay for this job increases with experience.");
+
+	}
 
 }

@@ -71,7 +71,7 @@ var jobCategoryData = [
         q1: '$70,000',
         median: '$80,000',
         q3: '$93,000',
-        max: '$97,000'
+        max: '$97,000',
     },
 
     // Design Director
@@ -81,7 +81,13 @@ var jobCategoryData = [
         q1: '$84,000',
         median: '$100,000',
         q3: '$120,000',
-        max:'$135,000'
+        max:'$135,000',
+        lev1Name: 'Senior',
+        lev1Years: '11 years',
+        lev1Pay: '$100k',
+        lev2Name: 'Lead',
+        lev2Years: '13 years',
+        lev2Pay: '$125k',
     },
 
     // Front-end Designer
@@ -91,7 +97,16 @@ var jobCategoryData = [
         q1: '$63,000',
         median: '$83,000',
         q3: '$107,000',
-        max: '$160,000'
+        max: '$160,000',
+        lev1Name: 'Int.',
+        lev1Years: '6 years',
+        lev1Pay: '$65k',
+        lev2Name: 'Senior',
+        lev2Years: '9 years',
+        lev2Pay: '$88k',
+        lev3Name: 'Lead',
+        lev3Years: '13 years',
+        lev3Pay: '$126k'
     },
 
     // Manager
@@ -101,7 +116,13 @@ var jobCategoryData = [
         q1: '$81,000',
         median: '$129,000',
         q3: '$156,000',
-        max: '$240,000'
+        max: '$240,000',
+        lev1Name: 'Senior',
+        lev1Years: '10 years',
+        lev1Pay: '$109k',
+        lev2Name: 'Lead',
+        lev2Years: '12 years',
+        lev2Pay: '$145k'
     },
 
     // UX Designer or Researcher
@@ -111,7 +132,13 @@ var jobCategoryData = [
         q1: '$81,000',
         median: '$95,000',
         q3: '$125,000',
-        max: '$154,000'
+        max: '$154,000',
+        lev1Name: 'Int.',
+        lev1Years: '4 years',
+        lev1Pay: '$84k',
+        lev2Name: 'Senior',
+        lev2Years: '8 years',
+        lev2Pay: '$113k',
     },
 
     // UX/UI Designer
@@ -121,7 +148,16 @@ var jobCategoryData = [
         q1: '$71,000',
         median: '$90,000',
         q3: '$111,000',
-        max: '$170,000'
+        max: '$170,000',
+        lev1Name: 'Int.',
+        lev1Years: '5 years',
+        lev1Pay: '$78k',
+        lev2Name: 'Senior',
+        lev2Years: '8 years',
+        lev2Pay: '$105k',
+        lev3Name: 'Lead',
+        lev3Years: '11 years',
+        lev3Pay: '$119k'
     },
 
     // Visual Designer
@@ -131,7 +167,16 @@ var jobCategoryData = [
         q1: '$49,000',
         median: '$64,000',
         q3: '$74,000',
-        max: '$95,000'
+        max: '$95,000',
+        lev1Name: 'Junior',
+        lev1Years: '3 years',
+        lev1Pay: '$48k',
+        lev2Name: 'Int.',
+        lev2Years: '8 years',
+        lev2Pay: '$65k',
+        lev3Name: 'Senior',
+        lev3Years: '15 years',
+        lev3Pay: '$76k'
     }
 ]
 
@@ -453,7 +498,7 @@ var jobCharts = [
                 type: 'line'
             }, {
                 data: [0.00,0.00,5.88,5.88,8.82,11.76,5.88,5.88,2.94,5.88,11.76,5.88,0.00,2.94,5.88,0.00,2.94,5.88,0.00,0.00,2.94,2.94,0.00,0.00,0.00,2.94,0.00,2.94,0.00],
-                                backgroundColor: 'rgba(137, 235, 215, 1)',
+                backgroundColor: 'rgba(137, 235, 215, 1)',
                 borderColor: 'rgba(137, 235, 215, 1)',
                 borderWidth: 1
             }]

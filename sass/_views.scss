@@ -134,7 +134,7 @@
 }
 
 .seniority {
-	margin-top: 60px;
+	margin-top: 70px;
 	width: 100%;
 	position: relative;
 	font-family: 'Source Code Pro', monospace;
@@ -159,18 +159,22 @@
 			border: 3px solid transparent;
 			
 			div {
-				width: 200px;
+				width: 120px;
 				text-align: left;
 				left: -2px;
 			}
 		}
 
 		&:nth-of-type(3) {
-			left: 220px;
+			left: 160px;
 		}
 
 		&:nth-of-type(4) {
-			left: 320px;
+			left: 260px;
+		}
+
+		&:nth-of-type(5) {
+			left: 360px;
 		}
 
 		div {
@@ -178,7 +182,7 @@
 			width: 4rem;
 			margin-top: -40px;
 			position: relative;
-			left: -30px;
+			left: -1.5rem;
 
 			&:first-of-type {
 				margin-bottom: 90px;

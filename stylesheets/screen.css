@@ -1227,7 +1227,7 @@ table tr.highlight strong {
 
 /* line 136, ../sass/_views.scss */
 .seniority {
-  margin-top: 60px;
+  margin-top: 70px;
   width: 100%;
   position: relative;
   font-family: 'Source Code Pro', monospace;
@@ -1255,27 +1255,31 @@ table tr.highlight strong {
 }
 /* line 161, ../sass/_views.scss */
 .seniority .dot:nth-of-type(2) div {
-  width: 200px;
+  width: 120px;
   text-align: left;
   left: -2px;
 }
 /* line 168, ../sass/_views.scss */
 .seniority .dot:nth-of-type(3) {
-  left: 220px;
+  left: 160px;
 }
 /* line 172, ../sass/_views.scss */
 .seniority .dot:nth-of-type(4) {
-  left: 320px;
+  left: 260px;
 }
 /* line 176, ../sass/_views.scss */
+.seniority .dot:nth-of-type(5) {
+  left: 360px;
+}
+/* line 180, ../sass/_views.scss */
 .seniority .dot div {
   text-align: center;
   width: 4rem;
   margin-top: -40px;
   position: relative;
-  left: -30px;
+  left: -1.5rem;
 }
-/* line 183, ../sass/_views.scss */
+/* line 187, ../sass/_views.scss */
 .seniority .dot div:first-of-type {
   margin-bottom: 90px;
 }
