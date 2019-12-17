@@ -78,7 +78,7 @@ function loadJobStats(number){
 
 	if (jobCategoryData[chartArrayNumber].name == "Content Designer") {
 		$('.seniority').hide();
-		$('.available-seniority').html("<em>There weren't enough reponses to look at compensation by seniority for this job.</em>");
+		$('.available-seniority').html("<em>There weren't enough reponses to look at compensation by seniority for this job.</em><br/><br/>");
 	} else {
 
 		// update seniority

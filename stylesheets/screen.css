@@ -1234,23 +1234,24 @@ table tr.highlight strong {
   font-size: 14px;
   font-weight: 600;
   max-width: 400px;
+  margin-bottom: 50px;
 }
-/* line 145, ../sass/_views.scss */
+/* line 146, ../sass/_views.scss */
 .seniority .bar {
   border-top: 3px solid #89EBD7;
   width: calc(100% - 2rem);
 }
-/* line 150, ../sass/_views.scss */
+/* line 151, ../sass/_views.scss */
 .seniority .dot-container {
   display: flex;
   justify-content: space-between;
 }
-/* line 155, ../sass/_views.scss */
+/* line 156, ../sass/_views.scss */
 .seniority .dot {
   margin-top: -12px;
   position: relative;
 }
-/* line 159, ../sass/_views.scss */
+/* line 160, ../sass/_views.scss */
 .seniority .dot:before {
   position: absolute;
   top: 0px;
@@ -1262,25 +1263,25 @@ table tr.highlight strong {
   content: ' ';
   left: calc(2rem - 10px);
 }
-/* line 172, ../sass/_views.scss */
+/* line 173, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1):before {
   border: 3px solid transparent;
   background: transparent;
 }
-/* line 177, ../sass/_views.scss */
+/* line 178, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1) div {
   text-align: left;
   margin-left: 0rem;
   min-width: 120px;
 }
-/* line 184, ../sass/_views.scss */
+/* line 185, ../sass/_views.scss */
 .seniority .dot div {
   text-align: center;
   width: 4rem;
   margin-top: -40px;
   position: relative;
 }
-/* line 190, ../sass/_views.scss */
+/* line 191, ../sass/_views.scss */
 .seniority .dot div:first-of-type {
   margin-bottom: 90px;
 }

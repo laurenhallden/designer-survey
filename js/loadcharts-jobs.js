@@ -9,6 +9,7 @@ window.onload = function () {
 	data: boxplotDataAll,
 	options: {
 	  responsive: true,
+	  maintainAspectRatio: false,
 	  legend: {
 	    display: false
 	  },
