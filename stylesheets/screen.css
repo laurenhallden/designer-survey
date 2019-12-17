@@ -858,61 +858,67 @@ section + .bg-light {
   font-weight: 400;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
-/* line 267, ../sass/_components.scss */
+@media screen and (max-width: 767px) {
+  /* line 259, ../sass/_components.scss */
+  .card {
+    margin-top: 30px;
+  }
+}
+/* line 271, ../sass/_components.scss */
 .card strong {
   font-weight: 700;
 }
-/* line 271, ../sass/_components.scss */
+/* line 275, ../sass/_components.scss */
 .card h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-/* line 276, ../sass/_components.scss */
+/* line 280, ../sass/_components.scss */
 .card a {
   color: #89EBD7 !important;
   font-weight: 600;
 }
-/* line 280, ../sass/_components.scss */
+/* line 284, ../sass/_components.scss */
 .card a:hover {
   border-bottom: 0;
   color: #48e0c1 !important;
 }
-/* line 285, ../sass/_components.scss */
+/* line 289, ../sass/_components.scss */
 .card a:active {
   color: #20bb9c !important;
 }
 
-/* line 291, ../sass/_components.scss */
+/* line 295, ../sass/_components.scss */
 .card-text {
   margin-bottom: .5rem;
 }
 
-/* line 295, ../sass/_components.scss */
+/* line 299, ../sass/_components.scss */
 .bg-primary {
   background-color: #13baff !important;
 }
 
-/* line 300, ../sass/_components.scss */
+/* line 304, ../sass/_components.scss */
 .bg-secondary .card-header, .bg-light .card-header {
   background-color: #4D4D59;
   font-weight: 700;
 }
-/* line 305, ../sass/_components.scss */
+/* line 309, ../sass/_components.scss */
 .bg-secondary .card-body, .bg-light .card-body {
   background-color: #3A3A43;
 }
 
-/* line 311, ../sass/_components.scss */
+/* line 315, ../sass/_components.scss */
 .charts h1, .charts h2, .charts h3 {
   margin: 0 0 0.5em 0;
 }
 
-/* line 316, ../sass/_components.scss */
+/* line 320, ../sass/_components.scss */
 .hidden {
   display: none;
 }
 
-/* line 321, ../sass/_components.scss */
+/* line 325, ../sass/_components.scss */
 #accordion .acc-card {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -923,7 +929,7 @@ section + .bg-light {
   padding: 0;
   max-width: 45rem;
 }
-/* line 331, ../sass/_components.scss */
+/* line 335, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header, #accordion .acc-card .acc-card-body {
   background-color: transparent;
   border: 0px;
@@ -931,20 +937,20 @@ section + .bg-light {
   color: white;
   padding: 0;
 }
-/* line 339, ../sass/_components.scss */
+/* line 343, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body {
   margin-bottom: 30px;
 }
-/* line 342, ../sass/_components.scss */
+/* line 346, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a {
   color: #5FD0FF !important;
 }
-/* line 345, ../sass/_components.scss */
+/* line 349, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a:active {
   color: #13baff !important;
   text-decoration: none;
 }
-/* line 352, ../sass/_components.scss */
+/* line 356, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn {
   padding: 20px 0 0px;
   margin-bottom: 10px;
@@ -952,69 +958,69 @@ section + .bg-light {
   font-size: 1.5rem;
   border-radius: 0;
 }
-/* line 359, ../sass/_components.scss */
+/* line 363, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:hover {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
 @media screen and (max-width: 767px) {
-  /* line 359, ../sass/_components.scss */
+  /* line 363, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn:hover {
     border-bottom: 0;
   }
 }
-/* line 368, ../sass/_components.scss */
+/* line 372, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:focus {
   text-decoration: none !important;
 }
 @media screen and (max-width: 767px) {
-  /* line 352, ../sass/_components.scss */
+  /* line 356, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn {
     font-size: 1.6rem;
   }
 }
-/* line 377, ../sass/_components.scss */
+/* line 381, ../sass/_components.scss */
 #accordion .acc-card .btn {
   text-align: left !important;
 }
 
 /* Tables */
-/* line 386, ../sass/_components.scss */
+/* line 390, ../sass/_components.scss */
 table {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-/* line 391, ../sass/_components.scss */
+/* line 395, ../sass/_components.scss */
 table td, table th {
   padding: 10px;
   border: 1px solid #4D4D59;
 }
-/* line 395, ../sass/_components.scss */
+/* line 399, ../sass/_components.scss */
 table tr {
   background: #3A3A43;
 }
-/* line 398, ../sass/_components.scss */
+/* line 402, ../sass/_components.scss */
 table tr.highlight {
   background: rgba(97, 167, 208, 0.3);
   border: 0px solid #61a7d0;
 }
-/* line 401, ../sass/_components.scss */
+/* line 405, ../sass/_components.scss */
 table tr.highlight strong {
   font-weight: 700;
 }
 
-/* line 415, ../sass/_components.scss */
+/* line 419, ../sass/_components.scss */
 .divider {
   padding: 0px 0 30px;
 }
-/* line 418, ../sass/_components.scss */
+/* line 422, ../sass/_components.scss */
 .divider hr {
   border-top: 1px solid #4D4D59;
 }
 
-/* line 423, ../sass/_components.scss */
+/* line 427, ../sass/_components.scss */
 .code {
   font-family: 'Source Code Pro', monospace;
   font-weight: 500;
@@ -1024,7 +1030,7 @@ table tr.highlight strong {
 }
 
 /* Mailchimp signup */
-/* line 433, ../sass/_components.scss */
+/* line 437, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -1033,11 +1039,11 @@ table tr.highlight strong {
   font-weight: 500;
   width: 100%;
 }
-/* line 441, ../sass/_components.scss */
+/* line 445, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 445, ../sass/_components.scss */
+/* line 449, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -1056,7 +1062,7 @@ table tr.highlight strong {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 464, ../sass/_components.scss */
+/* line 468, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -1075,7 +1081,7 @@ table tr.highlight strong {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 483, ../sass/_components.scss */
+  /* line 487, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
@@ -1195,37 +1201,38 @@ table tr.highlight strong {
   max-width: 10rem;
   font-size: 0.9rem;
   font-weight: 400;
+  margin-top: 10px;
 }
 
-/* line 113, ../sass/_views.scss */
+/* line 114, ../sass/_views.scss */
 #job-category-heading {
-  margin-bottom: 10px !important;
+  margin-bottom: 20px !important;
 }
 
-/* line 117, ../sass/_views.scss */
+/* line 118, ../sass/_views.scss */
 #job-details {
   padding-left: 25px;
 }
-/* line 120, ../sass/_views.scss */
+/* line 121, ../sass/_views.scss */
 #job-details h3 {
   font-size: 1.8rem;
 }
 
-/* line 125, ../sass/_views.scss */
+/* line 126, ../sass/_views.scss */
 #most-common-skills {
   margin-bottom: 5px;
 }
-/* line 127, ../sass/_views.scss */
+/* line 128, ../sass/_views.scss */
 #most-common-skills span {
   border-bottom: 0px solid;
 }
 
-/* line 132, ../sass/_views.scss */
+/* line 133, ../sass/_views.scss */
 #job-category-heading {
   margin-bottom: 10px;
 }
 
-/* line 136, ../sass/_views.scss */
+/* line 137, ../sass/_views.scss */
 .seniority {
   margin-top: 70px;
   width: 100%;
@@ -1236,22 +1243,22 @@ table tr.highlight strong {
   max-width: 400px;
   margin-bottom: 50px;
 }
-/* line 146, ../sass/_views.scss */
+/* line 147, ../sass/_views.scss */
 .seniority .bar {
   border-top: 3px solid #89EBD7;
   width: calc(100% - 2rem);
 }
-/* line 151, ../sass/_views.scss */
+/* line 152, ../sass/_views.scss */
 .seniority .dot-container {
   display: flex;
   justify-content: space-between;
 }
-/* line 156, ../sass/_views.scss */
+/* line 157, ../sass/_views.scss */
 .seniority .dot {
   margin-top: -12px;
   position: relative;
 }
-/* line 160, ../sass/_views.scss */
+/* line 161, ../sass/_views.scss */
 .seniority .dot:before {
   position: absolute;
   top: 0px;
@@ -1263,25 +1270,25 @@ table tr.highlight strong {
   content: ' ';
   left: calc(2rem - 10px);
 }
-/* line 173, ../sass/_views.scss */
+/* line 174, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1):before {
   border: 3px solid transparent;
   background: transparent;
 }
-/* line 178, ../sass/_views.scss */
+/* line 179, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1) div {
   text-align: left;
   margin-left: 0rem;
   min-width: 120px;
 }
-/* line 185, ../sass/_views.scss */
+/* line 186, ../sass/_views.scss */
 .seniority .dot div {
   text-align: center;
   width: 4rem;
   margin-top: -40px;
   position: relative;
 }
-/* line 191, ../sass/_views.scss */
+/* line 192, ../sass/_views.scss */
 .seniority .dot div:first-of-type {
   margin-bottom: 90px;
 }
