@@ -44,6 +44,22 @@ $('.job-categories li').click(function(){
 	});
 });
 
+// or change everytihng based on the job card "see comp" link
+$('.skip-to-comp').click(function() {
+
+	$('.job-categories li').removeClass('active');
+	var activeCat = $(this).attr("data-item");
+	var catName = $(this).attr("data-name");
+
+	// fade out the last set of details
+	$('.job-details-column').fadeOut(function() {
+		jobCategories();
+		loadJobChart(activeCat,catName);
+		$('.job-categories li[data-item=' + activeCat + ']').addClass('active');
+	});
+
+});
+
 // switch cateogry data based on list item
 function loadJobChart(number,name) {
 	var chartArrayNumber = (number-1)
@@ -104,5 +120,4 @@ function loadJobStats(number){
 		$('.available-seniority').html("How median pay increases with experience.");
 
 	}
-
 }

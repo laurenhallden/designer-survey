@@ -1142,8 +1142,17 @@ table tr.highlight strong {
   margin-top: 20px;
 }
 
+/* line 54, ../sass/_views.scss */
+a.skip-to-comp {
+  color: #5FD0FF !important;
+}
+/* line 57, ../sass/_views.scss */
+a.skip-to-comp:hover, a.skip-to-comp:active {
+  color: #13baff !important;
+}
+
 /* Pills */
-/* line 56, ../sass/_views.scss */
+/* line 65, ../sass/_views.scss */
 .pills {
   list-style: none;
   padding-inline-start: 0;
@@ -1151,12 +1160,12 @@ table tr.highlight strong {
   max-width: 18rem;
   min-height: 15rem;
 }
-/* line 63, ../sass/_views.scss */
+/* line 72, ../sass/_views.scss */
 .pills li {
   display: block;
   margin-bottom: 5px;
 }
-/* line 67, ../sass/_views.scss */
+/* line 76, ../sass/_views.scss */
 .pills li .bar-graph {
   display: inline-block;
   vertical-align: middle;
@@ -1166,7 +1175,7 @@ table tr.highlight strong {
   position: relative;
   height: 10px;
 }
-/* line 76, ../sass/_views.scss */
+/* line 85, ../sass/_views.scss */
 .pills li .bar-graph .bar {
   border-radius: 10px;
   background: #5FD0FF;
@@ -1175,7 +1184,7 @@ table tr.highlight strong {
   top: 0;
   left: 0;
 }
-/* line 86, ../sass/_views.scss */
+/* line 95, ../sass/_views.scss */
 .pills li .caption {
   display: inline-block;
   vertical-align: middle;
@@ -1183,7 +1192,7 @@ table tr.highlight strong {
   font-weight: 700;
   color: #5FD0FF;
 }
-/* line 94, ../sass/_views.scss */
+/* line 103, ../sass/_views.scss */
 .pills li .skill-name {
   margin-top: -5px;
   font-weight: 500;
@@ -1191,13 +1200,13 @@ table tr.highlight strong {
   font-size: 0.75rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 63, ../sass/_views.scss */
+  /* line 72, ../sass/_views.scss */
   .pills li {
     min-height: auto;
   }
 }
 
-/* line 107, ../sass/_views.scss */
+/* line 116, ../sass/_views.scss */
 .job-categories {
   max-width: 10rem;
   font-size: 0.9rem;
@@ -1205,35 +1214,35 @@ table tr.highlight strong {
   margin-top: 10px;
 }
 
-/* line 114, ../sass/_views.scss */
+/* line 123, ../sass/_views.scss */
 #job-category-heading {
   margin-bottom: 20px !important;
 }
 
-/* line 118, ../sass/_views.scss */
+/* line 127, ../sass/_views.scss */
 #job-details {
   padding-left: 25px;
 }
-/* line 121, ../sass/_views.scss */
+/* line 130, ../sass/_views.scss */
 #job-details h3 {
   font-size: 1.8rem;
 }
 
-/* line 126, ../sass/_views.scss */
+/* line 135, ../sass/_views.scss */
 #most-common-skills {
   margin-bottom: 5px;
 }
-/* line 128, ../sass/_views.scss */
+/* line 137, ../sass/_views.scss */
 #most-common-skills span {
   border-bottom: 0px solid;
 }
 
-/* line 133, ../sass/_views.scss */
+/* line 142, ../sass/_views.scss */
 #job-category-heading {
   margin-bottom: 10px;
 }
 
-/* line 137, ../sass/_views.scss */
+/* line 146, ../sass/_views.scss */
 .seniority {
   margin-top: 70px;
   width: 100%;
@@ -1244,22 +1253,22 @@ table tr.highlight strong {
   max-width: 400px;
   margin-bottom: 50px;
 }
-/* line 147, ../sass/_views.scss */
+/* line 156, ../sass/_views.scss */
 .seniority .bar {
   border-top: 3px solid #89EBD7;
   width: calc(100% - 2rem);
 }
-/* line 152, ../sass/_views.scss */
+/* line 161, ../sass/_views.scss */
 .seniority .dot-container {
   display: flex;
   justify-content: space-between;
 }
-/* line 157, ../sass/_views.scss */
+/* line 166, ../sass/_views.scss */
 .seniority .dot {
   margin-top: -12px;
   position: relative;
 }
-/* line 161, ../sass/_views.scss */
+/* line 170, ../sass/_views.scss */
 .seniority .dot:before {
   position: absolute;
   top: 0px;
@@ -1271,25 +1280,25 @@ table tr.highlight strong {
   content: ' ';
   left: calc(2rem - 10px);
 }
-/* line 174, ../sass/_views.scss */
+/* line 183, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1):before {
   border: 3px solid transparent;
   background: transparent;
 }
-/* line 179, ../sass/_views.scss */
+/* line 188, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1) div {
   text-align: left;
   margin-left: 0rem;
   min-width: 120px;
 }
-/* line 186, ../sass/_views.scss */
+/* line 195, ../sass/_views.scss */
 .seniority .dot div {
   text-align: center;
   width: 4rem;
   margin-top: -40px;
   position: relative;
 }
-/* line 192, ../sass/_views.scss */
+/* line 201, ../sass/_views.scss */
 .seniority .dot div:first-of-type {
   margin-bottom: 90px;
 }

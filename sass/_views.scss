@@ -51,6 +51,15 @@
 	margin-top: 20px;
 }
 
+a.skip-to-comp {
+	color: $blue !important;
+
+	&:hover,
+	&:active {
+		color: darken($blue, 15%) !important;
+	}
+}
+
 /* Pills */
 
 .pills {
