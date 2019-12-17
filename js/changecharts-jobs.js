@@ -50,12 +50,12 @@ $('.skip-to-comp').click(function() {
 	$('.job-categories li').removeClass('active');
 	var activeCat = $(this).attr("data-item");
 	var catName = $(this).attr("data-name");
+	$('.job-categories li[data-item=' + activeCat + ']').addClass('active');
 
 	// fade out the last set of details
 	$('.job-details-column').fadeOut(function() {
 		jobCategories();
 		loadJobChart(activeCat,catName);
-		$('.job-categories li[data-item=' + activeCat + ']').addClass('active');
 	});
 
 });
