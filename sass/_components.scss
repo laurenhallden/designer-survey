@@ -264,10 +264,6 @@
 	font-weight: 400;
 	box-shadow: $high-float;
 
-	@media screen and (max-width: 767px) {
-		margin-top: 30px;
-	}
-
 	strong {
 		font-weight: 700;
 	}

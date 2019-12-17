@@ -599,7 +599,14 @@ section + .bg-light {
   }
 }
 
-/* line 48, ../sass/_layout.scss */
+@media screen and (max-width: 767px) {
+  /* line 48, ../sass/_layout.scss */
+  .hidden-sm {
+    display: none;
+  }
+}
+
+/* line 55, ../sass/_layout.scss */
 .footer {
   font-size: 0.75rem;
   color: #8e8e9c;
@@ -858,67 +865,61 @@ section + .bg-light {
   font-weight: 400;
   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.15);
 }
-@media screen and (max-width: 767px) {
-  /* line 259, ../sass/_components.scss */
-  .card {
-    margin-top: 30px;
-  }
-}
-/* line 271, ../sass/_components.scss */
+/* line 267, ../sass/_components.scss */
 .card strong {
   font-weight: 700;
 }
-/* line 275, ../sass/_components.scss */
+/* line 271, ../sass/_components.scss */
 .card h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-/* line 280, ../sass/_components.scss */
+/* line 276, ../sass/_components.scss */
 .card a {
   color: #89EBD7 !important;
   font-weight: 600;
 }
-/* line 284, ../sass/_components.scss */
+/* line 280, ../sass/_components.scss */
 .card a:hover {
   border-bottom: 0;
   color: #48e0c1 !important;
 }
-/* line 289, ../sass/_components.scss */
+/* line 285, ../sass/_components.scss */
 .card a:active {
   color: #20bb9c !important;
 }
 
-/* line 295, ../sass/_components.scss */
+/* line 291, ../sass/_components.scss */
 .card-text {
   margin-bottom: .5rem;
 }
 
-/* line 299, ../sass/_components.scss */
+/* line 295, ../sass/_components.scss */
 .bg-primary {
   background-color: #13baff !important;
 }
 
-/* line 304, ../sass/_components.scss */
+/* line 300, ../sass/_components.scss */
 .bg-secondary .card-header, .bg-light .card-header {
   background-color: #4D4D59;
   font-weight: 700;
 }
-/* line 309, ../sass/_components.scss */
+/* line 305, ../sass/_components.scss */
 .bg-secondary .card-body, .bg-light .card-body {
   background-color: #3A3A43;
 }
 
-/* line 315, ../sass/_components.scss */
+/* line 311, ../sass/_components.scss */
 .charts h1, .charts h2, .charts h3 {
   margin: 0 0 0.5em 0;
 }
 
-/* line 320, ../sass/_components.scss */
+/* line 316, ../sass/_components.scss */
 .hidden {
   display: none;
 }
 
-/* line 325, ../sass/_components.scss */
+/* line 321, ../sass/_components.scss */
 #accordion .acc-card {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
@@ -929,7 +930,7 @@ section + .bg-light {
   padding: 0;
   max-width: 45rem;
 }
-/* line 335, ../sass/_components.scss */
+/* line 331, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header, #accordion .acc-card .acc-card-body {
   background-color: transparent;
   border: 0px;
@@ -937,20 +938,20 @@ section + .bg-light {
   color: white;
   padding: 0;
 }
-/* line 343, ../sass/_components.scss */
+/* line 339, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body {
   margin-bottom: 30px;
 }
-/* line 346, ../sass/_components.scss */
+/* line 342, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a {
   color: #5FD0FF !important;
 }
-/* line 349, ../sass/_components.scss */
+/* line 345, ../sass/_components.scss */
 #accordion .acc-card .acc-card-body a:active {
   color: #13baff !important;
   text-decoration: none;
 }
-/* line 356, ../sass/_components.scss */
+/* line 352, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn {
   padding: 20px 0 0px;
   margin-bottom: 10px;
@@ -958,69 +959,69 @@ section + .bg-light {
   font-size: 1.5rem;
   border-radius: 0;
 }
-/* line 363, ../sass/_components.scss */
+/* line 359, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:hover {
   text-decoration: none;
   border-bottom: 1px solid white;
 }
 @media screen and (max-width: 767px) {
-  /* line 363, ../sass/_components.scss */
+  /* line 359, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn:hover {
     border-bottom: 0;
   }
 }
-/* line 372, ../sass/_components.scss */
+/* line 368, ../sass/_components.scss */
 #accordion .acc-card .acc-card-header .btn:focus {
   text-decoration: none !important;
 }
 @media screen and (max-width: 767px) {
-  /* line 356, ../sass/_components.scss */
+  /* line 352, ../sass/_components.scss */
   #accordion .acc-card .acc-card-header .btn {
     font-size: 1.6rem;
   }
 }
-/* line 381, ../sass/_components.scss */
+/* line 377, ../sass/_components.scss */
 #accordion .acc-card .btn {
   text-align: left !important;
 }
 
 /* Tables */
-/* line 390, ../sass/_components.scss */
+/* line 386, ../sass/_components.scss */
 table {
   font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 30px;
 }
-/* line 395, ../sass/_components.scss */
+/* line 391, ../sass/_components.scss */
 table td, table th {
   padding: 10px;
   border: 1px solid #4D4D59;
 }
-/* line 399, ../sass/_components.scss */
+/* line 395, ../sass/_components.scss */
 table tr {
   background: #3A3A43;
 }
-/* line 402, ../sass/_components.scss */
+/* line 398, ../sass/_components.scss */
 table tr.highlight {
   background: rgba(97, 167, 208, 0.3);
   border: 0px solid #61a7d0;
 }
-/* line 405, ../sass/_components.scss */
+/* line 401, ../sass/_components.scss */
 table tr.highlight strong {
   font-weight: 700;
 }
 
-/* line 419, ../sass/_components.scss */
+/* line 415, ../sass/_components.scss */
 .divider {
   padding: 0px 0 30px;
 }
-/* line 422, ../sass/_components.scss */
+/* line 418, ../sass/_components.scss */
 .divider hr {
   border-top: 1px solid #4D4D59;
 }
 
-/* line 427, ../sass/_components.scss */
+/* line 423, ../sass/_components.scss */
 .code {
   font-family: 'Source Code Pro', monospace;
   font-weight: 500;
@@ -1030,7 +1031,7 @@ table tr.highlight strong {
 }
 
 /* Mailchimp signup */
-/* line 437, ../sass/_components.scss */
+/* line 433, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -1039,11 +1040,11 @@ table tr.highlight strong {
   font-weight: 500;
   width: 100%;
 }
-/* line 445, ../sass/_components.scss */
+/* line 441, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 449, ../sass/_components.scss */
+/* line 445, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -1062,7 +1063,7 @@ table tr.highlight strong {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 468, ../sass/_components.scss */
+/* line 464, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -1081,7 +1082,7 @@ table tr.highlight strong {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 487, ../sass/_components.scss */
+  /* line 483, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
