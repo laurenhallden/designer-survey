@@ -9,9 +9,11 @@
 {% include nav.html %}
 {% include subnav.html %}
 
+<div class="content-wrapper">
+
 <section>
-    <div class="container article">
-        <div class="row text-left">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-9">
                 <h1>{{ page.title }}</h1>
                 <p>When looking at pay disparity, it is well-reported nationally that cisgender straight white men earn more than their counterparts across gender and racial/ethnic identities. We therefore did analysis of this majority against all other groups, such as “Men vs. Non-Men” and “White vs. Non-white.” (Read more about why we did this in our <a href="/philly/methodology#group-responses" title="Chapter: Methodoloy - Group Responses">methodology.)</a></p>
@@ -28,7 +30,7 @@
 
 <section id="gender">
     <div class="container">
-        <div class="row text-left">
+        <div class="row">
             <div class="col-lg-9">
 
 				<h2>Gender Identity</h2>
@@ -259,19 +261,12 @@
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="row text-left">
-            <div class="col-lg-9">
-            	<p></p>
-            </div>
-        </div>
-    </div>
-</section>
+</div> <!-- content wrapper -->
 
 {% include footer.html %}
 
 <!-- JS -->
+<script src="/js/nav.js"></script>
 <script src="/js/data.js"></script>
 <script src="/js/loadcharts-demographics.js"></script>
 </body>

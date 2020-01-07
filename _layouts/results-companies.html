@@ -9,9 +9,11 @@
 {% include nav.html %}
 {% include subnav.html %}
 
+<div class="content-wrapper">
+
 <section>
-    <div class="container article">
-        <div class="row text-left">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-9">
                 <h1>{{ page.title }}</h1>
 
@@ -30,8 +32,8 @@
 </section>
 
 <section>
-    <div class="container article">
-        <div class="row text-left">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-9">
                 <h3>Compensation</h3>
 
@@ -70,8 +72,8 @@
 </section>
 
 <section>
-    <div class="container article">
-        <div class="row text-left">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-9">
                 <h3>Opportunity for advancement</h3>
 
@@ -131,8 +133,8 @@
 </section>
 
 <section>
-    <div class="container article">
-        <div class="row text-left">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-9">
                 <h3>Paid Time Off (PTO) Policy</h3>
 
@@ -189,8 +191,8 @@
 </section>
 
 <section>
-    <div class="container article">
-        <div class="row text-left">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-9">
                 <h3>Work flexibility</h3>
 
@@ -199,27 +201,55 @@
                 <p>We found that the vast majority of companies allow for remote work today, regardless of size or type.</p>
 
                 <p><strong>“I can work remotely”</strong></p>
+            </div>
+        </div>
+        <div class="row no-margin">
+            <div class="col-lg-3">
                 Small: 76%<br>
                 Mid-sized: 81%<br>
                 Large: 77%<br>
+            </div>
+            <div class="col-lg-9">
                 Agency/Consultancy: 75%<br>
                 In-house: 78%<br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
 
                 <p>There was more ambiguity when it came to flexible work hours. Importantly, we did not specify what flexible meant, and may consider being more specific next time.</p>
 
                 <p><strong>“My employer is flexible with work hours”</strong></p>
+            </div>
+        </div>
+        <div class="row no-margin">
+            <div class="col-lg-3">
                 Small: 52%<br>
                 Mid-sized: 64%<br>
                 Large: 55%<br>
+            </div>
+            <div class="col-lg-9">
                 Agency/Consultancy: 56%<br>
                 In-house: 58%<br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-9">
 
                 <p>A small but considerable number of respondents have no flexible work policy:</p>
 
                 <p><strong>“Neither” work remotely or with flexible hours</strong></p>
+            </div>
+
+        </div>
+        <div class="row no-margin">
+            <div class="col-lg-3">
                 Small: 14%<br>
                 Mid-sized: 11%<br>
                 Large: 15%<br>
+            </div>
+            <div class="col-lg-9">
                 Agency/Consultancy: 16%<br>
                 In-house: 12%<br><br>
 
@@ -230,7 +260,7 @@
 
 <section>
     <div class="container">
-        <div class="row text-left">
+        <div class="row">
             <div class="col-lg-9">
                 <h3>Benefits</h3>
                 <p>Asking about benefits is, unfortunately, a significant challenge that we didn’t quite get right. We asked respondents to simply select the benefits that were available to them and provided an option to enter their own. However, we did not at first consider that many might not know their benefits either because they weren’t explained to them or they are irrelevant based on their situation, such as child care or parental leave.</p>
@@ -241,9 +271,12 @@
     </div>
 </section>
 
+</div> <!-- content wrapper -->
+
 {% include footer.html %}
 
 <!-- JS -->
+<script src="/js/nav.js"></script>
 <script src="/js/data.js"></script>
 <script src="/js/loadcharts-companies.js"></script>
 </body>

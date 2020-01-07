@@ -9,9 +9,11 @@
 {% include nav.html %}
 {% include subnav.html %}
 
+<div class="content-wrapper">
+
 <section>
-    <div class="container article">
-        <div class="row text-left">
+    <div class="container">
+        <div class="row">
             <div class="col-lg-9">
                 <h1>{{ page.title }}</h1>
                 <p>The Philly Design Compensation Census was designed to help our members of our community answer two questions:</p>
@@ -59,19 +61,12 @@
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="row text-left">
-            <div class="col-lg-9">
-            	<p></p>
-            </div>
-        </div>
-    </div>
-</section> 
+</div> <!-- content wrapper -->
 
 {% include footer.html %}
 
 <!-- JS -->
+<script src="/js/nav.js"></script>
 <script src="/js/data.js"></script>
 <script>
   Chart.defaults.global.defaultFontFamily = "'Source Code Pro', monospace";

@@ -85,7 +85,6 @@
 .subnav {
 	background: $darker-background-color;
 	margin-bottom: 2rem;
-	border-bottom: 3px solid $green;
 
 	ul {
 	list-style: none;
@@ -103,17 +102,12 @@
 				color: $white;
 				border-radius: 2rem;
 				padding: 0.5rem 1rem;
-
-				&:hover {
-					color: $green !important;
-				}
 			}
 
 			&.active {
 
 				a,
 				a:hover {
-					color: $green !important;
 
 					&:before {
 						content: '';
@@ -126,6 +120,96 @@
 						border-left: 15px solid transparent;
 						border-right: 15px solid transparent;
 						border-bottom: 15px solid $green;
+					}
+				}
+			}
+		}
+	}
+
+	&.blue {
+		border-bottom: 3px solid $blue;
+
+		.nav-item {
+			a:hover { color: $blue !important; }
+
+			&.active {
+				a, a:hover {
+					color: $blue !important;
+
+					&:before {
+						border-bottom: 15px solid $blue !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.cyan {
+		border-bottom: 3px solid $cyan;
+
+		.nav-item {
+			a:hover { color: $cyan !important; }
+
+			&.active {
+				a, a:hover {
+					color: $cyan !important;
+
+					&:before {
+						border-bottom: 15px solid $cyan !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.green {
+		border-bottom: 3px solid $green;
+
+		.nav-item {
+			a:hover { color: $green !important; }
+
+			&.active {
+				a, a:hover {
+					color: $green !important;
+
+					&:before {
+						border-bottom: 15px solid $green !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.purple {
+		border-bottom: 3px solid $purple;
+
+		.nav-item {
+			a:hover { color: $purple !important; }
+
+			&.active {
+				a, a:hover {
+					color: $purple !important;
+
+					&:before {
+						border-bottom: 15px solid $purple !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.red {
+		border-bottom: 3px solid $red;
+
+		.nav-item {
+			a:hover { color: $red !important; }
+
+			&.active {
+				a, a:hover {
+					color: $red !important;
+
+					&:before {
+						border-bottom: 15px solid $red !important;
 					}
 				}
 			}
@@ -175,7 +259,6 @@
 		}
 	}
 }
-
 
 /* Buttons */
 

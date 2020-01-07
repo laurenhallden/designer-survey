@@ -1,0 +1,168 @@
+/* Subnav colors */
+
+.subnav {
+
+	&.blue {
+		border-bottom: 3px solid $blue;
+
+		.nav-item {
+			a:hover { color: $blue !important; }
+
+			&.active {
+				a, a:hover {
+					color: $blue !important;
+
+					&:before {
+						border-bottom: 15px solid $blue !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.lime {
+		border-bottom: 3px solid $lime;
+
+		.nav-item {
+			a:hover { color: $lime !important; }
+
+			&.active {
+				a, a:hover {
+					color: $lime !important;
+
+					&:before {
+						border-bottom: 15px solid $lime !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.green {
+		border-bottom: 3px solid $green;
+
+		.nav-item {
+			a:hover { color: $green !important; }
+
+			&.active {
+				a, a:hover {
+					color: $green !important;
+
+					&:before {
+						border-bottom: 15px solid $green !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.purple {
+		border-bottom: 3px solid $purple;
+
+		.nav-item {
+			a:hover { color: $purple !important; }
+
+			&.active {
+				a, a:hover {
+					color: $purple !important;
+
+					&:before {
+						border-bottom: 15px solid $purple !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.red {
+		border-bottom: 3px solid $red;
+
+		.nav-item {
+			a:hover { color: $red !important; }
+
+			&.active {
+				a, a:hover {
+					color: $red !important;
+
+					&:before {
+						border-bottom: 15px solid $red !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Body colors */
+
+.content-wrapper {
+	&.blue {
+		a {
+			color: $blue;
+
+			&:hover {
+				color: $blue;
+				border-bottom: 1px solid $blue;
+			}
+
+			&:active {
+				color: darken($blue, 15%);
+			}
+		}
+	}
+	&.lime {
+		a {
+			color: $lime;
+
+			&:hover {
+				color: $lime;
+				border-bottom: 1px solid $lime;
+			}
+
+			&:active {
+				color: darken($lime, 15%);
+			}
+		}
+	}
+	&.green {
+		a {
+			color: $green;
+
+			&:hover {
+				color: $green;
+				border-bottom: 1px solid $green;
+			}
+
+			&:active {
+				color: darken($green, 15%);
+			}
+		}
+	}
+	&.purple {
+		a {
+			color: $purple;
+
+			&:hover {
+				color: $purple;
+				border-bottom: 1px solid $purple;
+			}
+
+			&:active {
+				color: darken($purple, 15%);
+			}
+		}
+	}
+	&.red {
+		a {
+			color: $red;
+			&:hover {
+				color: $red;
+				border-bottom: 1px solid $red;
+			}
+
+			&:active {
+				color: darken($red, 15%);
+			}
+		}
+	}
+}
