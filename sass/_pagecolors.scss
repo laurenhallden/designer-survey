@@ -114,6 +114,40 @@
 				color: darken($blue, 15%);
 			}
 		}
+		.btn-primary,
+		.btn-outline-primary.active {
+			background-color: $blue !important;
+			border: 2px solid $blue !important;
+
+			&:hover {
+				background-color: darken($blue, 15%) !important;
+				border-color: darken($blue, 15%) !important;
+			}
+
+			&:active {
+				background-color: darken($blue, 30%) !important;
+				border-color: darken($blue, 15%) !important;
+			}
+		}
+		.btn-outline-primary {
+			color: $blue;
+			border: 2px solid $blue;
+
+			&:hover {
+				color: darken($blue, 15%) !important;
+				border-color: darken($blue, 15%) !important;
+			}
+
+			&:active {
+				color: darken($blue, 30%) !important;
+				border-color: darken($blue, 15%) !important;
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(95, 208, 254, 0.15) !important;
+			}
+		}
 	}
 	&.lime {
 		a {
@@ -126,6 +160,41 @@
 
 			&:active {
 				color: darken($lime, 15%);
+			}
+		}
+		.btn-primary,
+		.btn-outline-primary.active {
+			background-color: $lime !important;
+			border: 2px solid $lime !important;
+
+			&:hover {
+				background-color: darken($lime, 15%) !important;
+				border-color: darken($lime, 15%) !important;
+			}
+
+			&:active {
+				background-color: darken($lime, 30%) !important;
+				border-color: darken($lime, 15%) !important;
+			}
+		}
+
+		.btn-outline-primary {
+			color: $blue;
+			border: 2px solid $lime;
+
+			&:hover {
+				color: darken($lime, 15%) !important;
+				border-color: darken($lime, 15%) !important;
+			}
+
+			&:active {
+				color: darken($lime, 30%) !important;
+				border-color: darken($lime, 15%) !important;
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(187, 210, 119, 0.15) !important;
 			}
 		}
 	}
@@ -142,6 +211,42 @@
 				color: darken($green, 15%);
 			}
 		}
+		.btn-primary,
+		.btn-outline-primary.active {
+			background-color: $green !important;
+			border: 2px solid $green !important;
+			color: $gray-900 !important;
+
+			&:hover {
+				background-color: darken($green, 15%) !important;
+				border-color: darken($green, 15%) !important;
+				color: $gray-900 !important;
+			}
+
+			&:active {
+				background-color: darken($green, 30%) !important;
+				border-color: darken($green, 15%) !important;
+			}
+		}
+		.btn-outline-primary {
+			color: $green;
+			border: 2px solid $green;
+
+			&:hover {
+				color: darken($green, 15%) !important;
+				border-color: darken($green, 15%) !important;
+			}
+
+			&:active {
+				color: darken($green, 30%) !important;
+				border-color: darken($green, 15%) !important;
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(137, 235, 215, 0.15) !important;
+			}
+		}
 	}
 	&.purple {
 		a {
@@ -156,6 +261,11 @@
 				color: darken($purple, 15%);
 			}
 		}
+		table {
+			.highlight {
+				background: rgba(220, 134, 255, 0.20) !important;
+			}
+		}
 	}
 	&.red {
 		a {
@@ -167,6 +277,11 @@
 
 			&:active {
 				color: darken($red, 15%);
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(255, 134, 150, 0.15) !important;
 			}
 		}
 	}

@@ -27,13 +27,6 @@
 		margin: 5px 3px;
 		padding: 5px 7px;
 	}
-	.btn-outline-primary.active {
-
-		&:hover {
-			background-color: $blue !important;
-			border-color: $blue !important;
-		}
-	}
 }
 
 .job-description {
@@ -49,15 +42,6 @@
 .skills-header {
 	margin-bottom: 0px;
 	margin-top: 20px;
-}
-
-a.skip-to-comp {
-	color: $blue !important;
-
-	&:hover,
-	&:active {
-		color: darken($blue, 15%) !important;
-	}
 }
 
 /* Pills */
@@ -84,7 +68,7 @@ a.skip-to-comp {
 
 			.bar {
 				border-radius: 10px;
-				background: $blue;
+				background: $green;
 				height: 10px;
 				position: absolute;
 				top: 0;
@@ -97,7 +81,7 @@ a.skip-to-comp {
 			vertical-align: middle;
 			margin-left: 15px;
 			font-weight: 700;
-			color: $blue;
+			color: $green;
 		}
 
 		.skill-name {
