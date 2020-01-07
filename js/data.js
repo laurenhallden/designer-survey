@@ -324,6 +324,72 @@ var boxPlots = [
     }
 ]
 
+// COMPANIES PAGES DATA
+
+const boxplotCompanySize = {
+  // define label tree
+  labels: ['5-10','11-50','51-250','250+'],
+  datasets: [{
+    backgroundColor: 'rgba(97, 167, 208, .25)',
+    borderColor: 'rgba(97, 167, 208, 1)',
+    borderWidth: 3,
+    padding: 10,
+    itemRadius: 0,
+    data: [
+        {min: 48000,
+            q1: 64000,
+            median: 71000,
+            q3: 78000,
+            max: 85000
+        },
+        {min: 35000,
+            q1: 62000,
+            median: 83000,
+            q3: 96000,
+            max: 140000
+        },
+        {min: 43000,
+            q1: 70000,
+            median: 84000,
+            q3: 105000,
+            max: 154000
+        },
+        {min: 38000,
+            q1: 73000,
+            median: 97000,
+            q3: 126000,
+            max: 185000
+        }
+    ]
+  }]
+};
+
+const boxplotCompanyType = {
+  // define label tree
+  labels: ['Agency','In-House'],
+  datasets: [{
+    backgroundColor: 'rgba(97, 167, 208, .25)',
+    borderColor: 'rgba(97, 167, 208, 1)',
+    borderWidth: 3,
+    padding: 10,
+    itemRadius: 0,
+    data: [
+        {min: 35000,
+            q1: 70000,
+            median: 85000,
+            q3: 100000,
+            max: 140000
+        },
+        {min: 38000,
+            q1: 70000,
+            median: 94000,
+            q3: 125000,
+            max: 192000
+        }
+    ]
+  }]
+};
+
 // DEMOGRAPHICS PAGE DATA
 
 // Gaps by job category and gender
