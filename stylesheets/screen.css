@@ -448,11 +448,6 @@ textarea {
   /* 2 */
 }
 
-/* line 54, ../sass/_variables.scss */
-:root {
-  --accent-color: #5FD0FF;
-}
-
 /* line 1, ../sass/_type.scss */
 body, html {
   font-size: 20px;
