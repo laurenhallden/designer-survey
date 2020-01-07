@@ -4,6 +4,7 @@
 
 	&.blue {
 		border-bottom: 3px solid $blue;
+		background: rgba(95, 208, 254, 0.15) !important;
 
 		.nav-item {
 			a:hover { color: $blue !important; }
@@ -22,6 +23,7 @@
 
 	&.lime {
 		border-bottom: 3px solid $lime;
+		background: rgba(187, 210, 119, 0.15) !important;
 
 		.nav-item {
 			a:hover { color: $lime !important; }
@@ -40,6 +42,7 @@
 
 	&.green {
 		border-bottom: 3px solid $green;
+		background: rgba(137, 235, 215, 0.15) !important;
 
 		.nav-item {
 			a:hover { color: $green !important; }
@@ -58,6 +61,7 @@
 
 	&.purple {
 		border-bottom: 3px solid $purple;
+		background: rgba(220, 134, 255, 0.15) !important;
 
 		.nav-item {
 			a:hover { color: $purple !important; }
@@ -76,6 +80,7 @@
 
 	&.red {
 		border-bottom: 3px solid $red;
+		background: rgba(255, 134, 150, 0.15) !important;
 
 		.nav-item {
 			a:hover { color: $red !important; }

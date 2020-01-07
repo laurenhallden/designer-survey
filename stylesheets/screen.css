@@ -1164,147 +1164,152 @@ table tr.highlight strong {
 /* line 5, ../sass/_pagecolors.scss */
 .subnav.blue {
   border-bottom: 3px solid #5FD0FF;
+  background: rgba(95, 208, 254, 0.15) !important;
 }
-/* line 9, ../sass/_pagecolors.scss */
+/* line 10, ../sass/_pagecolors.scss */
 .subnav.blue .nav-item a:hover {
   color: #5FD0FF !important;
 }
-/* line 12, ../sass/_pagecolors.scss */
+/* line 13, ../sass/_pagecolors.scss */
 .subnav.blue .nav-item.active a, .subnav.blue .nav-item.active a:hover {
   color: #5FD0FF !important;
 }
-/* line 15, ../sass/_pagecolors.scss */
+/* line 16, ../sass/_pagecolors.scss */
 .subnav.blue .nav-item.active a:before, .subnav.blue .nav-item.active a:hover:before {
   border-bottom: 15px solid #5FD0FF !important;
 }
-/* line 23, ../sass/_pagecolors.scss */
+/* line 24, ../sass/_pagecolors.scss */
 .subnav.lime {
   border-bottom: 3px solid #BBD277;
+  background: rgba(187, 210, 119, 0.15) !important;
 }
-/* line 27, ../sass/_pagecolors.scss */
+/* line 29, ../sass/_pagecolors.scss */
 .subnav.lime .nav-item a:hover {
   color: #BBD277 !important;
 }
-/* line 30, ../sass/_pagecolors.scss */
+/* line 32, ../sass/_pagecolors.scss */
 .subnav.lime .nav-item.active a, .subnav.lime .nav-item.active a:hover {
   color: #BBD277 !important;
 }
-/* line 33, ../sass/_pagecolors.scss */
+/* line 35, ../sass/_pagecolors.scss */
 .subnav.lime .nav-item.active a:before, .subnav.lime .nav-item.active a:hover:before {
   border-bottom: 15px solid #BBD277 !important;
 }
-/* line 41, ../sass/_pagecolors.scss */
+/* line 43, ../sass/_pagecolors.scss */
 .subnav.green {
   border-bottom: 3px solid #89EBD7;
+  background: rgba(137, 235, 215, 0.15) !important;
 }
-/* line 45, ../sass/_pagecolors.scss */
+/* line 48, ../sass/_pagecolors.scss */
 .subnav.green .nav-item a:hover {
   color: #89EBD7 !important;
 }
-/* line 48, ../sass/_pagecolors.scss */
+/* line 51, ../sass/_pagecolors.scss */
 .subnav.green .nav-item.active a, .subnav.green .nav-item.active a:hover {
   color: #89EBD7 !important;
 }
-/* line 51, ../sass/_pagecolors.scss */
+/* line 54, ../sass/_pagecolors.scss */
 .subnav.green .nav-item.active a:before, .subnav.green .nav-item.active a:hover:before {
   border-bottom: 15px solid #89EBD7 !important;
 }
-/* line 59, ../sass/_pagecolors.scss */
+/* line 62, ../sass/_pagecolors.scss */
 .subnav.purple {
   border-bottom: 3px solid #DC86FF;
+  background: rgba(220, 134, 255, 0.15) !important;
 }
-/* line 63, ../sass/_pagecolors.scss */
+/* line 67, ../sass/_pagecolors.scss */
 .subnav.purple .nav-item a:hover {
   color: #DC86FF !important;
 }
-/* line 66, ../sass/_pagecolors.scss */
+/* line 70, ../sass/_pagecolors.scss */
 .subnav.purple .nav-item.active a, .subnav.purple .nav-item.active a:hover {
   color: #DC86FF !important;
 }
-/* line 69, ../sass/_pagecolors.scss */
+/* line 73, ../sass/_pagecolors.scss */
 .subnav.purple .nav-item.active a:before, .subnav.purple .nav-item.active a:hover:before {
   border-bottom: 15px solid #DC86FF !important;
 }
-/* line 77, ../sass/_pagecolors.scss */
+/* line 81, ../sass/_pagecolors.scss */
 .subnav.red {
   border-bottom: 3px solid #FF8696;
+  background: rgba(255, 134, 150, 0.15) !important;
 }
-/* line 81, ../sass/_pagecolors.scss */
+/* line 86, ../sass/_pagecolors.scss */
 .subnav.red .nav-item a:hover {
   color: #FF8696 !important;
 }
-/* line 84, ../sass/_pagecolors.scss */
+/* line 89, ../sass/_pagecolors.scss */
 .subnav.red .nav-item.active a, .subnav.red .nav-item.active a:hover {
   color: #FF8696 !important;
 }
-/* line 87, ../sass/_pagecolors.scss */
+/* line 92, ../sass/_pagecolors.scss */
 .subnav.red .nav-item.active a:before, .subnav.red .nav-item.active a:hover:before {
   border-bottom: 15px solid #FF8696 !important;
 }
 
 /* Body colors */
-/* line 100, ../sass/_pagecolors.scss */
+/* line 105, ../sass/_pagecolors.scss */
 .content-wrapper.blue a {
   color: #5FD0FF;
 }
-/* line 103, ../sass/_pagecolors.scss */
+/* line 108, ../sass/_pagecolors.scss */
 .content-wrapper.blue a:hover {
   color: #5FD0FF;
   border-bottom: 1px solid #5FD0FF;
 }
-/* line 108, ../sass/_pagecolors.scss */
+/* line 113, ../sass/_pagecolors.scss */
 .content-wrapper.blue a:active {
   color: #13baff;
 }
-/* line 114, ../sass/_pagecolors.scss */
+/* line 119, ../sass/_pagecolors.scss */
 .content-wrapper.lime a {
   color: #BBD277;
 }
-/* line 117, ../sass/_pagecolors.scss */
+/* line 122, ../sass/_pagecolors.scss */
 .content-wrapper.lime a:hover {
   color: #BBD277;
   border-bottom: 1px solid #BBD277;
 }
-/* line 122, ../sass/_pagecolors.scss */
+/* line 127, ../sass/_pagecolors.scss */
 .content-wrapper.lime a:active {
   color: #9ebe3f;
 }
-/* line 128, ../sass/_pagecolors.scss */
+/* line 133, ../sass/_pagecolors.scss */
 .content-wrapper.green a {
   color: #89EBD7;
 }
-/* line 131, ../sass/_pagecolors.scss */
+/* line 136, ../sass/_pagecolors.scss */
 .content-wrapper.green a:hover {
   color: #89EBD7;
   border-bottom: 1px solid #89EBD7;
 }
-/* line 136, ../sass/_pagecolors.scss */
+/* line 141, ../sass/_pagecolors.scss */
 .content-wrapper.green a:active {
   color: #48e0c1;
 }
-/* line 142, ../sass/_pagecolors.scss */
+/* line 147, ../sass/_pagecolors.scss */
 .content-wrapper.purple a {
   color: #DC86FF;
 }
-/* line 145, ../sass/_pagecolors.scss */
+/* line 150, ../sass/_pagecolors.scss */
 .content-wrapper.purple a:hover {
   color: #DC86FF;
   border-bottom: 1px solid #DC86FF;
 }
-/* line 150, ../sass/_pagecolors.scss */
+/* line 155, ../sass/_pagecolors.scss */
 .content-wrapper.purple a:active {
   color: #c63aff;
 }
-/* line 156, ../sass/_pagecolors.scss */
+/* line 161, ../sass/_pagecolors.scss */
 .content-wrapper.red a {
   color: #FF8696;
 }
-/* line 158, ../sass/_pagecolors.scss */
+/* line 163, ../sass/_pagecolors.scss */
 .content-wrapper.red a:hover {
   color: #FF8696;
   border-bottom: 1px solid #FF8696;
 }
-/* line 163, ../sass/_pagecolors.scss */
+/* line 168, ../sass/_pagecolors.scss */
 .content-wrapper.red a:active {
   color: #ff3a54;
 }
