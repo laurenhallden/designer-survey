@@ -21,23 +21,12 @@ window.onload = function () {
       backgroundColor: 'rgba(0, 0, 0, 0.9)',
       xPadding: 15,
       yPadding: 15,
-			cornerRadius: 4,
+      cornerRadius: 4,
       callbacks: {
 	        // use label callback to return the desired label
-	        label: function(tooltipItem, data) {
-	          return;
-	        },
-	        title: function(tooltipItem, data) {
-	          return;
-	        },
-		    footer: function(tooltipItems, data) {
-		    	var thisItem = data.datasets[0].data[0];
-		    	var Min = 'Min: ' + thisItem.min;
-		    	var Q1 = 'Q1: ' + thisItem.q1;
-		    	var Median = 'Median: ' + thisItem.median;
-		    	var Q3 = 'Q3: ' + thisItem.q3;
-		    	var Max = 'Max: ' + thisItem.max;
-		      return [Max, Q3, Median, Q1, Min];
+			label: function(tooltipItem, data) {
+				var label = tooltipItem.xLabel;
+				return 'Median salary: ' + tooltipItem.yLabel;
 		    }
 	    }
     },
@@ -104,20 +93,9 @@ window.onload = function () {
 			cornerRadius: 4,
       callbacks: {
 	        // use label callback to return the desired label
-	        label: function(tooltipItem, data) {
-	          return;
-	        },
-	        title: function(tooltipItem, data) {
-	          return;
-	        },
-		    footer: function(tooltipItems, data) {
-		    	var thisItem = data.datasets[0].data[0];
-		    	var Min = 'Min: ' + thisItem.min;
-		    	var Q1 = 'Q1: ' + thisItem.q1;
-		    	var Median = 'Median: ' + thisItem.median;
-		    	var Q3 = 'Q3: ' + thisItem.q3;
-		    	var Max = 'Max: ' + thisItem.max;
-		      return [Max, Q3, Median, Q1, Min];
+			label: function(tooltipItem, data) {
+				var label = tooltipItem.xLabel;
+				return 'Median salary: ' + tooltipItem.yLabel;
 		    }
 	    }
     },

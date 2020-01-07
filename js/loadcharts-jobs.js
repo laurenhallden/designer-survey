@@ -119,15 +119,15 @@ window.onload = function () {
 	        title: function(tooltipItem, data) {
 	          return;
 	        },
-			    footer: function(tooltipItems, data) {
-			    	var thisItem = data.datasets[0].data[0];
-			    	var Min = 'Min: ' + thisItem.min;
-			    	var Q1 = 'Q1: ' + thisItem.q1;
-			    	var Median = 'Median: ' + thisItem.median;
-			    	var Q3 = 'Q3: ' + thisItem.q3;
-			    	var Max = 'Max: ' + thisItem.max;
-			      return [Max, Q3, Median, Q1, Min];
-			    }
+		    footer: function(tooltipItems, data) {
+		    	var thisItem = data.datasets[0].data[0];
+		    	var Min = 'Min: ' + thisItem.min;
+		    	var Q1 = 'Q1: ' + thisItem.q1;
+		    	var Median = 'Median: ' + thisItem.median;
+		    	var Q3 = 'Q3: ' + thisItem.q3;
+		    	var Max = 'Max: ' + thisItem.max;
+		      return [Max, Q3, Median, Q1, Min];
+		    }
 	      }
 	    },
       scales: {
