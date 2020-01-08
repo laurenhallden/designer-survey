@@ -539,15 +539,16 @@ a,
 section a {
   color: #5FD0FF;
   font-weight: 500;
+  border-bottom: 1px solid transparent;
 }
-/* line 77, ../sass/_type.scss */
+/* line 78, ../sass/_type.scss */
 a:hover,
 section a:hover {
   color: #5FD0FF;
   text-decoration: none;
   border-bottom: 1px solid #5FD0FF;
 }
-/* line 83, ../sass/_type.scss */
+/* line 84, ../sass/_type.scss */
 a:active,
 section a:active {
   color: #13baff;
@@ -1029,8 +1030,23 @@ table tr.highlight strong {
   border-radius: 5px;
 }
 
+/* line 424, ../sass/_components.scss */
+.code-text {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 500;
+  border-left: 4px solid #5FD0FF;
+  padding-left: 20px;
+  font-size: 0.95rem;
+  margin-top: 40px;
+  color: #e0e0e3;
+}
+/* line 433, ../sass/_components.scss */
+.code-text strong {
+  color: #fff;
+}
+
 /* Mailchimp signup */
-/* line 426, ../sass/_components.scss */
+/* line 440, ../sass/_components.scss */
 #mc_embed_signup {
   text-align: left;
   display: block;
@@ -1039,11 +1055,11 @@ table tr.highlight strong {
   font-weight: 500;
   width: 100%;
 }
-/* line 434, ../sass/_components.scss */
+/* line 448, ../sass/_components.scss */
 #mc_embed_signup form {
   text-align: left !important;
 }
-/* line 438, ../sass/_components.scss */
+/* line 452, ../sass/_components.scss */
 #mc_embed_signup input.email {
   font-family: "Open Sans","Helvetica Neue",Arial,Helvetica,Verdana,sans-serif;
   font-size: 16px;
@@ -1062,7 +1078,7 @@ table tr.highlight strong {
   vertical-align: top;
   font-weight: 600;
 }
-/* line 457, ../sass/_components.scss */
+/* line 471, ../sass/_components.scss */
 #mc_embed_signup .button {
   font-size: 18px;
   border: none;
@@ -1081,7 +1097,7 @@ table tr.highlight strong {
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 476, ../sass/_components.scss */
+  /* line 490, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;

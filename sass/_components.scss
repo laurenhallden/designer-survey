@@ -421,6 +421,20 @@ table {
 	border-radius: 5px;
 }
 
+.code-text {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	border-left: 4px solid $blue;
+	padding-left: 20px;
+	font-size: 0.95rem;
+	margin-top: 40px;
+	color: $gray-300;
+
+	strong {
+		color: $white;
+	}
+}
+
 /* Mailchimp signup */
 
 #mc_embed_signup {

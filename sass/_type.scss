@@ -73,6 +73,7 @@ a,
 section a {
 	color: $blue;
 	font-weight: 500;
+	border-bottom: 1px solid transparent;
 
 	&:hover {
 		color: $blue;
