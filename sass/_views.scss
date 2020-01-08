@@ -112,6 +112,10 @@
 .job-details-column {
 	font-size: 0.9rem;
 	padding-left: 30px;
+
+	@media screen and (max-width: 767px) {
+		padding-left: 15px;
+	}
 }
 
 #job-details {
