@@ -34,6 +34,13 @@ h1 {
 	}
 }
 
+@media screen and (max-width: 767px) {
+
+	h2, h3 {
+		font-size: 1.8rem;
+	}
+}
+
 .article h1 {
 	margin-bottom: 2rem;
 }

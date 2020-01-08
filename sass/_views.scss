@@ -6,13 +6,14 @@
 
 	li {
 		cursor: pointer;
-		padding-left: 10px;
-		border-left: 4px solid transparent;
+		border-bottom: 2px solid transparent;
+		padding-bottom: 5px;
+		margin-bottom: 20px;
 
 		&.active {
 			font-weight: bold;
 			color: $green;
-			border-left: 4px solid $green;
+			border-bottom: 2px dotted $green;
 		}
 	}
 }
@@ -109,7 +110,6 @@
 }
 
 #job-details {
-	padding-left: 25px;
 
 	h3 {
 		font-size: 1.8rem;
