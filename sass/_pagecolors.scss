@@ -6,6 +6,11 @@
 		border-bottom: 3px solid $blue;
 		background: rgba(95, 208, 254, 0.15) !important;
 
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $blue;
+			border-bottom: 0;
+		}
+
 		.nav-item {
 			a:hover { color: $blue !important; }
 
@@ -14,7 +19,13 @@
 					color: $blue !important;
 
 					&:before {
-						border-bottom: 15px solid $blue !important;
+						border-bottom: 15px solid $blue;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $blue;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
 					}
 				}
 			}
@@ -25,6 +36,11 @@
 		border-bottom: 3px solid $lime;
 		background: rgba(187, 210, 119, 0.15) !important;
 
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $lime;
+			border-bottom: 0;
+		}
+
 		.nav-item {
 			a:hover { color: $lime !important; }
 
@@ -33,7 +49,13 @@
 					color: $lime !important;
 
 					&:before {
-						border-bottom: 15px solid $lime !important;
+						border-bottom: 15px solid $lime;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $lime;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
 					}
 				}
 			}
@@ -44,6 +66,11 @@
 		border-bottom: 3px solid $green;
 		background: rgba(137, 235, 215, 0.15) !important;
 
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $green;
+			border-bottom: 0;
+		}
+
 		.nav-item {
 			a:hover { color: $green !important; }
 
@@ -52,7 +79,13 @@
 					color: $green !important;
 
 					&:before {
-						border-bottom: 15px solid $green !important;
+						border-bottom: 15px solid $green;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $green;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
 					}
 				}
 			}
@@ -63,6 +96,11 @@
 		border-bottom: 3px solid $purple;
 		background: rgba(220, 134, 255, 0.15) !important;
 
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $purple;
+			border-bottom: 0;
+		}
+
 		.nav-item {
 			a:hover { color: $purple !important; }
 
@@ -71,7 +109,13 @@
 					color: $purple !important;
 
 					&:before {
-						border-bottom: 15px solid $purple !important;
+						border-bottom: 15px solid $purple;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $purple;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
 					}
 				}
 			}
@@ -82,6 +126,11 @@
 		border-bottom: 3px solid $red;
 		background: rgba(255, 134, 150, 0.15) !important;
 
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $red;
+			border-bottom: 0;
+		}
+
 		.nav-item {
 			a:hover { color: $red !important; }
 
@@ -90,7 +139,13 @@
 					color: $red !important;
 
 					&:before {
-						border-bottom: 15px solid $red !important;
+						border-bottom: 15px solid $red;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $red;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
 					}
 				}
 			}

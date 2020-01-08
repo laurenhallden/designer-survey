@@ -139,4 +139,71 @@ window.onload = function () {
 	  }
 	}
 	});
+
+	// load benefits bar chart
+	const ctxBenefits = document.getElementById("canvas-benefits").getContext("2d");
+	window.myBarBenefits = new Chart(ctxBenefits, {
+	type: 'horizontalBar',
+	data: benefits,
+	options: {
+	  responsive: true,
+	  maintainAspectRatio: false,
+	  legend: {
+	    display: false
+	  },
+	  tooltips: {
+      displayColors: false,
+      footerFontStyle: 'regular',
+      bodyFontSize: 14,
+      titleFontSize: 14,
+      footerSpacing: 12,
+      backgroundColor: 'rgba(21, 21, 25, 1)',
+      xPadding: 15,
+      yPadding: 15,
+      cornerRadius: 4,
+	  	callbacks: {
+        // use label callback to return the desired label
+        label: function(tooltipItem, data) {
+          var label = tooltipItem.xLabel;
+          return tooltipItem.xLabel + '%';
+        },
+        title: function(tooltipItem, data) {
+        	var title = '';
+        	return title;
+        }
+      }
+    },
+		scales: {
+			xAxes: [{
+			  ticks: {
+			    autoSkip: false,
+			    fontColor: '#e0e0e3',
+			    fontSize: 12,
+			    fontStyle: 600,
+			  },
+			  gridLines: {
+			  	display: false
+			  }
+			}],
+			yAxes: [{
+			  display: true,
+			  scaleLabel: {
+			    display: false
+			  },
+			  gridLines: { color: "#4D4D59" },
+			  ticks: {
+			    fontColor: '#e0e0e3',
+			    fontSize: 14,
+			    fontStyle: 600,
+			    beginAtZero: false,
+			    stepSize: 10,
+			    padding: 10
+			  }
+			 }]
+	  },
+	  title: {
+	    display: false
+	  }
+	}
+	});
 }

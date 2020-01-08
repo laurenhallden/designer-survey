@@ -5,13 +5,13 @@ subnav:
     - title: Intro
       url: /philly/intro
 
-    - title: Compensation by Job
+    - title: By Job Title
       url: /philly/jobs
 
-    - title: Compensation by Company Type
+    - title: By Company Type
       url: /philly/companies
 
-    - title: Demographics and Compensation
+    - title: By Demographics
       url: /philly/demographics
 
     - title: Methodology

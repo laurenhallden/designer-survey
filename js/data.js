@@ -390,6 +390,29 @@ const boxplotCompanyType = {
   }]
 };
 
+const benefits = {
+  // define label tree
+  labels: ['Employer-matched retirement account',
+  'Employer-paid medical insurance',
+  'Paid parental leave (beyond minimums)',
+  'Professional development funding',
+  'Fitness/wellness benefits',
+  'Transportation/commuter benefits',
+  'Wellness room (for nursing, meditation or prayer)',
+  'Courtesy services or discounts for services',
+  'Employer-provided meal at least once a week',
+  'Professional association memberships',
+  'Child care'],
+  datasets: [{
+    backgroundColor: 'rgba(97, 167, 208, .25)',
+    borderColor: 'rgba(97, 167, 208, 1)',
+    borderWidth: 3,
+    padding: 10,
+    itemRadius: 0,
+    data: [74,69,58,55,46,45,36,29,18,14,1]
+  }]
+};
+
 // DEMOGRAPHICS PAGE DATA
 
 // Gaps by job category and gender
