@@ -1501,11 +1501,10 @@ table tr.highlight strong {
 /* line 43, ../sass/_views.scss */
 .skills-header {
   margin-bottom: 0px;
-  margin-top: 20px;
 }
 
 /* Pills */
-/* line 50, ../sass/_views.scss */
+/* line 49, ../sass/_views.scss */
 .pills {
   list-style: none;
   padding-inline-start: 0;
@@ -1513,12 +1512,12 @@ table tr.highlight strong {
   max-width: 18rem;
   min-height: 15rem;
 }
-/* line 57, ../sass/_views.scss */
+/* line 56, ../sass/_views.scss */
 .pills li {
   display: block;
   margin-bottom: 5px;
 }
-/* line 61, ../sass/_views.scss */
+/* line 60, ../sass/_views.scss */
 .pills li .bar-graph {
   display: inline-block;
   vertical-align: middle;
@@ -1528,7 +1527,7 @@ table tr.highlight strong {
   position: relative;
   height: 10px;
 }
-/* line 70, ../sass/_views.scss */
+/* line 69, ../sass/_views.scss */
 .pills li .bar-graph .bar {
   border-radius: 10px;
   background: #89EBD7;
@@ -1537,7 +1536,7 @@ table tr.highlight strong {
   top: 0;
   left: 0;
 }
-/* line 80, ../sass/_views.scss */
+/* line 79, ../sass/_views.scss */
 .pills li .caption {
   display: inline-block;
   vertical-align: middle;
@@ -1545,7 +1544,7 @@ table tr.highlight strong {
   font-weight: 700;
   color: #89EBD7;
 }
-/* line 88, ../sass/_views.scss */
+/* line 87, ../sass/_views.scss */
 .pills li .skill-name {
   margin-top: -5px;
   font-weight: 500;
@@ -1553,13 +1552,13 @@ table tr.highlight strong {
   font-size: 0.75rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 57, ../sass/_views.scss */
+  /* line 56, ../sass/_views.scss */
   .pills li {
     min-height: auto;
   }
 }
 
-/* line 101, ../sass/_views.scss */
+/* line 100, ../sass/_views.scss */
 .job-categories {
   max-width: 10rem;
   font-size: 0.8rem;
@@ -1567,38 +1566,38 @@ table tr.highlight strong {
   margin-top: 10px;
 }
 
-/* line 108, ../sass/_views.scss */
+/* line 107, ../sass/_views.scss */
 #job-category-heading {
   margin-bottom: 20px !important;
   font-size: 1.8rem;
 }
 
-/* line 113, ../sass/_views.scss */
+/* line 112, ../sass/_views.scss */
 .job-details-column {
   font-size: 0.9rem;
   padding-left: 30px;
 }
 
-/* line 120, ../sass/_views.scss */
+/* line 119, ../sass/_views.scss */
 #job-details h3 {
   font-size: 1.8rem;
 }
 
-/* line 125, ../sass/_views.scss */
+/* line 124, ../sass/_views.scss */
 #most-common-skills {
   margin-bottom: 5px;
 }
-/* line 127, ../sass/_views.scss */
+/* line 126, ../sass/_views.scss */
 #most-common-skills span {
   border-bottom: 0px solid;
 }
 
-/* line 132, ../sass/_views.scss */
+/* line 131, ../sass/_views.scss */
 #job-category-heading {
   margin-bottom: 10px;
 }
 
-/* line 136, ../sass/_views.scss */
+/* line 135, ../sass/_views.scss */
 .seniority {
   margin-top: 70px;
   width: 100%;
@@ -1609,22 +1608,22 @@ table tr.highlight strong {
   max-width: 450px;
   margin-bottom: 50px;
 }
-/* line 146, ../sass/_views.scss */
+/* line 145, ../sass/_views.scss */
 .seniority .bar {
   border-top: 3px solid #89EBD7;
   width: calc(100% - 2rem);
 }
-/* line 151, ../sass/_views.scss */
+/* line 150, ../sass/_views.scss */
 .seniority .dot-container {
   display: flex;
   justify-content: space-between;
 }
-/* line 156, ../sass/_views.scss */
+/* line 155, ../sass/_views.scss */
 .seniority .dot {
   margin-top: -12px;
   position: relative;
 }
-/* line 160, ../sass/_views.scss */
+/* line 159, ../sass/_views.scss */
 .seniority .dot:before {
   position: absolute;
   top: 0px;
@@ -1636,25 +1635,25 @@ table tr.highlight strong {
   content: ' ';
   left: calc(2rem - 10px);
 }
-/* line 173, ../sass/_views.scss */
+/* line 172, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1):before {
   border: 3px solid transparent;
   background: transparent;
 }
-/* line 178, ../sass/_views.scss */
+/* line 177, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1) div {
   text-align: left;
   margin-left: 0rem;
   min-width: 120px;
 }
-/* line 185, ../sass/_views.scss */
+/* line 184, ../sass/_views.scss */
 .seniority .dot div {
   text-align: center;
   width: 4rem;
   margin-top: -40px;
   position: relative;
 }
-/* line 191, ../sass/_views.scss */
+/* line 190, ../sass/_views.scss */
 .seniority .dot div:first-of-type {
   margin-bottom: 90px;
 }
