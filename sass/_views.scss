@@ -100,13 +100,19 @@
 
 .job-categories {
 	max-width: 10rem;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	font-weight: 400;
 	margin-top: 10px;
 }
 
 #job-category-heading {
 	margin-bottom: 20px !important;
+	font-size: 1.8rem;
+}
+
+.job-details-column {
+	font-size: 0.9rem;
+	padding-left: 30px;
 }
 
 #job-details {
