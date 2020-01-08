@@ -1626,13 +1626,13 @@ table tr.highlight strong {
 }
 /* line 159, ../sass/_views.scss */
 .seniority .dot {
-  margin-top: -12px;
+  margin-top: -5px;
   position: relative;
 }
 /* line 163, ../sass/_views.scss */
 .seniority .dot:before {
   position: absolute;
-  top: 0px;
+  top: -7px;
   border-radius: 100%;
   width: 20px;
   height: 20px;
@@ -1661,5 +1661,5 @@ table tr.highlight strong {
 }
 /* line 194, ../sass/_views.scss */
 .seniority .dot div:first-of-type {
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }

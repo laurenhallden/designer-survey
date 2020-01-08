@@ -157,12 +157,12 @@
 	}
 
 	.dot {
-		margin-top: -12px;
+		margin-top: -5px;
 		position: relative;
 
 		&:before {
 			position: absolute;
-			top: 0px;
+			top: -7px;
 			border-radius: 100%;
 			width: 20px;
 			height: 20px;
@@ -192,7 +192,7 @@
 			position: relative;
 
 			&:first-of-type {
-				margin-bottom: 90px;
+				margin-bottom: 80px;
 			}
 		}
 	}
