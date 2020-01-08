@@ -72,6 +72,7 @@ var jobCategoryData = [
         median: '$80,000',
         q3: '$93,000',
         max: '$97,000',
+        desc:"Content Designers focus on the experience of content within a design, not typically including visual design responsibilities. Includes Content Strategist/Content Specialist."
     },
 
     // Design Director
@@ -88,6 +89,7 @@ var jobCategoryData = [
         lev2Name: 'Lead',
         lev2Years: '13 years',
         lev2Pay: '$125k',
+        desc: "Design Directors set the direction for design work on a particular project, often leading the team and acting as a practitioner. Includes Art Director/Creative Director."
     },
 
     // Front-end Designer
@@ -106,7 +108,8 @@ var jobCategoryData = [
         lev2Pay: '$88k',
         lev3Name: 'Lead',
         lev3Years: '13 years',
-        lev3Pay: '$126k'
+        lev3Pay: '$126k',
+        desc: "Front-end Designers do front-end development (HTML/CSS/JS) in addition to experience and/or visual design."
     },
 
     // Manager
@@ -122,7 +125,8 @@ var jobCategoryData = [
         lev1Pay: '$109k',
         lev2Name: 'Lead',
         lev2Years: '12 years',
-        lev2Pay: '$145k'
+        lev2Pay: '$145k',
+        desc: "Design Managers are responsible for managing the design team and/or designers from a “people management” perspective. Includes executives."
     },
 
     // UX Designer or Researcher
@@ -139,6 +143,7 @@ var jobCategoryData = [
         lev2Name: 'Senior',
         lev2Years: '8 years',
         lev2Pay: '$113k',
+        desc: "UX Designers or Researchers understand the user’s experience and define the best ways for serving users, not typically including visual design responsibilities."
     },
 
     // UX/UI Designer
@@ -157,7 +162,8 @@ var jobCategoryData = [
         lev2Pay: '$105k',
         lev3Name: 'Lead',
         lev3Years: '11 years',
-        lev3Pay: '$119k'
+        lev3Pay: '$119k',
+        desc: "UX/UI Designers both define the user experience and design the user interface."
     },
 
     // Visual Designer
@@ -176,7 +182,8 @@ var jobCategoryData = [
         lev2Pay: '$65k',
         lev3Name: 'Senior',
         lev3Years: '15 years',
-        lev3Pay: '$76k'
+        lev3Pay: '$76k',
+        desc: "Visual Designers focus on branding, marketing, movion, or user interface design, not typically including experience design responsibilities."
     }
 ]
 

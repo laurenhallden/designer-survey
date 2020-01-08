@@ -89,6 +89,7 @@ function loadJobStats(number){
 	$('#job-min').html(jobCategoryData[chartArrayNumber].min);
 	$('#job-max').html(jobCategoryData[chartArrayNumber].max);
 	$('#job-median').html(jobCategoryData[chartArrayNumber].median);
+	$('#job-desc').html(jobCategoryData[chartArrayNumber].desc);
 
 	console.log(jobCategoryData[chartArrayNumber].name);
 

@@ -529,26 +529,27 @@ h3 {
 
 /* line 66, ../sass/_type.scss */
 h4 {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 10px;
 }
 
-/* line 72, ../sass/_type.scss */
+/* line 73, ../sass/_type.scss */
 a,
 section a {
   color: #5FD0FF;
   font-weight: 500;
   border-bottom: 1px solid transparent;
 }
-/* line 78, ../sass/_type.scss */
+/* line 79, ../sass/_type.scss */
 a:hover,
 section a:hover {
   color: #5FD0FF;
   text-decoration: none;
   border-bottom: 1px solid #5FD0FF;
 }
-/* line 84, ../sass/_type.scss */
+/* line 85, ../sass/_type.scss */
 a:active,
 section a:active {
   color: #13baff;
@@ -1605,7 +1606,7 @@ table tr.highlight strong {
   font-family: 'Source Code Pro', monospace;
   font-size: 14px;
   font-weight: 600;
-  max-width: 400px;
+  max-width: 450px;
   margin-bottom: 50px;
 }
 /* line 146, ../sass/_views.scss */
