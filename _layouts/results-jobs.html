@@ -136,31 +136,26 @@
 <section>
 	<div class="container">
 
-		<div class="acc-card-body">
+		<div class="row">
 
-			<div class="charts">
-				<div class="row">
+			<div class="col-md-12">
+				<h2>Compensation</h2>
+				<p>With our job categories defined, we can now look at the distribution of compensation for each job:</p>
+				<br/>
+				<div class="card text-white bg-secondary">
+					<div class="card-header">
+						Compensation ranges for all jobs
+					</div>
+					<div class="card-body">
+						<div class="chart-container" style="position: relative; height: 500px;">
+							<canvas id="canvas-all"></canvas>
+						</div>
+					</div>
+				</div><!-- card -->
+				
+			</div><!-- column -->
 
-					<div class="col-md-12 col-space">
-						<h2>Compensation</h2>
-						<p>With our job categories defined, we can now look at the distribution of compensation for each job:</p>
-						<br/>
-						<div class="card text-white bg-secondary">
-							<div class="card-header">
-								Compensation ranges for all jobs
-							</div>
-							<div class="card-body">
-								<div class="chart-container" style="position: relative; height: 500px;">
-									<canvas id="canvas-all"></canvas>
-								</div>
-							</div>
-						</div><!-- card -->
-						
-					</div><!-- column -->
-
-				</div><!-- row -->
-			</div><!-- charts -->
-		</div><!-- acc-card-body -->
+		</div><!-- row -->
 
 		<div class="row" id="job-details">
 			<div class="col-md-9">
@@ -174,69 +169,54 @@
 <section class="job-category-details">
 	<div class="container">
 
-		<div class="acc-card-body">
+		<div class="row">
+			<div class="col-lg-3 col-md-4">
+				<ul class="job-categories">
+					<li class="active" data-item="1">Content Designer</li>
+					<li data-item="2">Design Director</li>
+					<li data-item="3">Front-End Designer</li>
+					<li data-item="4">Manager</li>							
+					<li data-item="5">UX Designer / Researcher</li>
+					<li data-item="6">UX/UI Desginer</li>
+					<li data-item="7">Visual Designer</li>
+				</ul>
+			</div><!-- column-->
 
-			<div class="charts">
-				<div class="row">
-					<div class="col-lg-3 col-md-4 col-space">
-						<ul class="job-categories">
-							<li class="active" data-item="1">Content Designer</li>
-							<li data-item="2">Design Director</li>
-							<li data-item="3">Front-End Designer</li>
-							<li data-item="4">Manager</li>							
-							<li data-item="5">UX Designer / Researcher</li>
-							<li data-item="6">UX/UI Desginer</li>
-							<li data-item="7">Visual Designer</li>
-						</ul>
-					</div><!-- column-->
+			<div class="col-lg-5 col-md-8 job-details-column">
 
-					<div class="col-lg-5 col-md-8 col-space job-details-column">
+				<h3 id="job-category-heading">Content Designer</h3>
+				
+				<p>50% of <span id="job-category-title">Content Designer</span>s make between <strong><span id="job-q1">$70,000</span></strong> and <strong><span id="job-q3">$93,000</span></strong> per year. 25% make less (starting at <strong><span id="job-min">$52,000</span></strong>) and 25% make more (up to <strong><span id="job-max">$97,000</span></strong>).</p>
 
-						<h3 id="job-category-heading">Content Designer</h3>
-						
-						<p>50% of <span id="job-category-title">Content Designer</span>s make between <strong><span id="job-q1">$70,000</span></strong> and <strong><span id="job-q3">$92,500</span></strong> per year. 25% make less (starting at <strong><span id="job-min">$51,840</span></strong>) and 25% make more (up to <strong><span id="job-max">$97,000</span></strong>).</p>
+				<p>The median annual pay for this job is <strong><span id="job-median">$80,000</span></strong>.</p>
 
-						<p>The median annual pay for this job is <strong><span id="job-median">$80,000</span></strong>.</p>
-
-						<h4>Seniority</h4>
-						<p class="available-seniority">Here's how the median pay for this job increases with experience.</p>
-						<div class="seniority">
-							<div class="bar"></div>
-							<div class="dot-container">
-								<div class="dot"><div>Level:</div><div>Designer for:<br/>Median pay:</div></div>
-								<div class="dot level-dot" id="level1"><div>Jr.</div><div>4 years<br/>$117k</div></div>
-								<div class="dot level-dot" id="level2"><div>Sr.</div><div>6 years<br/>$127k</div></div>
-								<div class="dot level-dot" id="level3"><div>Lead</div><div>6 years<br/>$127k</div></div>
-							</div>
-						</div>
+				<h4>Seniority</h4>
+				<p class="available-seniority">Here's how the median pay for this job increases with experience.</p>
+				<div class="seniority">
+					<div class="bar"></div>
+					<div class="dot-container">
+						<div class="dot"><div>Level:</div><div>Designer for:<br/>Median pay:</div></div>
+						<div class="dot level-dot" id="level1"><div>Jr.</div><div>4 years<br/>$117k</div></div>
+						<div class="dot level-dot" id="level2"><div>Sr.</div><div>6 years<br/>$127k</div></div>
+						<div class="dot level-dot" id="level3"><div>Lead</div><div>6 years<br/>$127k</div></div>
 					</div>
+				</div>
+			</div>
 
-					<div class="col-lg-4 col-md-12">
-						<div class="card text-white bg-secondary" style="height: 580px;">
-							<div class="card-header">
-								Compensation range
-							</div>
-							<div class="card-body" style="">
-								<!--<div class="chart-subheadings">
-									<div class="sub">All responses</div>
-									<div class="sub">Medians by seniority</div>
-								</div>
-								<ul class="medians">
-									<li>Lead</li>
-									<li>Senior</li>
-									<li>Intermediate</li>
-									<li>Junior</li>
-								</ul>-->
-								<canvas id="canvas-1">
-									
-								</canvas>
-							</div>
-						</div><!-- card -->
+			<div class="col-lg-4 col-md-12">
+				<div class="card text-white bg-secondary" style="height: 580px;">
+					<div class="card-header">
+						Compensation range
 					</div>
+					<div class="card-body">
 
-				</div><!-- row -->
-			</div><!-- charts -->
-		</div><!-- acc-card-body -->
+						<canvas id="canvas-1"></canvas>
+					</div>
+				</div><!-- card -->
+			</div>
+
+		</div><!-- row -->
+
 	</div><!-- container -->
 </section>
 

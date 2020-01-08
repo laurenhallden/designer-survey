@@ -903,7 +903,7 @@ section + .bg-light {
 }
 
 /* line 304, ../sass/_components.scss */
-.charts h1, .charts h2, .charts h3 {
+.job-category-details h1, .job-category-details h2, .job-category-details h3 {
   margin: 0 0 0.5em 0;
 }
 
