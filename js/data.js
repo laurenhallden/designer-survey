@@ -8,7 +8,7 @@
 
 const boxplotDataAll = {
   // define label tree
-  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],['Manager','']],
+  labels: [['Visual','Designer'],['Content','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Design','Director'],['Manager','']],
   datasets: [{
     backgroundColor: 'rgba(137, 235, 215, .25)',
     borderColor: 'rgba(137, 235, 215, 1)',
@@ -183,7 +183,7 @@ var jobCategoryData = [
         lev3Name: 'Senior',
         lev3Years: '15 years',
         lev3Pay: '$76k',
-        desc: "Visual Designers focus on branding, marketing, movion, or user interface design, not typically including experience design responsibilities."
+        desc: "Visual Designers focus on branding, marketing, motion, or user interface design, not typically including experience design responsibilities."
     }
 ]
 
@@ -426,7 +426,7 @@ const benefits = {
 
 const categoryAndGender = {
   // define label tree
-  labels: [['Visual','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Creative/Art','Director'],['Manager',''],['Overall','']],
+  labels: [['Visual','Designer'],['Front-end','Designer'],['UX/UI','Designer'],['UX Designer/','Researcher'],['Design','Director'],['Manager',''],['Overall','']],
   datasets: [{
     backgroundColor: 'rgba(220, 134, 255, .25)',
     borderColor: 'rgba(220, 134, 255, 1)',
