@@ -3,6 +3,10 @@
 .job-categories {
 	list-style: none;
 	padding-inline-start: 0;
+	max-width: 10rem;
+	font-size: 0.8rem;
+	font-weight: 400;
+	margin-top: 10px;
 
 	li {
 		cursor: pointer;
@@ -14,6 +18,16 @@
 			font-weight: bold;
 			color: $green;
 			border-bottom: 2px dotted $green;
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		max-width: 100%;
+		width: 100%;
+
+		li {
+			display: inline-block;
+			margin: 5px 10px;
 		}
 	}
 }
@@ -97,13 +111,6 @@
 	}
 }
 
-.job-categories {
-	max-width: 10rem;
-	font-size: 0.8rem;
-	font-weight: 400;
-	margin-top: 10px;
-}
-
 #job-category-heading {
 	margin-bottom: 20px !important;
 	font-size: 1.8rem;
@@ -130,10 +137,6 @@
 	span {
 		border-bottom: 0px solid;
 	}
-}
-
-#job-category-heading {
-	margin-bottom: 10px;
 }
 
 .seniority {

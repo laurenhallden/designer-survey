@@ -1462,23 +1462,39 @@ table tr.highlight strong {
 .job-categories {
   list-style: none;
   padding-inline-start: 0;
+  max-width: 10rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 10px;
 }
-/* line 7, ../sass/_views.scss */
+/* line 11, ../sass/_views.scss */
 .job-categories li {
   cursor: pointer;
   border-bottom: 2px solid transparent;
   padding-bottom: 5px;
   margin-bottom: 20px;
 }
-/* line 13, ../sass/_views.scss */
+/* line 17, ../sass/_views.scss */
 .job-categories li.active {
   font-weight: bold;
   color: #89EBD7;
   border-bottom: 2px dotted #89EBD7;
 }
+@media screen and (max-width: 767px) {
+  /* line 3, ../sass/_views.scss */
+  .job-categories {
+    max-width: 100%;
+    width: 100%;
+  }
+  /* line 28, ../sass/_views.scss */
+  .job-categories li {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
 
 /* JOBS PAGE */
-/* line 25, ../sass/_views.scss */
+/* line 39, ../sass/_views.scss */
 .job-buttons button {
   font-weight: 600;
   font-size: 0.75rem;
@@ -1486,26 +1502,26 @@ table tr.highlight strong {
   padding: 5px 7px;
 }
 
-/* line 33, ../sass/_views.scss */
+/* line 47, ../sass/_views.scss */
 .job-description {
   min-height: 6.5rem;
   border-bottom: 1px solid #4D4D59;
   padding-bottom: 10px;
 }
 @media screen and (max-width: 767px) {
-  /* line 33, ../sass/_views.scss */
+  /* line 47, ../sass/_views.scss */
   .job-description {
     min-height: auto;
   }
 }
 
-/* line 43, ../sass/_views.scss */
+/* line 57, ../sass/_views.scss */
 .skills-header {
   margin-bottom: 0px;
 }
 
 /* Pills */
-/* line 49, ../sass/_views.scss */
+/* line 63, ../sass/_views.scss */
 .pills {
   list-style: none;
   padding-inline-start: 0;
@@ -1513,12 +1529,12 @@ table tr.highlight strong {
   max-width: 18rem;
   min-height: 15rem;
 }
-/* line 56, ../sass/_views.scss */
+/* line 70, ../sass/_views.scss */
 .pills li {
   display: block;
   margin-bottom: 5px;
 }
-/* line 60, ../sass/_views.scss */
+/* line 74, ../sass/_views.scss */
 .pills li .bar-graph {
   display: inline-block;
   vertical-align: middle;
@@ -1528,7 +1544,7 @@ table tr.highlight strong {
   position: relative;
   height: 10px;
 }
-/* line 69, ../sass/_views.scss */
+/* line 83, ../sass/_views.scss */
 .pills li .bar-graph .bar {
   border-radius: 10px;
   background: #89EBD7;
@@ -1537,7 +1553,7 @@ table tr.highlight strong {
   top: 0;
   left: 0;
 }
-/* line 79, ../sass/_views.scss */
+/* line 93, ../sass/_views.scss */
 .pills li .caption {
   display: inline-block;
   vertical-align: middle;
@@ -1545,7 +1561,7 @@ table tr.highlight strong {
   font-weight: 700;
   color: #89EBD7;
 }
-/* line 87, ../sass/_views.scss */
+/* line 101, ../sass/_views.scss */
 .pills li .skill-name {
   margin-top: -5px;
   font-weight: 500;
@@ -1553,58 +1569,45 @@ table tr.highlight strong {
   font-size: 0.75rem;
 }
 @media screen and (max-width: 767px) {
-  /* line 56, ../sass/_views.scss */
+  /* line 70, ../sass/_views.scss */
   .pills li {
     min-height: auto;
   }
 }
 
-/* line 100, ../sass/_views.scss */
-.job-categories {
-  max-width: 10rem;
-  font-size: 0.8rem;
-  font-weight: 400;
-  margin-top: 10px;
-}
-
-/* line 107, ../sass/_views.scss */
+/* line 114, ../sass/_views.scss */
 #job-category-heading {
   margin-bottom: 20px !important;
   font-size: 1.8rem;
 }
 
-/* line 112, ../sass/_views.scss */
+/* line 119, ../sass/_views.scss */
 .job-details-column {
   font-size: 0.9rem;
   padding-left: 30px;
 }
 @media screen and (max-width: 767px) {
-  /* line 112, ../sass/_views.scss */
+  /* line 119, ../sass/_views.scss */
   .job-details-column {
     padding-left: 15px;
   }
 }
 
-/* line 123, ../sass/_views.scss */
+/* line 130, ../sass/_views.scss */
 #job-details h3 {
   font-size: 1.8rem;
 }
 
-/* line 128, ../sass/_views.scss */
+/* line 135, ../sass/_views.scss */
 #most-common-skills {
   margin-bottom: 5px;
 }
-/* line 130, ../sass/_views.scss */
+/* line 137, ../sass/_views.scss */
 #most-common-skills span {
   border-bottom: 0px solid;
 }
 
-/* line 135, ../sass/_views.scss */
-#job-category-heading {
-  margin-bottom: 10px;
-}
-
-/* line 139, ../sass/_views.scss */
+/* line 142, ../sass/_views.scss */
 .seniority {
   margin-top: 70px;
   width: 100%;
@@ -1615,22 +1618,22 @@ table tr.highlight strong {
   max-width: 450px;
   margin-bottom: 50px;
 }
-/* line 149, ../sass/_views.scss */
+/* line 152, ../sass/_views.scss */
 .seniority .bar {
   border-top: 3px solid #89EBD7;
   width: calc(100% - 2rem);
 }
-/* line 154, ../sass/_views.scss */
+/* line 157, ../sass/_views.scss */
 .seniority .dot-container {
   display: flex;
   justify-content: space-between;
 }
-/* line 159, ../sass/_views.scss */
+/* line 162, ../sass/_views.scss */
 .seniority .dot {
   margin-top: -5px;
   position: relative;
 }
-/* line 163, ../sass/_views.scss */
+/* line 166, ../sass/_views.scss */
 .seniority .dot:before {
   position: absolute;
   top: -7px;
@@ -1642,25 +1645,25 @@ table tr.highlight strong {
   content: ' ';
   left: calc(2rem - 10px);
 }
-/* line 176, ../sass/_views.scss */
+/* line 179, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1):before {
   border: 3px solid transparent;
   background: transparent;
 }
-/* line 181, ../sass/_views.scss */
+/* line 184, ../sass/_views.scss */
 .seniority .dot:nth-of-type(1) div {
   text-align: left;
   margin-left: 0rem;
   min-width: 120px;
 }
-/* line 188, ../sass/_views.scss */
+/* line 191, ../sass/_views.scss */
 .seniority .dot div {
   text-align: center;
   width: 4rem;
   margin-top: -40px;
   position: relative;
 }
-/* line 194, ../sass/_views.scss */
+/* line 197, ../sass/_views.scss */
 .seniority .dot div:first-of-type {
   margin-bottom: 80px;
 }
