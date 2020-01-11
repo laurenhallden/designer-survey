@@ -91,8 +91,6 @@ function loadJobStats(number){
 	$('#job-median').html(jobCategoryData[chartArrayNumber].median);
 	$('#job-desc').html(jobCategoryData[chartArrayNumber].desc);
 
-	console.log(jobCategoryData[chartArrayNumber].name);
-
 	if (jobCategoryData[chartArrayNumber].name == "Content Designer") {
 		$('.seniority').hide();
 		$('.available-seniority').html("<em>There weren't enough reponses to look at compensation by seniority for this job.</em><br/><br/>");

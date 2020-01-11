@@ -1,7 +1,5 @@
-console.log('Hi');
 var index = $('.subnav .nav-item.active').index();
 var text = $('.subnav .nav-item.active').html();
-console.log(index);
 
 if (index == 0) {
 	$('.subnav').attr('class','navbar subnav lime');
