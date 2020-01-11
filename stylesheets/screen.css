@@ -1355,7 +1355,7 @@ table tr.highlight strong {
   background: rgba(95, 208, 254, 0.15) !important;
 }
 /* line 206, ../sass/_pagecolors.scss */
-.content-wrapper.blue .fa {
+.content-wrapper.blue .icon-row .fa {
   background: #5FD0FF;
 }
 /* line 211, ../sass/_pagecolors.scss */
