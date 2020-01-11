@@ -2,5 +2,5 @@
 layout: results-methodology
 title: Methodology
 permalink: /philly/methodology
-summary: Methodology
+summary: The 2019 Census Methodology
 ---

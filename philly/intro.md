@@ -1,6 +1,6 @@
 ---
 layout: results-intro
-title: Introduction
+title: The 2019 Census Results
 permalink: /philly/intro
-summary: Intro the the project
+summary: Explore data to learn about pay trends for Philadelphia designers.
 ---
