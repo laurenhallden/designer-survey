@@ -581,43 +581,47 @@ section + .bg-light {
 .row.no-margin {
   margin-top: 0;
 }
+/* line 22, ../sass/_layout.scss */
+.row.no-margin h1, .row.no-margin h2, .row.no-margin h3 {
+  margin-top: 0;
+}
 
-/* line 23, ../sass/_layout.scss */
+/* line 27, ../sass/_layout.scss */
 .padded-left-row {
   padding-left: 40px;
 }
 @media screen and (max-width: 767px) {
-  /* line 23, ../sass/_layout.scss */
+  /* line 27, ../sass/_layout.scss */
   .padded-left-row {
     padding-left: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 35, ../sass/_layout.scss */
+  /* line 39, ../sass/_layout.scss */
   .col-space + .col-space {
     margin-top: 30px;
   }
 }
-/* line 40, ../sass/_layout.scss */
+/* line 44, ../sass/_layout.scss */
 .hidden-md-up {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  /* line 40, ../sass/_layout.scss */
+  /* line 44, ../sass/_layout.scss */
   .hidden-md-up {
     display: block;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 48, ../sass/_layout.scss */
+  /* line 52, ../sass/_layout.scss */
   .hidden-sm {
     display: none;
   }
 }
 
-/* line 55, ../sass/_layout.scss */
+/* line 59, ../sass/_layout.scss */
 .footer {
   font-size: 0.75rem;
   color: #8e8e9c;
@@ -1350,139 +1354,143 @@ table tr.highlight strong {
 .content-wrapper.blue table .highlight {
   background: rgba(95, 208, 254, 0.15) !important;
 }
-/* line 208, ../sass/_pagecolors.scss */
+/* line 206, ../sass/_pagecolors.scss */
+.content-wrapper.blue .fa {
+  background: #5FD0FF;
+}
+/* line 211, ../sass/_pagecolors.scss */
 .content-wrapper.lime a {
   color: #BBD277;
 }
-/* line 211, ../sass/_pagecolors.scss */
+/* line 214, ../sass/_pagecolors.scss */
 .content-wrapper.lime a:hover {
   color: #BBD277;
   border-bottom: 1px solid #BBD277;
 }
-/* line 216, ../sass/_pagecolors.scss */
+/* line 219, ../sass/_pagecolors.scss */
 .content-wrapper.lime a:active {
   color: #9ebe3f;
 }
-/* line 220, ../sass/_pagecolors.scss */
+/* line 223, ../sass/_pagecolors.scss */
 .content-wrapper.lime .btn-primary,
 .content-wrapper.lime .btn-outline-primary.active {
   background-color: #BBD277 !important;
   border: 2px solid #BBD277 !important;
 }
-/* line 225, ../sass/_pagecolors.scss */
+/* line 228, ../sass/_pagecolors.scss */
 .content-wrapper.lime .btn-primary:hover,
 .content-wrapper.lime .btn-outline-primary.active:hover {
   background-color: #9ebe3f !important;
   border-color: #9ebe3f !important;
 }
-/* line 230, ../sass/_pagecolors.scss */
+/* line 233, ../sass/_pagecolors.scss */
 .content-wrapper.lime .btn-primary:active,
 .content-wrapper.lime .btn-outline-primary.active:active {
   background-color: #6e842c !important;
   border-color: #9ebe3f !important;
 }
-/* line 236, ../sass/_pagecolors.scss */
+/* line 239, ../sass/_pagecolors.scss */
 .content-wrapper.lime .btn-outline-primary {
   color: #5FD0FF;
   border: 2px solid #BBD277;
 }
-/* line 240, ../sass/_pagecolors.scss */
+/* line 243, ../sass/_pagecolors.scss */
 .content-wrapper.lime .btn-outline-primary:hover {
   color: #9ebe3f !important;
   border-color: #9ebe3f !important;
 }
-/* line 245, ../sass/_pagecolors.scss */
+/* line 248, ../sass/_pagecolors.scss */
 .content-wrapper.lime .btn-outline-primary:active {
   color: #6e842c !important;
   border-color: #9ebe3f !important;
 }
-/* line 251, ../sass/_pagecolors.scss */
+/* line 254, ../sass/_pagecolors.scss */
 .content-wrapper.lime table .highlight {
   background: rgba(187, 210, 119, 0.15) !important;
 }
-/* line 257, ../sass/_pagecolors.scss */
+/* line 260, ../sass/_pagecolors.scss */
 .content-wrapper.green a {
   color: #89EBD7;
 }
-/* line 260, ../sass/_pagecolors.scss */
+/* line 263, ../sass/_pagecolors.scss */
 .content-wrapper.green a:hover {
   color: #89EBD7;
   border-bottom: 1px solid #89EBD7;
 }
-/* line 265, ../sass/_pagecolors.scss */
+/* line 268, ../sass/_pagecolors.scss */
 .content-wrapper.green a:active {
   color: #48e0c1;
 }
-/* line 269, ../sass/_pagecolors.scss */
+/* line 272, ../sass/_pagecolors.scss */
 .content-wrapper.green .btn-primary,
 .content-wrapper.green .btn-outline-primary.active {
   background-color: #89EBD7 !important;
   border: 2px solid #89EBD7 !important;
   color: #2C2C32 !important;
 }
-/* line 275, ../sass/_pagecolors.scss */
+/* line 278, ../sass/_pagecolors.scss */
 .content-wrapper.green .btn-primary:hover,
 .content-wrapper.green .btn-outline-primary.active:hover {
   background-color: #48e0c1 !important;
   border-color: #48e0c1 !important;
   color: #2C2C32 !important;
 }
-/* line 281, ../sass/_pagecolors.scss */
+/* line 284, ../sass/_pagecolors.scss */
 .content-wrapper.green .btn-primary:active,
 .content-wrapper.green .btn-outline-primary.active:active {
   background-color: #20bb9c !important;
   border-color: #48e0c1 !important;
 }
-/* line 286, ../sass/_pagecolors.scss */
+/* line 289, ../sass/_pagecolors.scss */
 .content-wrapper.green .btn-outline-primary {
   color: #89EBD7;
   border: 2px solid #89EBD7;
 }
-/* line 290, ../sass/_pagecolors.scss */
+/* line 293, ../sass/_pagecolors.scss */
 .content-wrapper.green .btn-outline-primary:hover {
   color: #48e0c1 !important;
   border-color: #48e0c1 !important;
 }
-/* line 295, ../sass/_pagecolors.scss */
+/* line 298, ../sass/_pagecolors.scss */
 .content-wrapper.green .btn-outline-primary:active {
   color: #20bb9c !important;
   border-color: #48e0c1 !important;
 }
-/* line 301, ../sass/_pagecolors.scss */
+/* line 304, ../sass/_pagecolors.scss */
 .content-wrapper.green table .highlight {
   background: rgba(137, 235, 215, 0.15) !important;
 }
-/* line 307, ../sass/_pagecolors.scss */
+/* line 310, ../sass/_pagecolors.scss */
 .content-wrapper.purple a {
   color: #DC86FF;
 }
-/* line 310, ../sass/_pagecolors.scss */
+/* line 313, ../sass/_pagecolors.scss */
 .content-wrapper.purple a:hover {
   color: #DC86FF;
   border-bottom: 1px solid #DC86FF;
 }
-/* line 315, ../sass/_pagecolors.scss */
+/* line 318, ../sass/_pagecolors.scss */
 .content-wrapper.purple a:active {
   color: #c63aff;
 }
-/* line 320, ../sass/_pagecolors.scss */
+/* line 323, ../sass/_pagecolors.scss */
 .content-wrapper.purple table .highlight {
   background: rgba(220, 134, 255, 0.2) !important;
 }
-/* line 326, ../sass/_pagecolors.scss */
+/* line 329, ../sass/_pagecolors.scss */
 .content-wrapper.red a {
   color: #FF8696;
 }
-/* line 328, ../sass/_pagecolors.scss */
+/* line 331, ../sass/_pagecolors.scss */
 .content-wrapper.red a:hover {
   color: #FF8696;
   border-bottom: 1px solid #FF8696;
 }
-/* line 333, ../sass/_pagecolors.scss */
+/* line 336, ../sass/_pagecolors.scss */
 .content-wrapper.red a:active {
   color: #ff3a54;
 }
-/* line 338, ../sass/_pagecolors.scss */
+/* line 341, ../sass/_pagecolors.scss */
 .content-wrapper.red table .highlight {
   background: rgba(255, 134, 150, 0.15) !important;
 }
