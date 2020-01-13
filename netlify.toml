@@ -9,10 +9,3 @@ from = "https://designsurvey.us/"
 to = "https://designsurvey.us/philly"
 status = 301
 force = true
-
-
-[[redirects]]
-from = "https://designsurvey.us/*"
-to = "https://designsurvey.us/philly/:splat"
-status = 301
-force = true
