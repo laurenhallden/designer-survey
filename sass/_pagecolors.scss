@@ -1,0 +1,346 @@
+/* Subnav colors */
+
+.subnav {
+
+	&.blue {
+		border-bottom: 3px solid $blue;
+		background: rgba(95, 208, 254, 0.15) !important;
+
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $blue;
+			border-bottom: 0;
+		}
+
+		.nav-item {
+			a:hover { color: $blue !important; }
+
+			&.active {
+				a, a:hover {
+					color: $blue !important;
+
+					&:before {
+						border-bottom: 15px solid $blue;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $blue;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.lime {
+		border-bottom: 3px solid $lime;
+		background: rgba(187, 210, 119, 0.15) !important;
+
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $lime;
+			border-bottom: 0;
+		}
+
+		.nav-item {
+			a:hover { color: $lime !important; }
+
+			&.active {
+				a, a:hover {
+					color: $lime !important;
+
+					&:before {
+						border-bottom: 15px solid $lime;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $lime;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.green {
+		border-bottom: 3px solid $green;
+		background: rgba(137, 235, 215, 0.15) !important;
+
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $green;
+			border-bottom: 0;
+		}
+
+		.nav-item {
+			a:hover { color: $green !important; }
+
+			&.active {
+				a, a:hover {
+					color: $green !important;
+
+					&:before {
+						border-bottom: 15px solid $green;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $green;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.purple {
+		border-bottom: 3px solid $purple;
+		background: rgba(220, 134, 255, 0.15) !important;
+
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $purple;
+			border-bottom: 0;
+		}
+
+		.nav-item {
+			a:hover { color: $purple !important; }
+
+			&.active {
+				a, a:hover {
+					color: $purple !important;
+
+					&:before {
+						border-bottom: 15px solid $purple;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $purple;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.red {
+		border-bottom: 3px solid $red;
+		background: rgba(255, 134, 150, 0.15) !important;
+
+		@media screen and (max-width: 767px) {
+			border-left: 3px solid $red;
+			border-bottom: 0;
+		}
+
+		.nav-item {
+			a:hover { color: $red !important; }
+
+			&.active {
+				a, a:hover {
+					color: $red !important;
+
+					&:before {
+						border-bottom: 15px solid $red;
+
+						@media screen and (max-width: 767px) {
+							border-left: 15px solid $red;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Body colors */
+
+.content-wrapper {
+	&.blue {
+		a {
+			color: $blue;
+
+			&:hover {
+				color: $blue;
+				border-bottom: 1px solid $blue;
+			}
+
+			&:active {
+				color: darken($blue, 15%);
+			}
+		}
+		.btn-primary,
+		.btn-outline-primary.active {
+			background-color: $blue !important;
+			border: 2px solid $blue !important;
+
+			&:hover {
+				background-color: darken($blue, 15%) !important;
+				border-color: darken($blue, 15%) !important;
+			}
+
+			&:active {
+				background-color: darken($blue, 30%) !important;
+				border-color: darken($blue, 15%) !important;
+			}
+		}
+		.btn-outline-primary {
+			color: $blue;
+			border: 2px solid $blue;
+
+			&:hover {
+				color: darken($blue, 15%) !important;
+				border-color: darken($blue, 15%) !important;
+			}
+
+			&:active {
+				color: darken($blue, 30%) !important;
+				border-color: darken($blue, 15%) !important;
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(95, 208, 254, 0.15) !important;
+			}
+		}
+		.icon-row .fa {
+			background: $blue;
+		}
+	}
+	&.lime {
+		a {
+			color: $lime;
+
+			&:hover {
+				color: $lime;
+				border-bottom: 1px solid $lime;
+			}
+
+			&:active {
+				color: darken($lime, 15%);
+			}
+		}
+		.btn-primary,
+		.btn-outline-primary.active {
+			background-color: $lime !important;
+			border: 2px solid $lime !important;
+
+			&:hover {
+				background-color: darken($lime, 15%) !important;
+				border-color: darken($lime, 15%) !important;
+			}
+
+			&:active {
+				background-color: darken($lime, 30%) !important;
+				border-color: darken($lime, 15%) !important;
+			}
+		}
+
+		.btn-outline-primary {
+			color: $blue;
+			border: 2px solid $lime;
+
+			&:hover {
+				color: darken($lime, 15%) !important;
+				border-color: darken($lime, 15%) !important;
+			}
+
+			&:active {
+				color: darken($lime, 30%) !important;
+				border-color: darken($lime, 15%) !important;
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(187, 210, 119, 0.15) !important;
+			}
+		}
+	}
+	&.green {
+		a {
+			color: $green;
+
+			&:hover {
+				color: $green;
+				border-bottom: 1px solid $green;
+			}
+
+			&:active {
+				color: darken($green, 15%);
+			}
+		}
+		.btn-primary,
+		.btn-outline-primary.active {
+			background-color: $green !important;
+			border: 2px solid $green !important;
+			color: $gray-900 !important;
+
+			&:hover {
+				background-color: darken($green, 15%) !important;
+				border-color: darken($green, 15%) !important;
+				color: $gray-900 !important;
+			}
+
+			&:active {
+				background-color: darken($green, 30%) !important;
+				border-color: darken($green, 15%) !important;
+			}
+		}
+		.btn-outline-primary {
+			color: $green;
+			border: 2px solid $green;
+
+			&:hover {
+				color: darken($green, 15%) !important;
+				border-color: darken($green, 15%) !important;
+			}
+
+			&:active {
+				color: darken($green, 30%) !important;
+				border-color: darken($green, 15%) !important;
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(137, 235, 215, 0.15) !important;
+			}
+		}
+	}
+	&.purple {
+		a {
+			color: $purple;
+
+			&:hover {
+				color: $purple;
+				border-bottom: 1px solid $purple;
+			}
+
+			&:active {
+				color: darken($purple, 15%);
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(220, 134, 255, 0.20) !important;
+			}
+		}
+	}
+	&.red {
+		a {
+			color: $red;
+			&:hover {
+				color: $red;
+				border-bottom: 1px solid $red;
+			}
+
+			&:active {
+				color: darken($red, 15%);
+			}
+		}
+		table {
+			.highlight {
+				background: rgba(255, 134, 150, 0.15) !important;
+			}
+		}
+	}
+}

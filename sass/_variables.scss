@@ -15,17 +15,38 @@ $gray-800: #3A3A43;
 $gray-900: #2C2C32;
 $black:    #000 !default;
 
-$blue:    #5FD0FF;
+$background-color: $gray-900;
+$darker-background-color: rgba(0,0,0,0.5);
+
+// OUR COLORS
+
+$blue:    #5FD0FF;  // 95, 208, 254
+$green:   #89EBD7;  // 137, 235, 215
+$purple:  #DC86FF;  // 220, 134, 255
+$red:     #FF8696;  // 255, 134, 150
+$lime:    #BBD277;  // 187, 210, 119
+
+// TONY COLORS
+
+$tony-purple:  #A13EC5;
+$tony-green:   #48AB6E;
+$tony-cyan:    #46C2C2;
+$tony-indigo:  #7443C6;
+$tony-red:     #C03F5C;
+
+// $red: $tony-red;
+// $purple: $tony-purple;
+
+// Other theme colors
+
 $indigo:  #64B8C8 !default;
-$purple:  #8664B3 !default;
+// $purple:  #8664B3 !default;
 $pink:    #e83e8c !default;
-$red:     #BA6767 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #DAC96B !default;	
-$green:   #89EBD7;
 $teal:	  #64B8C8;
 $bright-teal: #1DFEC1;
-$cyan:    #3498DB !default;
+$cyan:    #61A7D0 !default;
 
 $primary:       $blue !default;
 $secondary:     $gray-700 !default;

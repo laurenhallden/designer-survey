@@ -1,0 +1,18 @@
+## Subnav single links
+subnav:
+- title: Subnav
+  items:
+    - title: Intro
+      url: /philly/intro
+
+    - title: By Job Title
+      url: /philly/jobs
+
+    - title: By Company Type
+      url: /philly/companies
+
+    - title: By Demographics
+      url: /philly/demographics
+
+    - title: Methodology
+      url: /philly/methodology

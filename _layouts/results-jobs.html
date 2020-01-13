@@ -1,0 +1,235 @@
+---
+---
+
+<!DOCTYPE html>
+<head>
+{% include head.html %}
+</head>
+<body>
+{% include nav.html %}
+{% include subnav.html %}
+
+<div class="content-wrapper">
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h1>{{ page.title }}</h1>
+
+                <p>In this section, you’ll find a breakdown of total compensation (including bonus) by job title, and where possible, a level of seniority.</p>
+
+                <p>The clearest takeaway from our analysis work was that the <strong>job titles themselves</strong> are a major obstacle to understanding fair compensation in the design community. Titles were incredibly varied and inconsistent even within similar types of companies. The jumble of titles is a major issue that makes it hard for individuals to understand how their experience translates to other companies and compares to their peers. </p>
+
+                <h3>How we defined job titles</h3>
+				<p>Because we couldn’t show every individual job title, we decided to make a set of benchmark jobs that are representative of the data. We leaned heavily on the responsibilities that respondents selected to place responses in specific groups. For example, every individual contributor who did <span class="code">UX design</span> and <span class="code">visual design</span> fit into <span class="code">UX/UI Designer</span>. Without visual design they became a <span class="code">UX Designer/Researcher</span>. You might see job titles that you aren’t familiar with, but we’ve provided a small breakdown of the skills of each.</p>
+            </div>
+        </div>
+        <div class="row no-margin">
+			<div class="col-lg-12 job-buttons">
+				<br class="hidden-sm"/>
+				<p><strong>If your primary skill is...</strong></p>
+
+				<button class="active btn btn-outline-primary visualdesigner designdirector manager">
+					Branding
+				</button>
+
+				<button class="btn btn-outline-primary contentdesigner visualdesigner designdirector">
+					Content Strategy
+				</button>
+
+				<button class="btn btn-outline-primary designdirector visualdesigner manager">
+					Creative Direction
+				</button>
+
+				<button class="btn btn-outline-primary frontend manager">
+					Front-end Development
+				</button>
+
+				<button class="btn btn-outline-primary visualdesigner designdirector manager">
+					Print Design
+				</button>
+
+				<button class="btn btn-outline-primary manager designdirector uxresearcher">
+					Product Managment
+				</button>
+
+				<button class="btn btn-outline-primary manager designdirector uxresearcher">
+					Project Managment
+				</button>
+
+				<button class="btn btn-outline-primary uxresearcher uxui contentdesigner">
+					Research
+				</button>
+
+				<button class="btn btn-outline-primary manager designdirector">
+					Team Leadership
+				</button>
+
+				<button class="btn btn-outline-primary visualdesigner uxui manager">
+					UI Design
+				</button>
+
+				<button class="btn btn-outline-primary uxresearcher uxui manager">
+					UX or Experience Design
+				</button>
+
+				<button class="btn btn-outline-primary visualdesigner designdirector manager">
+					Visual Design
+				</button>
+
+				<br/><br/>
+				<p><strong>...one of these may be the most relevant to you:</strong></p>
+
+			</div>
+		</div>
+
+		<div class="row no-margin">
+
+			<div class="job-card col-lg-4 hidden" id="contentdesigner">
+				{% include jobcards/contentdesigner.html %}
+			</div>
+
+			<div class="job-card col-lg-4 hidden" id="frontend">
+				{% include jobcards/frontend.html %}
+			</div>
+
+			<div class="job-card col-lg-4 hidden" id="uxui">
+				{% include jobcards/uxui.html %}
+			</div>
+
+			<div class="job-card col-lg-4 hidden" id="uxresearcher">
+				{% include jobcards/uxresearcher.html %}
+			</div>
+
+			<div class="job-card col-lg-4" id="visualdesigner">
+				{% include jobcards/visualdesigner.html %}
+			</div>
+
+			<div class="job-card col-lg-4" id="designdirector">
+				{% include jobcards/designdirector.html %}
+			</div>
+
+			<div class="job-card col-lg-4" id="manager">
+				{% include jobcards/manager.html %}
+			</div>
+
+	    </div>
+    </div>
+</section>
+
+{% include divider.html %}
+
+<section>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Compensation</h2>
+				<p>With our job categories defined, we can now look at the distribution of compensation for each job:</p>
+				<br/>
+
+				<div class="card text-white bg-secondary">
+					<div class="card-header">
+						Compensation ranges for all jobs (including bonuses)
+					</div>
+					<div class="card-body">
+						<div class="chart-container" style="position: relative; height: 500px;">
+							<canvas id="canvas-all"></canvas>
+						</div>
+					</div>
+				</div><!-- card -->
+				
+			</div><!-- column -->
+		</div><!-- row -->
+
+		<div class="row" id="job-details">
+			<div class="col-lg-9">
+				<br/>
+				<p>Drill into the details for each job:</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="job-category-details">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-2 col-md-4">
+				<ul class="job-categories">
+					<li class="active" data-item="1">Content Designer</li>
+					<li data-item="2">Design Director</li>
+					<li data-item="3">Front-End Designer</li>
+					<li data-item="4">Manager</li>							
+					<li data-item="5">UX Designer / Researcher</li>
+					<li data-item="6">UX/UI Desginer</li>
+					<li data-item="7">Visual Designer</li>
+				</ul>
+			</div><!-- column-->
+
+			<div class="col-lg-6 col-md-8 job-details-column">
+
+				<h3 id="job-category-heading">Content Designer</h3>
+
+				<p><span id="job-desc"></span></p>
+
+				<h4>Compensation</h4>				
+				<p>50% of <span id="job-category-title">Content Designer</span>s make between <strong><span id="job-q1">$70,000</span></strong> and <strong><span id="job-q3">$93,000</span></strong> per year. 25% make less (starting at <strong><span id="job-min">$52,000</span></strong>) and 25% make more (up to <strong><span id="job-max">$97,000</span></strong>). The median annual pay for this job is <strong><span id="job-median">$80,000</span></strong>.</p>
+
+				<h4>Seniority</h4>
+				<p class="available-seniority">Here's how the median pay for this job increases with experience.</p>
+				<div class="seniority">
+					<div class="bar"></div>
+					<div class="dot-container">
+						<div class="dot"><div>Level:</div><div>Designer for:<br/>Median pay:</div></div>
+						<div class="dot level-dot" id="level1"><div>Jr.</div><div>4 years<br/>$117k</div></div>
+						<div class="dot level-dot" id="level2"><div>Sr.</div><div>6 years<br/>$127k</div></div>
+						<div class="dot level-dot" id="level3"><div>Lead</div><div>6 years<br/>$127k</div></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-12">
+				<div class="card text-white bg-secondary" style="height: 580px;">
+					<div class="card-header">
+						Compensation range (including bonuses)
+					</div>
+					<div class="card-body">
+
+						<canvas id="canvas-1"></canvas>
+					</div>
+				</div><!-- card -->
+			</div>
+
+		</div><!-- row -->
+
+	</div><!-- container -->
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <a style="float: left;" href="/philly/intro">
+                    <i class="fa fa-angle-left"></i> Previous chapter
+                </a>
+                <a style="float: right;" href="/philly/companies">
+                    Next chapter <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</div> <!-- content wrapper -->
+
+{% include footer.html %}
+
+<!-- JS -->
+<script src="/js/nav.js"></script>
+<script src="/js/data.js"></script>
+<script src="/js/loadcharts-jobs.js"></script>
+<script src="/js/changecharts-jobs.js"></script>
+</body>
+</html>

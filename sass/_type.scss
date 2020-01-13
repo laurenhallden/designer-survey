@@ -34,12 +34,27 @@ h1 {
 	}
 }
 
+@media screen and (max-width: 767px) {
+
+	h2, h3 {
+		font-size: 1.8rem;
+	}
+}
+
+.article h1 {
+	margin-bottom: 2rem;
+}
+
 strong {
 	font-weight: 700;
 }
 
 ul li {
 	margin-bottom: 1rem;
+}
+
+h2 {
+	font-size: 2rem;
 }
 
 h3 {
@@ -52,9 +67,18 @@ h3 {
 	}
 }
 
-a {
+h4 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	margin-top: 1.5rem;
+	margin-bottom: 10px;
+}
+
+a,
+section a {
 	color: $blue;
 	font-weight: 500;
+	border-bottom: 1px solid transparent;
 
 	&:hover {
 		color: $blue;

@@ -16,6 +16,24 @@ section+.bg-light {
 	margin-top: 40px;
 }
 
+.row.no-margin {
+	margin-top: 0;
+
+	h1,h2,h3 {
+		margin-top: 0;
+	}
+}
+
+.padded-left-row {
+	padding-left: 40px;
+	
+	@media screen and (max-width: 767px) {
+	
+		padding-left: 0;
+	}
+
+}
+
 @media screen and (max-width: 767px) {
 
 	.col-space+.col-space {
@@ -28,6 +46,13 @@ section+.bg-light {
 
 	@media screen and (max-width: 767px) {
 		display: block;
+	}
+}
+
+.hidden-sm {
+
+	@media screen and (max-width: 767px) {
+		display: none;
 	}
 }
 

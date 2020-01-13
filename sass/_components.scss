@@ -4,6 +4,9 @@
 	background-color: $gray-800 !important;
 }
 
+
+/* Navs */
+
 .navbar {
 	font-size: 0.9rem;
 
@@ -27,7 +30,7 @@
 
 		&:hover {
 			color: $green !important;
-			border-bottom: 0;
+			border-bottom: 1px solid transparent;
 		}
 
 		&:active {
@@ -77,6 +80,96 @@
 	}
 }
 
+/* Subnav */
+
+.subnav {
+	background: $darker-background-color;
+	margin-bottom: 2rem;
+
+	ul {
+	list-style: none;
+	padding-inline-start: 0;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 0;
+
+		.nav-item {
+			margin-bottom: 0;
+			position: relative;
+
+			a {
+				color: $white;
+				border-radius: 2rem;
+				padding: 0.5rem 1rem;
+			}
+
+			&.active {
+
+				a,
+				a:hover {
+
+					&:before {
+						content: '';
+						position: absolute;
+						bottom: calc(-1rem - 2px);
+						left: calc(50% - 15px);
+						color: white;
+						width: 0; 
+						height: 0; 
+						border-left: 15px solid transparent;
+						border-right: 15px solid transparent;
+						border-bottom: 15px solid $green;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Mobile subnav */
+@media screen and (max-width: 767px) {
+
+	.subnav {
+		border-left: 3px solid $green;
+		border-bottom: 0;
+
+		ul {
+		display: block;
+
+			.nav-item {
+				display: block;
+
+				a {
+					&:hover {
+					}
+				}
+
+				&.active {
+
+					a,
+					a:hover {
+						
+
+						&:before {
+							content: '';
+							position: absolute;
+							top: 7px;
+							left: -1rem;
+							color: white;
+							width: 0; 
+							height: 0; 
+							border-left: 15px solid $green;
+							border-top: 15px solid transparent;
+							border-bottom: 15px solid transparent;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 /* Buttons */
 
 .btn {
@@ -91,18 +184,39 @@
 	}
 }
 
-.btn-primary {
-	background-color: $blue;
-	color: $gray-900;
-	font-weight: 600;
+.btn-primary,
+.btn-outline-primary.active {
+	background-color: $blue !important;
+	color: $gray-900 !important;
+	font-weight: 600 !important;
+	border: 2px solid $blue !important;
 
 	&:hover {
 		background-color: darken($blue, 15%) !important;
-		color: $gray-900;
+		border-color: darken($blue, 15%) !important;
+		color: $gray-900 !important;
 	}
 
 	&:active {
 		background-color: darken($blue, 30%) !important;
+		border-color: darken($blue, 15%) !important;
+		color: $gray-900 !important;
+	}
+}
+
+.btn-outline-primary {
+	color: $blue;
+	border: 2px solid $blue;
+
+	&:hover {
+		color: darken($blue, 15%) !important;
+		border-color: darken($blue, 15%) !important;
+		background: transparent;
+	}
+
+	&:active {
+		color: darken($blue, 30%) !important;
+		border-color: darken($blue, 15%) !important;
 	}
 }
 
@@ -136,6 +250,7 @@
 }
 
 .card {
+	margin-bottom: 30px;
 	font-family: 'Source Code Pro', monospace;
 	line-height: 1.6;
 	font-size: 16px;
@@ -171,90 +286,184 @@
 }
 
 .bg-primary {
- 	background-color: darken($blue, 15%) !important;
- }
+	background-color: darken($blue, 15%) !important;
+}
 
 .bg-secondary, .bg-light {
 	.card-header {
 		background-color: $gray-700;
+		font-weight: 700;
 	}
 
 	.card-body {
 		background-color: $gray-800;
 	}
- }
+}
 
- #accordion {
- 	.acc-card {
- 		font-family: 'Open Sans', sans-serif;
- 		font-size: 1rem;
- 		font-weight: 300;
- 		background-color: transparent;
- 		box-shadow: none;
- 		border: 0px;
- 		padding: 0;
- 		max-width: 45rem;
+.job-category-details {
+	h1, h2, h3 {
+		margin: 0 0 0.5em 0;
+	}
+}
 
- 		.acc-card-header, .acc-card-body {
- 			background-color: transparent;
- 			border: 0px;
- 			box-shadow: none;
- 			color: white;
- 			padding: 0;
- 		}
+.hidden {
+	display: none;
+}
 
- 		.acc-card-body {
- 			margin-bottom: 30px;
+#accordion {
+	.acc-card {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		font-weight: 300;
+		background-color: transparent;
+		box-shadow: none;
+		border: 0px;
+		padding: 0;
+		max-width: 45rem;
 
- 			a {
- 				color: $blue !important;
+		.acc-card-header, .acc-card-body {
+			background-color: transparent;
+			border: 0px;
+			box-shadow: none;
+			color: white;
+			padding: 0;
+		}
 
- 				&:active {
- 					color: darken($blue, 15%) !important;
- 					text-decoration: none;
- 				}
- 			}
- 		}
+		.acc-card-body {
+			margin-bottom: 30px;
 
- 		.acc-card-header .btn {
- 			padding: 20px 0 0px;
- 			margin-bottom: 10px;
- 			color: white;
- 			font-size: 1.5rem;
- 			border-radius: 0;
+			a {
+				color: $blue !important;
 
- 			&:hover {
- 				text-decoration: none;
- 				border-bottom: 1px solid white;
+				&:active {
+					color: darken($blue, 15%) !important;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.acc-card-header .btn {
+			padding: 20px 0 0px;
+			margin-bottom: 10px;
+			color: white;
+			font-size: 1.5rem;
+			border-radius: 0;
+
+			&:hover {
+				text-decoration: none;
+				border-bottom: 1px solid white;
+
 	  			@media screen and (max-width: 767px) {
 					border-bottom: 0;
 				}
- 			}
+			}
 
- 			 &:focus {
+			&:focus {
 				text-decoration: none !important;
 			}
 
- 			@media screen and (max-width: 767px) {
+			@media screen and (max-width: 767px) {
 				font-size: 1.6rem;
 			}
- 		}
+		}
 
- 		.btn {
- 			text-align: left !important;
- 		}
- 	}
- }
-
- .charts {
- 	.row {
- 		margin-top: 30px;
- 		margin-bottom: 30px;
- 	}
- }
+		.btn {
+			text-align: left !important;
+		}
+	}
+}
 
 
- /* Mailchimp signup */
+/* Tables */
+
+table {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	td, th {
+		padding: 10px;
+		border: 1px solid $gray-700;
+	}
+	tr {
+		background: $gray-800;
+
+		&.highlight {
+			background: rgba(97, 167, 208, .3);
+			border: 0px solid rgba(97, 167, 208, 1);
+			strong {
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.demographics-tables {
+	table {
+		tr,td {
+		}
+	}
+}
+
+.divider {
+	padding: 0px 0 30px;
+
+	hr {
+		border-top: 1px solid $gray-700;
+	}
+}
+
+.code {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	padding: 0px 5px;
+	background: $gray-700;
+	border-radius: 5px;
+}
+
+.code-text {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 500;
+	border-left: 4px solid $blue;
+	padding-left: 20px;
+	font-size: 0.95rem;
+	margin-top: 40px;
+	color: $gray-300;
+
+	strong {
+		color: $white;
+	}
+}
+
+.icon-row {
+	text-align: center;
+
+	.fa {
+		text-align: center;
+		font-size: 2rem;
+		color: $gray-800;
+		display: block;
+		margin: 2rem auto 2rem;
+		height: 5rem;
+		width: 5rem;
+		background: $lime;
+		padding: 1.5rem 0.5rem;
+		border-radius: 4rem;
+	}
+
+	@media screen and (max-width: 767px) {
+		text-align: left;
+
+		.fa {
+			margin: initial;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+/* Mailchimp signup */
 
 #mc_embed_signup {
 	text-align: left;
@@ -298,7 +507,6 @@
 	    background-color: $blue;
 	    box-sizing: border-box;
 	    height: 46px;
-	    line-height: 46px;
 	    padding: 0 18px;
 	    display: inline-block;
 	    margin: 0;
