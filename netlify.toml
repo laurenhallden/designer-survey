@@ -1,0 +1,11 @@
+[[redirects]]
+from = "http://designsurvey.us/*"
+to = "https://designsurvey.us/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://designsurvey.us/"
+to = "https://designsurvey.us/philly"
+status = 301
+force = true
