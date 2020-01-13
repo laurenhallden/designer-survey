@@ -4,10 +4,10 @@ topnav:
 - title: Topnav
   items:
     - title: Home
-      url: /
+      url: https://designsurvey.us/philly
 
     - title: About
-      url: /about
+      url: https://designsurvey.us/about/about
 
     - title: 2019 Results
-      url: /intro
+      url: https://designsurvey.us/about/intro
