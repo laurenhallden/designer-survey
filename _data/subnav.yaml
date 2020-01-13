@@ -3,7 +3,7 @@ subnav:
 - title: Subnav
   items:
     - title: Intro
-      url: /philly/intro
+      url: /philly/results
 
     - title: By Job Title
       url: /philly/jobs

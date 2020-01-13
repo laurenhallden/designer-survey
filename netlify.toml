@@ -9,3 +9,10 @@ from = "https://designsurvey.us/"
 to = "https://designsurvey.us/philly"
 status = 301
 force = true
+
+
+[[redirects]]
+from = "https://designsurvey.us/philly/results"
+to = "https://designsurvey.us/philly/intro"
+status = 301
+force = true
