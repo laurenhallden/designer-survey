@@ -30,7 +30,7 @@
 
 		&:hover {
 			color: $green !important;
-			border-bottom: 0;
+			border-bottom: 1px solid transparent;
 		}
 
 		&:active {
@@ -507,7 +507,6 @@ table {
 	    background-color: $blue;
 	    box-sizing: border-box;
 	    height: 46px;
-	    line-height: 46px;
 	    padding: 0 18px;
 	    display: inline-block;
 	    margin: 0;

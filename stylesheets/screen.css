@@ -667,7 +667,7 @@ section + .bg-light {
 /* line 31, ../sass/_components.scss */
 .navbar a:hover {
   color: #89EBD7 !important;
-  border-bottom: 0;
+  border-bottom: 1px solid transparent;
 }
 /* line 36, ../sass/_components.scss */
 .navbar a:active {
@@ -1131,14 +1131,13 @@ table tr.highlight strong {
   background-color: #5FD0FF;
   box-sizing: border-box;
   height: 46px;
-  line-height: 46px;
   padding: 0 18px;
   display: inline-block;
   margin: 0;
   transition: all 0.23s ease-in-out 0s;
 }
 @media screen and (max-width: 767px) {
-  /* line 518, ../sass/_components.scss */
+  /* line 517, ../sass/_components.scss */
   #mc_embed_signup input.email, #mc_embed_signup .button {
     display: block;
     width: 100%;
