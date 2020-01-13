@@ -515,19 +515,24 @@ ul li {
 }
 
 /* line 56, ../sass/_type.scss */
+h2 {
+  font-size: 2rem;
+}
+
+/* line 60, ../sass/_type.scss */
 h3 {
   font-size: 2rem;
   margin-top: 50px;
   margin-bottom: 15px;
 }
 @media screen and (max-width: 767px) {
-  /* line 56, ../sass/_type.scss */
+  /* line 60, ../sass/_type.scss */
   h3 {
     font-size: 1.6rem;
   }
 }
 
-/* line 66, ../sass/_type.scss */
+/* line 70, ../sass/_type.scss */
 h4 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -535,21 +540,21 @@ h4 {
   margin-bottom: 10px;
 }
 
-/* line 73, ../sass/_type.scss */
+/* line 77, ../sass/_type.scss */
 a,
 section a {
   color: #5FD0FF;
   font-weight: 500;
   border-bottom: 1px solid transparent;
 }
-/* line 79, ../sass/_type.scss */
+/* line 83, ../sass/_type.scss */
 a:hover,
 section a:hover {
   color: #5FD0FF;
   text-decoration: none;
   border-bottom: 1px solid #5FD0FF;
 }
-/* line 85, ../sass/_type.scss */
+/* line 89, ../sass/_type.scss */
 a:active,
 section a:active {
   color: #13baff;
