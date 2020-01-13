@@ -3,16 +3,16 @@ subnav:
 - title: Subnav
   items:
     - title: Intro
-      url: https://designsurvey.us/philly/intro
+      url: /philly/intro
 
     - title: By Job Title
-      url: https://designsurvey.us/philly/jobs
+      url: /philly/jobs
 
     - title: By Company Type
-      url: https://designsurvey.us/philly/companies
+      url: /philly/companies
 
     - title: By Demographics
-      url: https://designsurvey.us/philly/demographics
+      url: /philly/demographics
 
     - title: Methodology
-      url: https://designsurvey.us/philly/methodology
+      url: /philly/methodology
